@@ -4,6 +4,7 @@ import { useState } from 'react';
 import { Box } from '@mui/material';
 import { Sidebar } from './Sidebar';
 import { TopNavigation } from './TopNavigation';
+import { Breadcrumbs } from '@/components/ui';
 
 interface DashboardLayoutProps {
   children: React.ReactNode;
@@ -36,6 +37,9 @@ export function DashboardLayout({ children }: DashboardLayoutProps) {
           minHeight: 'calc(100vh - 64px)',
         }}
       >
+        <Box sx={{ p: { xs: 2, md: 3 }, pb: 0 }}>
+          <Breadcrumbs />
+        </Box>
         {children}
       </Box>
     </Box>
