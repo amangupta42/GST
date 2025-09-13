@@ -243,8 +243,8 @@ export function Sidebar({ open, onClose }: SidebarProps) {
             borderRight: '1px solid',
             borderColor: 'divider',
             backgroundColor: 'background.paper',
-            marginTop: '64px', // AppBar height offset
-            height: 'calc(100vh - 64px)', // Adjust height accordingly
+            marginTop: '55px', // AppBar height offset
+            height: 'calc(100vh - 55px)', // Adjust height accordingly
           },
         }}
       >
@@ -267,9 +267,10 @@ export function Sidebar({ open, onClose }: SidebarProps) {
           borderRight: '1px solid',
           borderColor: 'divider',
           backgroundColor: 'background.paper',
-          position: 'relative',
-          marginTop: '64px', // AppBar height offset
+          position: 'fixed',
+          top: '64px', // AppBar height offset
           height: 'calc(100vh - 64px)', // Adjust height accordingly
+          zIndex: theme.zIndex.drawer,
         },
       }}
     >

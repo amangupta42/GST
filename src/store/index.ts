@@ -1,14 +1,14 @@
 import { configureStore } from '@reduxjs/toolkit';
 import { useDispatch, useSelector, type TypedUseSelectorHook } from 'react-redux';
 
-// Import slices (will be created later)
-// import authSlice from './slices/authSlice';
-// import dashboardSlice from './slices/dashboardSlice';
+// Import slices
+import dashboardReducer from './slices/dashboardSlice';
+import widgetReducer from './slices/widgetSlice';
+// import authSlice from './slices/authSlice'; // Will be added later
 
-// Temporary empty reducer until we add actual slices
 const rootReducer = {
-  // Placeholder to prevent empty reducer error
-  _placeholder: (state = {}, action: any) => state,
+  dashboard: dashboardReducer,
+  widgets: widgetReducer,
 };
 
 export const store = configureStore({

@@ -6,6 +6,8 @@ import { Sidebar } from './Sidebar';
 import { TopNavigation } from './TopNavigation';
 import { Breadcrumbs } from '@/components/ui';
 
+const DRAWER_WIDTH = 280;
+
 interface DashboardLayoutProps {
   children: React.ReactNode;
 }
@@ -31,7 +33,7 @@ export function DashboardLayout({ children }: DashboardLayoutProps) {
         component="main"
         sx={{
           flexGrow: 1,
-          ml: { xs: 0, md: 0 }, // No margin on desktop, no margin on mobile
+          ml: { xs: 0, md: 0 }, // Keep as is. Sidebar automatically accounted for in web
           mt: '64px', // AppBar height
           backgroundColor: 'background.default',
           minHeight: 'calc(100vh - 64px)',
