@@ -10,6 +10,7 @@ import {
   Chip,
   Avatar
 } from '@mui/material';
+import Link from 'next/link';
 import {
   TrendingUp,
   TrendingDown,
@@ -168,62 +169,89 @@ export default function Dashboard() {
         case 'quickActions':
           return (
             <Grid container spacing={2}>
-              <Grid item xs={12} md={4}>
-                <Button
-                  variant="outlined"
-                  color="primary"
-                  fullWidth
-                  sx={{
-                    height: 80,
-                    flexDirection: 'column',
-                    gap: 1
-                  }}
-                >
-                  <Typography variant="subtitle1" fontWeight="medium">
-                    File GSTR-1
-                  </Typography>
-                  <Typography variant="body2" color="text.secondary">
-                    Upload and file your sales return
-                  </Typography>
-                </Button>
+              <Grid item xs={12} sm={6} md={3}>
+                <Link href="/filing/gstr-1" passHref legacyBehavior>
+                  <Button
+                    variant="outlined"
+                    color="primary"
+                    fullWidth
+                    sx={{
+                      height: 80,
+                      flexDirection: 'column',
+                      gap: 1
+                    }}
+                  >
+                    <Typography variant="subtitle1" fontWeight="medium">
+                      File GSTR-1
+                    </Typography>
+                    <Typography variant="body2" color="text.secondary">
+                      Sales return filing
+                    </Typography>
+                  </Button>
+                </Link>
               </Grid>
-              <Grid item xs={12} md={4}>
-                <Button
-                  variant="outlined"
-                  color="success"
-                  fullWidth
-                  sx={{
-                    height: 80,
-                    flexDirection: 'column',
-                    gap: 1
-                  }}
-                >
-                  <Typography variant="subtitle1" fontWeight="medium">
-                    File GSTR-3B
-                  </Typography>
-                  <Typography variant="body2" color="text.secondary">
-                    Submit your monthly summary
-                  </Typography>
-                </Button>
+              <Grid item xs={12} sm={6} md={3}>
+                <Link href="/filing/gstr-3b" passHref legacyBehavior>
+                  <Button
+                    variant="outlined"
+                    color="success"
+                    fullWidth
+                    sx={{
+                      height: 80,
+                      flexDirection: 'column',
+                      gap: 1
+                    }}
+                  >
+                    <Typography variant="subtitle1" fontWeight="medium">
+                      File GSTR-3B
+                    </Typography>
+                    <Typography variant="body2" color="text.secondary">
+                      Monthly summary
+                    </Typography>
+                  </Button>
+                </Link>
               </Grid>
-              <Grid item xs={12} md={4}>
-                <Button
-                  variant="outlined"
-                  color="secondary"
-                  fullWidth
-                  sx={{
-                    height: 80,
-                    flexDirection: 'column',
-                    gap: 1
-                  }}
-                >
-                  <Typography variant="subtitle1" fontWeight="medium">
-                    ITC Reconciliation
-                  </Typography>
-                  <Typography variant="body2" color="text.secondary">
-                    Match purchase invoices
-                  </Typography>
-                </Button>
+              <Grid item xs={12} sm={6} md={3}>
+                <Link href="/filing/gstr-9" passHref legacyBehavior>
+                  <Button
+                    variant="outlined"
+                    color="info"
+                    fullWidth
+                    sx={{
+                      height: 80,
+                      flexDirection: 'column',
+                      gap: 1
+                    }}
+                  >
+                    <Typography variant="subtitle1" fontWeight="medium">
+                      File GSTR-9
+                    </Typography>
+                    <Typography variant="body2" color="text.secondary">
+                      Annual return
+                    </Typography>
+                  </Button>
+                </Link>
+              </Grid>
+              <Grid item xs={12} sm={6} md={3}>
+                <Link href="/reconciliation" passHref legacyBehavior>
+                  <Button
+                    variant="outlined"
+                    color="secondary"
+                    fullWidth
+                    sx={{
+                      height: 80,
+                      flexDirection: 'column',
+                      gap: 1
+                    }}
+                  >
+                    <Typography variant="subtitle1" fontWeight="medium">
+                      ITC Reconciliation
+                    </Typography>
+                    <Typography variant="body2" color="text.secondary">
+                      Match invoices
+                    </Typography>
+                  </Button>
+                </Link>
               </Grid>
             </Grid>
           );

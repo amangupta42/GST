@@ -56,16 +56,18 @@ export const mockApi = {
   },
 
   // Add notification
-  async addNotification(notification: Omit<DashboardAPIData['notifications'][0], 'id' | 'timestamp'>): Promise<APIResponse<DashboardAPIData['notifications'][0]>> {
+  async addNotification(notification: { title: string; subtitle: string; type: 'info' | 'warning' | 'success' }): Promise<APIResponse<DashboardAPIData['notifications'][0]>> {
     await simulateNetworkDelay(100, 300);
     
-    const newNotification = {
-      ...notification,
+    const newNotification: DashboardAPIData['notifications'][0] = {
       id: `${Date.now()}-${Math.random().toString(36).substr(2, 9)}`,
+      type: notification.type,
+      title: notification.title,
+      subtitle: notification.subtitle,
       timestamp: new Date().toISOString(),
     };
     
-    mockScenarios[currentScenario].notifications.unshift(newNotification);
+    (mockScenarios[currentScenario].notifications as any[]).unshift(newNotification);
     
     // Keep only the latest 20 notifications
     if (mockScenarios[currentScenario].notifications.length > 20) {

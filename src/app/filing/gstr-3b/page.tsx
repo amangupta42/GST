@@ -1,30 +1,20 @@
-import { Box, Typography, Card, CardContent, Grid } from '@mui/material';
+'use client';
+
+import { useRouter } from 'next/navigation';
 import { DashboardLayout } from '@/components/layouts';
+import { GSTR3BWizard } from './components/GSTR3BWizard';
 
 export default function GSTR3BFiling() {
+  const router = useRouter();
+
+  const handleComplete = () => {
+    // Navigate back to dashboard or filing overview
+    router.push('/dashboard');
+  };
+
   return (
     <DashboardLayout>
-      <Box sx={{ p: { xs: 2, md: 3 } }}>
-        <Box sx={{ mb: 4 }}>
-          <Typography variant="h4" component="h1" gutterBottom>
-            GSTR-3B Filing
-          </Typography>
-          <Typography variant="body1" color="text.secondary">
-            Monthly summary return - Auto-computed from GSTR-1
-          </Typography>
-        </Box>
-
-        <Card>
-          <CardContent>
-            <Typography variant="h6" color="text.secondary" textAlign="center">
-              🚧 Coming Soon
-            </Typography>
-            <Typography variant="body1" textAlign="center" sx={{ mt: 2 }}>
-              GSTR-3B filing interface is under development
-            </Typography>
-          </CardContent>
-        </Card>
-      </Box>
+      <GSTR3BWizard onComplete={handleComplete} />
     </DashboardLayout>
   );
 }
