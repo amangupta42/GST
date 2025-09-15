@@ -22,6 +22,9 @@ import {
   Settings as SettingsIcon,
   Receipt as InvoiceIcon,
   Notifications as NotificationIcon,
+  QrCode as EInvoiceIcon,
+  LocalShipping as EWayBillIcon,
+  SmartToy as AIAssistantIcon,
 } from '@mui/icons-material';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
@@ -58,9 +61,24 @@ const navigationItems = [
     href: '/invoices',
   },
   {
+    text: 'E-Invoice',
+    icon: <EInvoiceIcon />,
+    href: '/e-invoice',
+  },
+  {
+    text: 'E-way Bill',
+    icon: <EWayBillIcon />,
+    href: '/e-way-bill',
+  },
+  {
     text: 'Analytics',
     icon: <AnalyticsIcon />,
     href: '/analytics',
+  },
+  {
+    text: 'AI Assistant',
+    icon: <AIAssistantIcon />,
+    href: '/ai-assistant',
   },
   {
     text: 'Notifications',

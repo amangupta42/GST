@@ -169,7 +169,7 @@ export default function Dashboard() {
         case 'quickActions':
           return (
             <Grid container spacing={2}>
-              <Grid item xs={12} sm={6} md={3}>
+              <Grid item xs={12} sm={6} md={4}>
                 <Link href="/filing/gstr-1" passHref legacyBehavior>
                   <Button
                     variant="outlined"
@@ -190,7 +190,7 @@ export default function Dashboard() {
                   </Button>
                 </Link>
               </Grid>
-              <Grid item xs={12} sm={6} md={3}>
+              <Grid item xs={12} sm={6} md={4}>
                 <Link href="/filing/gstr-3b" passHref legacyBehavior>
                   <Button
                     variant="outlined"
@@ -211,7 +211,7 @@ export default function Dashboard() {
                   </Button>
                 </Link>
               </Grid>
-              <Grid item xs={12} sm={6} md={3}>
+              <Grid item xs={12} sm={6} md={4}>
                 <Link href="/filing/gstr-9" passHref legacyBehavior>
                   <Button
                     variant="outlined"
@@ -232,7 +232,7 @@ export default function Dashboard() {
                   </Button>
                 </Link>
               </Grid>
-              <Grid item xs={12} sm={6} md={3}>
+              <Grid item xs={12} sm={6} md={4}>
                 <Link href="/reconciliation" passHref legacyBehavior>
                   <Button
                     variant="outlined"
@@ -249,6 +249,91 @@ export default function Dashboard() {
                     </Typography>
                     <Typography variant="body2" color="text.secondary">
                       Match invoices
+                    </Typography>
+                  </Button>
+                </Link>
+              </Grid>
+              <Grid item xs={12} sm={6} md={4}>
+                <Link href="/invoices" passHref legacyBehavior>
+                  <Button
+                    variant="outlined"
+                    color="warning"
+                    fullWidth
+                    sx={{
+                      height: 80,
+                      flexDirection: 'column',
+                      gap: 1
+                    }}
+                  >
+                    <Typography variant="subtitle1" fontWeight="medium">
+                      Invoice Management
+                    </Typography>
+                    <Typography variant="body2" color="text.secondary">
+                      Manage invoices
+                    </Typography>
+                  </Button>
+                </Link>
+              </Grid>
+              <Grid item xs={12} sm={6} md={4}>
+                <Link href="/e-invoice" passHref legacyBehavior>
+                  <Button
+                    variant="outlined"
+                    color="error"
+                    fullWidth
+                    sx={{
+                      height: 80,
+                      flexDirection: 'column',
+                      gap: 1
+                    }}
+                  >
+                    <Typography variant="subtitle1" fontWeight="medium">
+                      E-Invoice
+                    </Typography>
+                    <Typography variant="body2" color="text.secondary">
+                      IRN generation
+                    </Typography>
+                  </Button>
+                </Link>
+              </Grid>
+              <Grid item xs={12} sm={6} md={4}>
+                <Link href="/e-way-bill" passHref legacyBehavior>
+                  <Button
+                    variant="outlined"
+                    sx={{
+                      height: 80,
+                      flexDirection: 'column',
+                      gap: 1,
+                      color: 'purple',
+                      borderColor: 'purple'
+                    }}
+                    fullWidth
+                  >
+                    <Typography variant="subtitle1" fontWeight="medium">
+                      E-way Bill
+                    </Typography>
+                    <Typography variant="body2" color="text.secondary">
+                      GPS tracking
+                    </Typography>
+                  </Button>
+                </Link>
+              </Grid>
+              <Grid item xs={12} sm={6} md={4}>
+                <Link href="/analytics" passHref legacyBehavior>
+                  <Button
+                    variant="outlined"
+                    color="inherit"
+                    fullWidth
+                    sx={{
+                      height: 80,
+                      flexDirection: 'column',
+                      gap: 1
+                    }}
+                  >
+                    <Typography variant="subtitle1" fontWeight="medium">
+                      Analytics
+                    </Typography>
+                    <Typography variant="body2" color="text.secondary">
+                      Reports & insights
                     </Typography>
                   </Button>
                 </Link>
