@@ -178,7 +178,7 @@ export const GSTR3BPreviewStep = ({ data }: GSTR3BPreviewStepProps) => {
           </Box>
         </AccordionSummary>
         <AccordionDetails>
-          <TableContainer component={Paper}>
+          <TableContainer component={Paper} sx={{ overflowX: 'auto' }}>
             <Table size="small">
               <TableHead>
                 <TableRow>
@@ -240,7 +240,7 @@ export const GSTR3BPreviewStep = ({ data }: GSTR3BPreviewStepProps) => {
           </Box>
         </AccordionSummary>
         <AccordionDetails>
-          <TableContainer component={Paper}>
+          <TableContainer component={Paper} sx={{ overflowX: 'auto' }}>
             <Table size="small">
               <TableHead>
                 <TableRow>

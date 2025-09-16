@@ -308,7 +308,7 @@ export function DataSourceStep({ data, onUpdate, loading, setLoading }: DataSour
               Imported Data Summary
             </Typography>
 
-            <TableContainer component={Paper} variant="outlined">
+            <TableContainer component={Paper} variant="outlined" sx={{ overflowX: 'auto' }}>
               <Table size="small">
                 <TableHead>
                   <TableRow>

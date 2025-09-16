@@ -522,7 +522,7 @@ export const EWayBillHub = ({ onNavigate }: EWayBillHubProps) => {
           <Typography variant="h6">
             E-way Bills
           </Typography>
-          <Box sx={{ display: 'flex', gap: 1 }}>
+          <Box sx={{ display: 'flex', gap: 1, flexWrap: 'wrap' }}>
             <Button
               variant="contained"
               startIcon={<AddIcon />}
@@ -540,7 +540,7 @@ export const EWayBillHub = ({ onNavigate }: EWayBillHubProps) => {
           </Box>
         </Box>
 
-        <TableContainer>
+        <TableContainer sx={{ overflowX: 'auto' }}>
           <Table>
             <TableHead>
               <TableRow>
@@ -722,7 +722,7 @@ export const EWayBillHub = ({ onNavigate }: EWayBillHubProps) => {
                     </Box>
                   )}
 
-                  <Box sx={{ display: 'flex', gap: 1 }}>
+                  <Box sx={{ display: 'flex', gap: 1, flexWrap: 'wrap' }}>
                     <Button size="small" variant="outlined" startIcon={<GPSIcon />}>
                       Live Track
                     </Button>

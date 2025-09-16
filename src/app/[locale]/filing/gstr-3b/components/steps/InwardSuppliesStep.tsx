@@ -381,7 +381,7 @@ export const InwardSuppliesStep = ({
           </Box>
 
           {/* Supplies Table */}
-          <TableContainer component={Paper}>
+          <TableContainer component={Paper} sx={{ overflowX: 'auto' }}>
             <Table size="small">
               <TableHead>
                 <TableRow>

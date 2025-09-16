@@ -561,7 +561,7 @@ export const AdvancedAnalytics = ({ onNavigate }: AdvancedAnalyticsProps) => {
         <Typography variant="h6" gutterBottom>
           Location Performance Details
         </Typography>
-        <TableContainer>
+        <TableContainer sx={{ overflowX: 'auto' }}>
           <Table>
             <TableHead>
               <TableRow>

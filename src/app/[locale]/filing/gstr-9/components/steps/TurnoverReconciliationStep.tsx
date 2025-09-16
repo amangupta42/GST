@@ -265,7 +265,7 @@ export function TurnoverReconciliationStep({ data, onUpdate, loading, setLoading
             Detailed Turnover Comparison
           </Typography>
 
-          <TableContainer component={Paper} variant="outlined">
+          <TableContainer component={Paper} variant="outlined" sx={{ overflowX: 'auto' }}>
             <Table>
               <TableHead>
                 <TableRow>

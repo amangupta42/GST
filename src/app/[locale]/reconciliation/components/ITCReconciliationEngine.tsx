@@ -581,7 +581,7 @@ export function ITCReconciliationEngine({ onComplete }: ITCReconciliationEngineP
                   Reconciliation Results ({reconciliationMatches.length} records)
                 </Typography>
 
-                <TableContainer component={Paper} variant="outlined" sx={{ mt: 2 }}>
+                <TableContainer component={Paper} variant="outlined" sx={{ mt: 2, overflowX: 'auto' }}>
                   <Table>
                     <TableHead>
                       <TableRow>
@@ -730,8 +730,8 @@ export function ITCReconciliationEngine({ onComplete }: ITCReconciliationEngineP
             <Typography variant="h6" gutterBottom>
               Purchase Invoices ({purchaseInvoices.length} records)
             </Typography>
-            
-            <TableContainer component={Paper} variant="outlined">
+
+            <TableContainer component={Paper} variant="outlined" sx={{ overflowX: 'auto' }}>
               <Table>
                 <TableHead>
                   <TableRow>
@@ -799,7 +799,7 @@ export function ITCReconciliationEngine({ onComplete }: ITCReconciliationEngineP
               GSTR-2B Records ({gstr2bRecords.length} records)
             </Typography>
 
-            <TableContainer component={Paper} variant="outlined">
+            <TableContainer component={Paper} variant="outlined" sx={{ overflowX: 'auto' }}>
               <Table>
                 <TableHead>
                   <TableRow>

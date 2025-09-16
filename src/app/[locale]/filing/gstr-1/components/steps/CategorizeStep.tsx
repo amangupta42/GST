@@ -276,7 +276,7 @@ export const CategorizeStep = ({ data, onUpdate }: CategorizeStepProps) => {
       </Box>
 
       {/* Invoice Table */}
-      <TableContainer component={Paper}>
+      <TableContainer component={Paper} sx={{ overflowX: 'auto' }}>
         <Table>
           <TableHead>
             <TableRow>

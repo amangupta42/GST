@@ -581,7 +581,7 @@ export function EInvoiceHub({ onComplete }: EInvoiceHubProps) {
               E-Invoice Records Management
             </Typography>
 
-            <TableContainer>
+            <TableContainer sx={{ overflowX: 'auto' }}>
               <Table>
                 <TableHead>
                   <TableRow>
@@ -689,7 +689,7 @@ export function EInvoiceHub({ onComplete }: EInvoiceHubProps) {
                         )}
                       </TableCell>
                       <TableCell align="center">
-                        <Box sx={{ display: 'flex', gap: 0.5 }}>
+                        <Box sx={{ display: 'flex', gap: 0.5, flexWrap: 'wrap' }}>
                           {record.status === 'pending' && (
                             <Tooltip title="Generate IRN">
                               <IconButton 
@@ -791,7 +791,7 @@ export function EInvoiceHub({ onComplete }: EInvoiceHubProps) {
                       <Typography variant="subtitle2" gutterBottom>
                         Results Summary
                       </Typography>
-                      <Box sx={{ display: 'flex', gap: 2, mb: 2 }}>
+                      <Box sx={{ display: 'flex', gap: 2, mb: 2, flexWrap: 'wrap' }}>
                         <Chip 
                           size="small" 
                           label={`✓ ${job.successfulInvoices}`}

@@ -314,7 +314,7 @@ export function TaxDetailsStep({ data, onUpdate, loading, setLoading }: TaxDetai
               GSTR-1 vs GSTR-3B Tax Comparison
             </Typography>
 
-            <TableContainer component={Paper} variant="outlined">
+            <TableContainer component={Paper} variant="outlined" sx={{ overflowX: 'auto' }}>
               <Table>
                 <TableHead>
                   <TableRow>
@@ -387,7 +387,7 @@ export function TaxDetailsStep({ data, onUpdate, loading, setLoading }: TaxDetai
               </Typography>
             </Alert>
 
-            <TableContainer component={Paper} variant="outlined">
+            <TableContainer component={Paper} variant="outlined" sx={{ overflowX: 'auto' }}>
               <Table>
                 <TableHead>
                   <TableRow>

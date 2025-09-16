@@ -137,13 +137,14 @@ export function Sidebar({ open, onClose }: SidebarProps) {
         <List sx={{ px: 2, py: 1 }}>
           {navigationItems.map((item) => (
             <Box key={item.textKey}>
-              <ListItem disablePadding sx={{ mb: 0.5 }}>
-                {item.children ? (
+              {item.children ? (
+                <ListItem disablePadding sx={{ mb: 0.5 }}>
                   <ListItemButton
                     onClick={() => handleItemClick(item)}
                     sx={{
                       borderRadius: 2,
                       minHeight: 48,
+                      width: '100%',
                       backgroundColor: isActive(item.href)
                         ? 'primary.main'
                         : 'transparent',
@@ -171,13 +172,16 @@ export function Sidebar({ open, onClose }: SidebarProps) {
                       }}
                     />
                   </ListItemButton>
-                ) : (
-                  <Link href={item.href as Parameters<typeof Link>[0]['href']} style={{ textDecoration: 'none' }}>
+                </ListItem>
+              ) : (
+                <ListItem disablePadding sx={{ mb: 0.5 }}>
+                  <Link href={item.href as Parameters<typeof Link>[0]['href']} style={{ textDecoration: 'none', width: '100%' }}>
                     <ListItemButton
                       onClick={() => handleItemClick(item)}
                       sx={{
                         borderRadius: 2,
                         minHeight: 48,
+                        width: '100%',
                         backgroundColor: isActive(item.href)
                           ? 'primary.main'
                           : 'transparent',
@@ -206,20 +210,21 @@ export function Sidebar({ open, onClose }: SidebarProps) {
                       />
                     </ListItemButton>
                   </Link>
-                )}
-              </ListItem>
+                </ListItem>
+              )}
 
               {/* Submenu items */}
               {item.children && expandedItems.includes(item.textKey) && (
                 <List sx={{ pl: 2 }}>
                   {item.children.map((child) => (
                     <ListItem key={child.textKey} disablePadding sx={{ mb: 0.5 }}>
-                      <Link href={child.href as Parameters<typeof Link>[0]['href']} style={{ textDecoration: 'none' }}>
+                      <Link href={child.href as Parameters<typeof Link>[0]['href']} style={{ textDecoration: 'none', width: '100%' }}>
                         <ListItemButton
                           onClick={() => isMobile && onClose()}
                           sx={{
                             borderRadius: 1.5,
                             minHeight: 40,
+                            width: '100%',
                             backgroundColor: isActive(child.href)
                               ? 'primary.main'
                               : 'transparent',

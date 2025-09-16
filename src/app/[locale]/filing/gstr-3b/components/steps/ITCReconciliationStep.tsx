@@ -394,7 +394,7 @@ export const ITCReconciliationStep = ({
           </Box>
 
           {/* Reconciliation Table */}
-          <TableContainer component={Paper}>
+          <TableContainer component={Paper} sx={{ overflowX: 'auto' }}>
             <Table size="small">
               <TableHead>
                 <TableRow>

@@ -389,7 +389,7 @@ export const AIAssistant = ({ onNavigate }: AIAssistantProps) => {
         mb: 2
       }}
     >
-      <Box sx={{ maxWidth: '80%', display: 'flex', gap: 1 }}>
+      <Box sx={{ maxWidth: '80%', display: 'flex', gap: 1, flexWrap: 'wrap' }}>
         {message.type === 'ai' && (
           <Avatar sx={{ bgcolor: 'primary.main', width: 32, height: 32 }}>
             <AIIcon fontSize="small" />
@@ -509,19 +509,19 @@ export const AIAssistant = ({ onNavigate }: AIAssistantProps) => {
 
         {/* Chat Interface */}
         <Grid item xs={12} md={8}>
-          <Card sx={{ height: 600, display: 'flex', flexDirection: 'column' }}>
+          <Card sx={{ height: { xs: 500, md: 700 }, display: 'flex', flexDirection: 'column' }}>
             <CardContent sx={{ flex: 1, overflow: 'auto', p: 0 }}>
               <Box sx={{ p: 2 }}>
                 {currentSession?.messages.map(renderMessage)}
                 
                 {isTyping && (
                   <Box sx={{ display: 'flex', justifyContent: 'flex-start', mb: 2 }}>
-                    <Box sx={{ display: 'flex', gap: 1, alignItems: 'center' }}>
+                    <Box sx={{ display: 'flex', gap: 1, alignItems: 'center', flexWrap: 'wrap' }}>
                       <Avatar sx={{ bgcolor: 'primary.main', width: 32, height: 32 }}>
                         <AIIcon fontSize="small" />
                       </Avatar>
                       <Paper sx={{ p: 2, bgcolor: 'grey.100', borderRadius: 2 }}>
-                        <Box sx={{ display: 'flex', gap: 0.5 }}>
+                        <Box sx={{ display: 'flex', gap: 0.5, flexWrap: 'wrap' }}>
                           <CircularProgress size={8} />
                           <CircularProgress size={8} sx={{ animationDelay: '0.2s' }} />
                           <CircularProgress size={8} sx={{ animationDelay: '0.4s' }} />
@@ -537,7 +537,7 @@ export const AIAssistant = ({ onNavigate }: AIAssistantProps) => {
 
             {/* Input Area */}
             <Box sx={{ p: 2, borderTop: '1px solid', borderColor: 'divider' }}>
-              <Box sx={{ display: 'flex', gap: 1, alignItems: 'flex-end' }}>
+              <Box sx={{ display: 'flex', gap: 1, alignItems: 'flex-end', flexWrap: 'wrap' }}>
                 <TextField
                   ref={inputRef}
                   fullWidth
@@ -574,7 +574,8 @@ export const AIAssistant = ({ onNavigate }: AIAssistantProps) => {
 
         {/* Sidebar */}
         <Grid item xs={12} md={4}>
-          <Grid container spacing={2}>
+          <Box sx={{ height: { xs: 'auto', md: 700 }, display: 'flex', flexDirection: 'column' }}>
+            <Grid container spacing={2} sx={{ flex: 1 }}>
             {/* Language Selector */}
             <Grid item xs={12}>
               <Card>
@@ -615,8 +616,8 @@ export const AIAssistant = ({ onNavigate }: AIAssistantProps) => {
 
             {/* Session History */}
             <Grid item xs={12}>
-              <Card>
-                <CardContent>
+              <Card sx={{ flex: 1, display: 'flex', flexDirection: 'column', minHeight: { xs: 200, md: 280 } }}>
+                <CardContent sx={{ flex: 1, display: 'flex', flexDirection: 'column' }}>
                   <Box sx={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', mb: 2 }}>
                     <Typography variant="h6">Recent Chats</Typography>
                     <IconButton size="small" onClick={() => createNewSession()}>
@@ -624,21 +625,23 @@ export const AIAssistant = ({ onNavigate }: AIAssistantProps) => {
                     </IconButton>
                   </Box>
                   
-                  <List dense>
-                    {sessions.slice(0, 5).map((session) => (
-                      <ListItem
-                        key={session.id}
-                        button
-                        selected={currentSession?.id === session.id}
-                        onClick={() => setCurrentSession(session)}
-                      >
-                        <ListItemText
-                          primary={session.title}
-                          secondary={new Date(session.createdAt).toLocaleDateString()}
-                        />
-                      </ListItem>
-                    ))}
-                  </List>
+                  <Box sx={{ flex: 1, overflow: 'auto' }}>
+                    <List dense>
+                      {sessions.slice(0, 5).map((session) => (
+                        <ListItem
+                          key={session.id}
+                          button
+                          selected={currentSession?.id === session.id}
+                          onClick={() => setCurrentSession(session)}
+                        >
+                          <ListItemText
+                            primary={session.title}
+                            secondary={new Date(session.createdAt).toLocaleDateString()}
+                          />
+                        </ListItem>
+                      ))}
+                    </List>
+                  </Box>
                   
                   <Button
                     fullWidth
@@ -648,6 +651,7 @@ export const AIAssistant = ({ onNavigate }: AIAssistantProps) => {
                       setDialogType('history');
                       setDialogOpen(true);
                     }}
+                    sx={{ mt: 2 }}
                   >
                     View All History
                   </Button>
@@ -694,6 +698,7 @@ export const AIAssistant = ({ onNavigate }: AIAssistantProps) => {
               </Card>
             </Grid>
           </Grid>
+          </Box>
         </Grid>
       </Grid>
 
@@ -747,7 +752,7 @@ export const AIAssistant = ({ onNavigate }: AIAssistantProps) => {
                   <Typography variant="body2" color="text.secondary">
                     {session.messages.length} messages • {new Date(session.createdAt).toLocaleDateString()}
                   </Typography>
-                  <Box sx={{ mt: 1, display: 'flex', gap: 1 }}>
+                  <Box sx={{ mt: 1, display: 'flex', gap: 1, flexWrap: 'wrap' }}>
                     <Button size="small" variant="outlined">Continue</Button>
                     <Button size="small" variant="outlined" startIcon={<DownloadIcon />}>Export</Button>
                     <Button size="small" variant="outlined" startIcon={<ShareIcon />}>Share</Button>

@@ -542,7 +542,7 @@ export function InvoiceManagementSystem({ onComplete }: InvoiceManagementSystemP
               </FormControl>
             </Grid>
             <Grid item xs={12} md={4}>
-              <Box sx={{ display: 'flex', gap: 1 }}>
+              <Box sx={{ display: 'flex', gap: 1, flexWrap: 'wrap' }}>
                 <Button
                   variant="contained"
                   startIcon={<Add />}
@@ -573,7 +573,7 @@ export function InvoiceManagementSystem({ onComplete }: InvoiceManagementSystemP
                 <Typography variant="body2">
                   {selectedInvoices.length} invoice(s) selected
                 </Typography>
-                <Box sx={{ display: 'flex', gap: 1 }}>
+                <Box sx={{ display: 'flex', gap: 1, flexWrap: 'wrap' }}>
                   <Button
                     size="small"
                     startIcon={<QrCode />}
@@ -622,7 +622,7 @@ export function InvoiceManagementSystem({ onComplete }: InvoiceManagementSystemP
           </Box>
 
           <TabPanel value={tabValue} index={0}>
-            <TableContainer>
+            <TableContainer sx={{ overflowX: 'auto' }}>
               <Table>
                 <TableHead>
                   <TableRow>
@@ -770,7 +770,7 @@ export function InvoiceManagementSystem({ onComplete }: InvoiceManagementSystemP
               </Typography>
             </Alert>
 
-            <TableContainer>
+            <TableContainer sx={{ overflowX: 'auto' }}>
               <Table>
                 <TableHead>
                   <TableRow>
@@ -789,7 +789,7 @@ export function InvoiceManagementSystem({ onComplete }: InvoiceManagementSystemP
                       <TableCell align="right">{formatCurrency(invoice.totalAmount)}</TableCell>
                       <TableCell>{new Date(invoice.createdAt).toLocaleDateString()}</TableCell>
                       <TableCell align="center">
-                        <Box sx={{ display: 'flex', gap: 1, justifyContent: 'center' }}>
+                        <Box sx={{ display: 'flex', gap: 0.5, justifyContent: 'center', flexWrap: 'wrap' }}>
                           <Tooltip title="Edit">
                             <IconButton size="small">
                               <Edit />
@@ -892,7 +892,7 @@ export function InvoiceManagementSystem({ onComplete }: InvoiceManagementSystemP
                 </Typography>
               </AccordionSummary>
               <AccordionDetails>
-                <TableContainer>
+                <TableContainer sx={{ overflowX: 'auto' }}>
                   <Table>
                     <TableHead>
                       <TableRow>
@@ -989,7 +989,7 @@ export function InvoiceManagementSystem({ onComplete }: InvoiceManagementSystemP
               </Grid>
             </Grid>
 
-            <TableContainer sx={{ mt: 3 }}>
+            <TableContainer sx={{ mt: 3, overflowX: 'auto' }}>
               <Table>
                 <TableHead>
                   <TableRow>
@@ -1034,7 +1034,7 @@ export function InvoiceManagementSystem({ onComplete }: InvoiceManagementSystemP
                           />
                         </TableCell>
                         <TableCell align="center">
-                          <Box sx={{ display: 'flex', gap: 1, justifyContent: 'center' }}>
+                          <Box sx={{ display: 'flex', gap: 0.5, justifyContent: 'center', flexWrap: 'wrap' }}>
                             <Tooltip title="Send Reminder">
                               <IconButton size="small">
                                 <Email />

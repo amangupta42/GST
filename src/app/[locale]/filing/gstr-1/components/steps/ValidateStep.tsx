@@ -380,7 +380,7 @@ export const ValidateStep = ({ data, onUpdate, loading, setLoading }: ValidateSt
       </Box>
 
       {/* Invoice Table */}
-      <TableContainer component={Paper}>
+      <TableContainer component={Paper} sx={{ overflowX: 'auto' }}>
         <Table>
           <TableHead>
             <TableRow>

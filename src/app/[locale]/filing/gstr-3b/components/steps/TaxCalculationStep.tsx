@@ -280,7 +280,7 @@ export const TaxCalculationStep = ({
               <Typography variant="h6">Detailed Tax Calculation</Typography>
             </AccordionSummary>
             <AccordionDetails>
-              <TableContainer component={Paper}>
+              <TableContainer component={Paper} sx={{ overflowX: 'auto' }}>
                 <Table size="small">
                   <TableHead>
                     <TableRow>

@@ -155,7 +155,7 @@ export const PreviewStep = ({ data }: PreviewStepProps) => {
           <Typography variant="h6" gutterBottom>
             Category-wise Breakdown
           </Typography>
-          <TableContainer>
+          <TableContainer sx={{ overflowX: 'auto' }}>
             <Table>
               <TableHead>
                 <TableRow>
@@ -244,7 +244,7 @@ export const PreviewStep = ({ data }: PreviewStepProps) => {
           <Typography variant="h6" gutterBottom>
             HSN-wise Summary
           </Typography>
-          <TableContainer>
+          <TableContainer sx={{ overflowX: 'auto' }}>
             <Table size="small">
               <TableHead>
                 <TableRow>

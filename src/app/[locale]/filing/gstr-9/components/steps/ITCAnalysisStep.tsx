@@ -390,7 +390,7 @@ export function ITCAnalysisStep({ data, onUpdate, loading, setLoading }: ITCAnal
               Detailed ITC Analysis by Tax Type
             </Typography>
 
-            <TableContainer component={Paper} variant="outlined">
+            <TableContainer component={Paper} variant="outlined" sx={{ overflowX: 'auto' }}>
               <Table>
                 <TableHead>
                   <TableRow>
@@ -558,7 +558,7 @@ export function ITCAnalysisStep({ data, onUpdate, loading, setLoading }: ITCAnal
               </Typography>
             </Alert>
 
-            <TableContainer component={Paper} variant="outlined">
+            <TableContainer component={Paper} variant="outlined" sx={{ overflowX: 'auto' }}>
               <Table>
                 <TableHead>
                   <TableRow>
