@@ -12,8 +12,6 @@ import {
   Paper,
   Avatar,
   IconButton,
-  Chip,
-  Menu,
   MenuItem,
   Dialog,
   DialogTitle,
@@ -26,15 +24,10 @@ import {
   FormControlLabel,
   List,
   ListItem,
-  ListItemIcon,
   ListItemText,
-  Divider,
   Alert,
   CircularProgress,
-  Tooltip,
-  Badge,
-  Fade,
-  Collapse
+  Badge
 } from '@mui/material';
 import {
   SmartToy as AIIcon,
@@ -43,24 +36,18 @@ import {
   MicOff as MicOffIcon,
   Language as LanguageIcon,
   VolumeUp as SpeakIcon,
-  VolumeOff as MuteIcon,
   History as HistoryIcon,
   BookmarkBorder as BookmarkIcon,
   Bookmark as BookmarkedIcon,
   Download as DownloadIcon,
   Share as ShareIcon,
-  Clear as ClearIcon,
-  Settings as SettingsIcon,
-  Help as HelpIcon,
   Lightbulb as InsightIcon,
   Receipt as InvoiceIcon,
   Assignment as FilingIcon,
   AccountBalance as ITCIcon,
   Assessment as ComplianceIcon,
   Calculate as CalculatorIcon,
-  Search as SearchIcon,
-  AutoAwesome as MagicIcon,
-  Translate as TranslateIcon
+  AutoAwesome as MagicIcon
 } from '@mui/icons-material';
 
 interface Message {
@@ -126,7 +113,6 @@ export const AIAssistant = ({ onNavigate }: AIAssistantProps) => {
   const [voiceEnabled, setVoiceEnabled] = useState(true);
   const [dialogOpen, setDialogOpen] = useState(false);
   const [dialogType, setDialogType] = useState<'settings' | 'history' | 'help'>('settings');
-  const [anchorEl, setAnchorEl] = useState<null | HTMLElement>(null);
   
   const messagesEndRef = useRef<HTMLDivElement>(null);
   const inputRef = useRef<HTMLInputElement>(null);
@@ -206,7 +192,7 @@ export const AIAssistant = ({ onNavigate }: AIAssistantProps) => {
       messages: [{
         id: `msg-${Date.now()}`,
         type: 'ai',
-        content: mockResponses[selectedLanguage]?.greeting || mockResponses.en.greeting,
+        content: (mockResponses as any)[selectedLanguage]?.greeting || mockResponses.en.greeting,
         timestamp: new Date().toISOString(),
         language: selectedLanguage,
         metadata: { category: 'general', confidence: 1.0 }
@@ -253,7 +239,7 @@ export const AIAssistant = ({ onNavigate }: AIAssistantProps) => {
         timestamp: new Date().toISOString(),
         language: selectedLanguage,
         metadata: {
-          category,
+          category: category as any,
           confidence: response.confidence,
           sources: response.sources,
           actions: response.actions
@@ -288,11 +274,11 @@ export const AIAssistant = ({ onNavigate }: AIAssistantProps) => {
     return 'general';
   };
 
-  const generateResponse = (query: string, category: string) => {
-    const responses = mockResponses[selectedLanguage] || mockResponses.en;
-    let confidence = 0.9;
-    let sources = ['GST Portal', 'CBIC Guidelines', 'Tax Regulations 2024'];
-    let actions: any[] = [];
+  const generateResponse = useCallback((query: string, category: string) => {
+    const responses = (mockResponses as any)[selectedLanguage] || mockResponses.en;
+    const confidence = 0.9;
+    const sources = ['GST Portal', 'CBIC Guidelines', 'Tax Regulations 2024'];
+    const actions: any[] = [];
 
     let content = responses[category] || responses.fallback;
 
@@ -309,14 +295,14 @@ export const AIAssistant = ({ onNavigate }: AIAssistantProps) => {
     }
 
     return { content, confidence, sources, actions };
-  };
+  }, [selectedLanguage, mockResponses]);
 
   const generateSessionTitle = (firstMessage: string): string => {
     const words = firstMessage.split(' ').slice(0, 5);
     return words.join(' ') + (words.length === 5 ? '...' : '');
   };
 
-  const speakText = (text: string) => {
+  const speakText = useCallback((text: string) => {
     if ('speechSynthesis' in window) {
       const utterance = new SpeechSynthesisUtterance(text);
       utterance.lang = selectedLanguage === 'hi' ? 'hi-IN' : selectedLanguage === 'ta' ? 'ta-IN' : 'en-US';
@@ -325,11 +311,11 @@ export const AIAssistant = ({ onNavigate }: AIAssistantProps) => {
       utterance.onend = () => setIsSpeaking(false);
       speechSynthesis.speak(utterance);
     }
-  };
+  }, [selectedLanguage]);
 
   const startVoiceInput = useCallback(() => {
     if ('webkitSpeechRecognition' in window || 'SpeechRecognition' in window) {
-      const SpeechRecognition = window.webkitSpeechRecognition || window.SpeechRecognition;
+      const SpeechRecognition = (window as any).webkitSpeechRecognition || (window as any).SpeechRecognition;
       const recognition = new SpeechRecognition();
       
       recognition.lang = selectedLanguage === 'hi' ? 'hi-IN' : selectedLanguage === 'ta' ? 'ta-IN' : 'en-US';
@@ -337,7 +323,7 @@ export const AIAssistant = ({ onNavigate }: AIAssistantProps) => {
       recognition.interimResults = false;
       
       recognition.onstart = () => setIsListening(true);
-      recognition.onresult = (event) => {
+      recognition.onresult = (event: any) => {
         const transcript = event.results[0][0].transcript;
         setInputMessage(transcript);
         setIsListening(false);
