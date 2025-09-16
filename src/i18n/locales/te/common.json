@@ -1,0 +1,102 @@
+{
+  "nav": {
+    "dashboard": "డ్యాష్‌బోర్డ్",
+    "filing": "రిటర్న్ ఫైలింగ్",
+    "reconciliation": "ITC సమన్వయం",
+    "invoices": "ఇన్‌వౌయస్ నిర్వహణ",
+    "e_invoice": "ఇ-ఇన్‌వౌయస్",
+    "e_way_bill": "ఇ-వే బిల్",
+    "analytics": "విశ్లేషణలు",
+    "ai_assistant": "AI సహాయకుడు",
+    "settings": "సెట్టింగ్‌లు",
+    "notifications": "నోటిఫికేషన్‌లు"
+  },
+  "buttons": {
+    "save": "రక్షించండి",
+    "cancel": "రద్దు చేయండి",
+    "submit": "సబ్మిట్ చేయండి",
+    "delete": "తొలగించండి",
+    "edit": "వర్తించండి",
+    "view": "చూడండి",
+    "download": "డౌన్‌లోడ్ చేయండి",
+    "upload": "అప్‌లోడ్ చేయండి",
+    "search": "వెతకండి",
+    "filter": "ఫిల్టర్",
+    "refresh": "రిఫ్రెష్ చేయండి",
+    "previous": "క్రితం",
+    "next": "తరువాత",
+    "close": "మూయండి",
+    "confirm": "నిర్ధారణ",
+    "create": "సృష్టించండి",
+    "update": "ఎప్‌డేట్ చేయండి"
+  },
+  "labels": {
+    "name": "పేరు",
+    "email": "ఇమెయిల్",
+    "phone": "ఫోన్",
+    "address": "చిరునామా",
+    "gstin": "GSTIN",
+    "pan": "PAN",
+    "date": "తేదీ",
+    "amount": "మొత్తం",
+    "status": "స్థితి",
+    "type": "రకం",
+    "description": "వివరణ",
+    "total": "మొత్తం",
+    "subtotal": "ఉప మొత్తం",
+    "tax": "పన్ను",
+    "discount": "దిస్కౌంట్",
+    "quantity": "పరిమాణం",
+    "rate": "రేటు",
+    "hsn_code": "HSN కోడ్",
+    "invoice_number": "ఇన్‌వౌయస్ నంబర్",
+    "due_date": "నిర్ధారిత తేదీ"
+  },
+  "status": {
+    "active": "సక్రియం",
+    "inactive": "నిష్క్రియం",
+    "pending": "వేచి ఉంది",
+    "completed": "పూర్తి అయింది",
+    "failed": "విఫలమైంది",
+    "processing": "ప్రక్రియ నడుస్తోంది",
+    "cancelled": "రద్దు అయింది",
+    "draft": "డ్రాఫ్ట్",
+    "submitted": "సబ్మిట్ అయింది",
+    "approved": "ఆమోదించింది",
+    "rejected": "తిరస్కరించింది"
+  },
+  "language": {
+    "select": "భాషను ఎంచుకోండి",
+    "english": "English",
+    "hindi": "हिंदी",
+    "tamil": "தமிழ்",
+    "bengali": "বাংলা",
+    "gujarati": "ગુજરાતી",
+    "marathi": "मराठी",
+    "telugu": "తెలుగు",
+    "kannada": "ಕನ್ನಡ",
+    "malayalam": "മലയാളം"
+  },
+  "currency": {
+    "symbol": "₹",
+    "inr": "INR",
+    "rupees": "రూపాయలు"
+  },
+  "time": {
+    "today": "ఈరోజు",
+    "yesterday": "నిన్న",
+    "last_week": "గత వారం",
+    "last_month": "గత నెల",
+    "this_year": "ఈ సంవత్సరం",
+    "last_year": "గత సంవత్సరం"
+  },
+  "profile": {
+    "profile": "ప్రొఫైల్",
+    "settings": "సెట్టింగ్‌లు",
+    "logout": "లాగ్‌అవుట్"
+  },
+  "notifications": {
+    "notifications": "నోటిఫికేషన్‌లు",
+    "view_all": "అన్ని నోటిఫికేషన్‌లను చూడండి"
+  }
+}

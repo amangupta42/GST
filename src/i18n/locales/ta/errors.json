@@ -1,0 +1,31 @@
+{
+  "general": {
+    "something_went_wrong": "ஏதோ தவறு நடந்தது",
+    "please_try_again": "தயவுசெய்து மீண்டும் முயற்சிக்கவும்",
+    "network_error": "நெட்வொர்க் இணைப்பு பிழை",
+    "server_error": "சர்வர் பிழை ஏற்பட்டது",
+    "permission_denied": "அனுமதி மறுக்கப்பட்டது",
+    "not_found": "வளம் கண்டுபிடிக்கப்படவில்லை"
+  },
+  "validation": {
+    "required_field": "இந்த புலம் அவசியம்",
+    "invalid_email": "சரியான மின்னஞ்சலை உள்ளிடவும்",
+    "invalid_phone": "சரியான தொலைபேசி எண்ணை உள்ளிடவும்",
+    "invalid_gstin": "சரியான GSTIN ஐ உள்ளிடவும் (15 எழுத்துகள்)",
+    "invalid_pan": "சரியான PAN ஐ உள்ளிடவும் (10 எழுத்துகள்)",
+    "invalid_amount": "சரியான தொகையை உள்ளிடவும்",
+    "invalid_date": "சரியான தேதியை உள்ளிடவும்",
+    "future_date_not_allowed": "எதிர்கால தேதிகள் அனுமதிக்கப்படவில்லை"
+  },
+  "auth": {
+    "login_failed": "உள்நுழைவு தோல்வி",
+    "session_expired": "உங்கள் அமர்வு காலாவதியாகிவிட்டது",
+    "access_denied": "அணுகல் மறுக்கப்பட்டது"
+  },
+  "filing": {
+    "upload_failed": "கோப்பு பதிவேற்றம் தோல்வி",
+    "validation_failed": "தரவு சரிபார்ப்பு தோல்வி",
+    "submission_failed": "ரிட்டர்ன் சமர்ப்பித்தல் தோல்வி",
+    "invalid_file_format": "தவறான கோப்பு வடிவம்"
+  }
+}

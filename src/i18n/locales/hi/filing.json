@@ -1,0 +1,72 @@
+{
+  "gstr1": {
+    "title": "जीएसटीआर-1 रिटर्न फाइलिंग",
+    "description": "कर योग्य वस्तुओं और सेवाओं की बाहरी आपूर्ति के लिए मासिक रिटर्न",
+    "steps": {
+      "upload": "डेटा अपलोड करें",
+      "categorize": "चालान वर्गीकरण",
+      "validate": "डेटा सत्यापन",
+      "preview": "रिटर्न पूर्वावलोकन",
+      "submit": "रिटर्न जमा करें"
+    },
+    "fields": {
+      "invoice_type": "चालान प्रकार",
+      "place_of_supply": "आपूर्ति स्थान",
+      "invoice_value": "चालान मूल्य",
+      "taxable_value": "कर योग्य मूल्य",
+      "cgst_amount": "सीजीएसटी राशि",
+      "sgst_amount": "एसजीएसटी राशि",
+      "igst_amount": "आईजीएसटी राशि"
+    }
+  },
+  "gstr3b": {
+    "title": "जीएसटीआर-3बी मासिक रिटर्न",
+    "description": "बाहरी और आंतरिक आपूर्ति के विवरण के साथ मासिक सारांश रिटर्न",
+    "steps": {
+      "outward_supplies": "बाहरी आपूर्ति",
+      "inward_supplies": "आंतरिक आपूर्ति",
+      "itc_reconciliation": "आईटीसी मिलान",
+      "tax_calculation": "कर गणना",
+      "preview": "पूर्वावलोकन और सत्यापन",
+      "submit": "रिटर्न जमा करें"
+    },
+    "sections": {
+      "supplies": "बाहरी आपूर्ति का विवरण",
+      "inward": "आंतरिक आपूर्ति का विवरण",
+      "itc": "पात्र आईटीसी",
+      "payment": "कर का भुगतान"
+    }
+  },
+  "gstr9": {
+    "title": "जीएसटीआर-9 वार्षिक रिटर्न",
+    "description": "सभी मासिक/त्रैमासिक रिटर्न को समेकित करने वाला वार्षिक रिटर्न",
+    "steps": {
+      "data_source": "डेटा स्रोत",
+      "turnover": "टर्नओवर मिलान",
+      "tax_details": "कर विवरण",
+      "itc_analysis": "आईटीसी विश्लेषण",
+      "preview": "रिटर्न पूर्वावलोकन",
+      "submit": "रिटर्न जमा करें"
+    },
+    "sections": {
+      "basic_details": "मूल विवरण",
+      "turnover_details": "टर्नओवर विवरण",
+      "itc_details": "आईटीसी विवरण",
+      "tax_paid": "भुगतान किया गया कर"
+    }
+  },
+  "common": {
+    "return_period": "रिटर्न अवधि",
+    "due_date": "देय तिथि",
+    "filing_status": "फाइलिंग स्थिति",
+    "late_fee": "विलंब शुल्क",
+    "interest": "ब्याज",
+    "penalty": "जुर्माना",
+    "acknowledgment": "पावती संख्या",
+    "reference_number": "संदर्भ संख्या",
+    "file_return": "रिटर्न फाइल करें",
+    "save_draft": "मसौदे के रूप में सेव करें",
+    "validate_data": "डेटा सत्यापित करें",
+    "download_summary": "सारांश डाउनलोड करें"
+  }
+}

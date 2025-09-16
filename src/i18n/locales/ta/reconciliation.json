@@ -1,0 +1,38 @@
+{
+  "title": "ITC சரிபார்ப்பு",
+  "description": "GSTR-2A/2B தரவுகளுடன் உள்ளீட்டு வரி கடன் சரிபார்ப்பு",
+  "sections": {
+    "purchase_invoices": "கொள்முதல் இன்வாய்ஸ்கள்",
+    "gstr2a_data": "GSTR-2A தரவு",
+    "gstr2b_data": "GSTR-2B தரவு",
+    "matched_invoices": "பொருந்திய இன்வாய்ஸ்கள்",
+    "unmatched_invoices": "பொருந்தாத இன்வாய்ஸ்கள்",
+    "disputed_invoices": "சர்ச்சைக்குரிய இன்வாய்ஸ்கள்"
+  },
+  "actions": {
+    "upload_invoices": "கொள்முதல் இன்வாய்ஸ்கள் பதிவேற்று",
+    "fetch_gstr2a": "GSTR-2A எடுத்துவர",
+    "fetch_gstr2b": "GSTR-2B எடுத்துவர",
+    "start_reconciliation": "சரிபார்ப்பு தொடங்கு",
+    "view_details": "விவரங்கள் பார்",
+    "mark_disputed": "சர்ச்சைக்குரியதாக குறி",
+    "accept_match": "பொருத்தத்தை ஏற்று",
+    "reject_match": "பொருத்தத்தை நிராகரி"
+  },
+  "status": {
+    "matched": "பொருந்தியது",
+    "unmatched": "பொருந்தவில்லை",
+    "disputed": "சர்ச்சைக்குரியது",
+    "pending": "மதிப்பாய்வு நிலுவையில்",
+    "accepted": "ஏற்றுக்கொள்ளப்பட்டது",
+    "rejected": "நிராகரிக்கப்பட்டது"
+  },
+  "fields": {
+    "supplier_gstin": "சப்ளையர் GSTIN",
+    "invoice_date": "இன்வாய்ஸ் தேதி",
+    "invoice_value": "இன்வாய்ஸ் மதிப்பு",
+    "itc_amount": "ITC தொகை",
+    "match_confidence": "பொருத்த நம்பிக்கை",
+    "difference_amount": "வேறுபாடு தொகை"
+  }
+}

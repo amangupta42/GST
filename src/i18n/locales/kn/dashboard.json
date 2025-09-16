@@ -1,0 +1,38 @@
+{
+  "title": "GST ನಿಯಮಾನುಪಾಲನೆ ಡ್ಯಾಶ್‌ಬೋರ್ಡ್",
+  "subtitle": "ರಿಯಲ್-ಟೈಮ್ GST ನಿಯಮಾನುಪಾಲನೆ ನಿರೀಕ್ಷಣೆ ಮರಿಯು ವ್ಯವಸ್ಥಾಪನೆ",
+  "kpis": {
+    "total_liability": "ಮುತ್ತು GST ದಾಯಬದ್ಧತೆ",
+    "itc_available": "ITC ಲಭ್ಯವಿದೆ",
+    "compliance_score": "ನಿಯಮಾನುಪಾಲನೆ ಗುಣ",
+    "pending_returns": "ಬಾಕಿ ಉಯ್ತು ರಿಟರ್ನ್‌ಗಳು",
+    "current_month": "ಇ ತಿಂಗಳು",
+    "vs_last_month": "ಕೆಟ್ಟ ತಿಂಗಳಿಗೆ ಹೆೆಂಗತ್ತುಲು"
+  },
+  "quick_actions": {
+    "title": "ತ್ವರಿತ ಕ್ರಿಯೆಗಳು",
+    "file_gstr1": "GSTR-1 ಫೈಲ್ ಮಾಡಿ",
+    "file_gstr3b": "GSTR-3B ಫೈಲ್ ಮಾಡಿ",
+    "reconcile_itc": "ITC ಮಿಲನ",
+    "generate_invoice": "ಇ-ಇನ್‌ವಾಯ್ಸ್ ತಯಾರಿಸಿ",
+    "create_eway_bill": "ಇ-ವೇ ಬಿಲ್ ಸರ್ಜನೆ ಮಾಡಿ",
+    "view_analytics": "ವಿಶ್ಲೇಷಣೆಗಳನ್ನು ನೋಡಿ"
+  },
+  "charts": {
+    "gst_liability": "GST ದಾಯಬದ್ಧತೆ ಟ್ರೆಂಡ್",
+    "itc_utilization": "ITC ವಿನಿಯೋಗ",
+    "compliance_breakdown": "ನಿಯಮಾನುಪಾಲನೆ ವಿಭಾಗ",
+    "filing_status": "ಫೈಲಿಂಗ್ ಸ್ಥಿತಿ ಟೈಮ್‌ಲೈನ್"
+  },
+  "notifications": {
+    "title": "ಇಕ್ಕಡಿನ ಅವಸರಗಳು",
+    "view_all": "ಎಲ್ಲವನ್ನು ನೋಡಿ",
+    "mark_read": "ವಾಚಿದದಾಗಿ ಗುರುತು ಮಾಡಿ",
+    "no_notifications": "ಹೋಸ ಅವಸರಗಳಿಲ್ಲ"
+  },
+  "widgets": {
+    "configure": "ವಿಜೆಟ್‌ಗಳನ್ನು ಕಾನ್‌ಫಿಗರ್ ಮಾಡಿ",
+    "refresh": "ಡೇಟಾ ರಿಫ್ರೆಶ್ ಮಾಡಿ",
+    "last_updated": "ಕೆೆಂಚ್ಚ ಅಪ್‌ಡೇಟ್ ಮಾಡಿದುದು"
+  }
+}

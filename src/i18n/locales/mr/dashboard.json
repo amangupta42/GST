@@ -1,0 +1,38 @@
+{
+  "title": "GST नियमानुवर्तन डॅशबोर्ड",
+  "subtitle": "रियल-टाइम GST नियमानुवर्तन निरीक्षण आणि व्यवस्थापन",
+  "kpis": {
+    "total_liability": "एकूण GST देयता",
+    "itc_available": "ITC उपलब्ध",
+    "compliance_score": "नियमानुवर्तन गुण",
+    "pending_returns": "प्रलंबित रिटर्न",
+    "current_month": "चालू महिना",
+    "vs_last_month": "गेल्या महिन्याच्या तुलनेत"
+  },
+  "quick_actions": {
+    "title": "त्वरित क्रिया",
+    "file_gstr1": "GSTR-1 फाइल करा",
+    "file_gstr3b": "GSTR-3B फाइल करा",
+    "reconcile_itc": "ITC तुलना करा",
+    "generate_invoice": "ई-बीजक तयार करा",
+    "create_eway_bill": "ई-वे बिल तयार करा",
+    "view_analytics": "विश्लेषणे पहा"
+  },
+  "charts": {
+    "gst_liability": "GST देयता ट्रेंड",
+    "itc_utilization": "ITC वापर",
+    "compliance_breakdown": "नियमानुवर्तन विभाजन",
+    "filing_status": "फाइलिंग स्थिती टाइमलाइन"
+  },
+  "notifications": {
+    "title": "अलीकडील सूचना",
+    "view_all": "सर्व पहा",
+    "mark_read": "वाचलेले म्हणून चिन्हांकित करा",
+    "no_notifications": "कोणत्या नवीन सूचना नाहीत"
+  },
+  "widgets": {
+    "configure": "विजेट कॉन्फिगर करा",
+    "refresh": "डेटा रिफ्रेश करा",
+    "last_updated": "शेवटचे अपडेट"
+  }
+}

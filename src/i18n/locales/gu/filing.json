@@ -1,0 +1,72 @@
+{
+  "gstr1": {
+    "title": "GSTR-1 રિટર્ન ફાઇલિંગ",
+    "description": "કરપાત્ર વસ્તુઓ અને સેવાઓના બહારવટા સપ્લાય માટે માસિક રિટર્ન",
+    "steps": {
+      "upload": "ડેટા અપલોડ કરો",
+      "categorize": "ઇન્વૉઇસ વર્ગીકરણ કરો",
+      "validate": "ડેટા ચકાસો",
+      "preview": "રિટર્નનું પૂર્વાવલોકન",
+      "submit": "રિટર્ન સબમિટ કરો"
+    },
+    "fields": {
+      "invoice_type": "ઇન્વૉઇસ પ્રકાર",
+      "place_of_supply": "સપ્લાયનું સ્થળ",
+      "invoice_value": "ઇન્વૉઇસ મૂલ્ય",
+      "taxable_value": "કરપાત્ર મૂલ્ય",
+      "cgst_amount": "CGST રકમ",
+      "sgst_amount": "SGST રકમ",
+      "igst_amount": "IGST રકમ"
+    }
+  },
+  "gstr3b": {
+    "title": "GSTR-3B માસિક રિટર્ન",
+    "description": "બહારવટા અને અંદરવટા સપ્લાયની વિગતો સાથે માસિક સારાંશ રિટર્ન",
+    "steps": {
+      "outward_supplies": "બહારવટા સપ્લાય",
+      "inward_supplies": "અંદરવટા સપ્લાય",
+      "itc_reconciliation": "ITC મિલાન",
+      "tax_calculation": "કર ગણતરી",
+      "preview": "પૂર્વાવલોકન અને ચકાસણી",
+      "submit": "રિટર્ન સબમિટ કરો"
+    },
+    "sections": {
+      "supplies": "બહારવટા સપ્લાયની વિગતો",
+      "inward": "અંદરવટા સપ્લાયની વિગતો",
+      "itc": "પાત્ર ITC",
+      "payment": "કરની ચુકવણી"
+    }
+  },
+  "gstr9": {
+    "title": "GSTR-9 વાર્ષિક રિટર્ન",
+    "description": "ફાઇલ કરેલા તમામ માસિક/ત્રિમાસિક રિટર્નનો વાર્ષિક એકીકૃત રિટર્ન",
+    "steps": {
+      "data_source": "ડેટા સ્રોતો",
+      "turnover": "ટર્નઓવર મિલાન",
+      "tax_details": "કરની વિગતો",
+      "itc_analysis": "ITC વિશ્લેષણ",
+      "preview": "રિટર્નનું પૂર્વાવલોકન",
+      "submit": "રિટર્ન સબમિટ કરો"
+    },
+    "sections": {
+      "basic_details": "મૂળભૂત વિગતો",
+      "turnover_details": "ટર્નઓવર વિગતો",
+      "itc_details": "ITC વિગતો",
+      "tax_paid": "ચૂકવેલ કર"
+    }
+  },
+  "common": {
+    "return_period": "રિટર્ન અવધિ",
+    "due_date": "અંતિમ તારીખ",
+    "filing_status": "ફાઇલિંગ સ્થિતિ",
+    "late_fee": "વિલંબ ફી",
+    "interest": "વ્યાજ",
+    "penalty": "દંડ",
+    "acknowledgment": "પાવતી નંબર",
+    "reference_number": "સંદર્ભ નંબર",
+    "file_return": "રિટર્ન ફાઇલ કરો",
+    "save_draft": "ડ્રાફ્ટ તરીકે સાચવો",
+    "validate_data": "ડેટા ચકાસો",
+    "download_summary": "સારાંશ ડાઉનલોડ કરો"
+  }
+}

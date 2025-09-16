@@ -1,0 +1,31 @@
+{
+  "title": "ఇన్‌వౌయస్ నిర్వహణ",
+  "description": "ఇన్‌వౌయస్‌లను నిర్వహించండి మరియు ఇ-ఇన్‌వౌయస్‌లను ఉత్పత్తి చేయండి",
+  "actions": {
+    "create_invoice": "ఇన్‌వౌయస్ సృష్టించండి",
+    "generate_e_invoice": "ఇ-ఇన్‌వౌయస్ ఉత్పత్తి చేయండి",
+    "download_pdf": "PDF డౌన్‌లోడ్ చేయండి",
+    "send_email": "ఇమెయిల్ పంపండి",
+    "cancel_invoice": "ఇన్‌వౌయస్ రద్దు చేయండి",
+    "view_qr_code": "QR కోడ్ చూడండి"
+  },
+  "fields": {
+    "customer_name": "గ్రాహక పేరు",
+    "customer_gstin": "గ్రాహక GSTIN",
+    "billing_address": "బిల్లింగ్ చిరునామా",
+    "shipping_address": "షిప్పింగ్ చిరునామా",
+    "item_description": "వస్తు వివరణ",
+    "unit_price": "యూనిట్ విలువ",
+    "tax_rate": "పన్ను రేటు",
+    "irn_number": "IRN నంబర్",
+    "ack_number": "రసీదు నంబర్"
+  },
+  "status": {
+    "draft": "డ్రాఫ్ట్",
+    "generated": "ఉత్పత్తి అయింది",
+    "sent": "పంపించింది",
+    "paid": "చెల్లించింది",
+    "overdue": "ముదతి మీరింది",
+    "cancelled": "రద్దు అయింది"
+  }
+}

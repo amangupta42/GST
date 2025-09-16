@@ -1,0 +1,38 @@
+{
+  "title": "GST Compliance Dashboard",
+  "subtitle": "Real-time GST compliance monitoring and management",
+  "kpis": {
+    "total_liability": "Total GST Liability",
+    "itc_available": "ITC Available",
+    "compliance_score": "Compliance Score",
+    "pending_returns": "Pending Returns",
+    "current_month": "Current Month",
+    "vs_last_month": "vs last month"
+  },
+  "quick_actions": {
+    "title": "Quick Actions",
+    "file_gstr1": "File GSTR-1",
+    "file_gstr3b": "File GSTR-3B",
+    "reconcile_itc": "Reconcile ITC",
+    "generate_invoice": "Generate E-Invoice",
+    "create_eway_bill": "Create E-way Bill",
+    "view_analytics": "View Analytics"
+  },
+  "charts": {
+    "gst_liability": "GST Liability Trend",
+    "itc_utilization": "ITC Utilization",
+    "compliance_breakdown": "Compliance Breakdown",
+    "filing_status": "Filing Status Timeline"
+  },
+  "notifications": {
+    "title": "Recent Notifications",
+    "view_all": "View All",
+    "mark_read": "Mark as Read",
+    "no_notifications": "No new notifications"
+  },
+  "widgets": {
+    "configure": "Configure Widgets",
+    "refresh": "Refresh Data",
+    "last_updated": "Last updated"
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "title": "ITC মিলকরণ",
+  "description": "GSTR-2A/2B ডেটার সাথে ইনপুট ট্যাক্স ক্রেডিট মিলান",
+  "sections": {
+    "purchase_invoices": "ক্রয় চালান",
+    "gstr2a_data": "GSTR-2A ডেটা",
+    "gstr2b_data": "GSTR-2B ডেটা",
+    "matched_invoices": "মিলিত চালান",
+    "unmatched_invoices": "অমিলিত চালান",
+    "disputed_invoices": "বিতর্কিত চালান"
+  },
+  "actions": {
+    "upload_invoices": "ক্রয় চালান আপলোড",
+    "fetch_gstr2a": "GSTR-2A আনুন",
+    "fetch_gstr2b": "GSTR-2B আনুন",
+    "start_reconciliation": "মিলকরণ শুরু করুন",
+    "view_details": "বিস্তারিত দেখুন",
+    "mark_disputed": "বিতর্কিত হিসেবে চিহ্নিত করুন",
+    "accept_match": "মিল গ্রহণ করুন",
+    "reject_match": "মিল প্রত্যাখ্যান করুন"
+  },
+  "status": {
+    "matched": "মিলেছে",
+    "unmatched": "মেলেনি",
+    "disputed": "বিতর্কিত",
+    "pending": "পর্যালোচনার অপেক্ষায়",
+    "accepted": "গৃহীত",
+    "rejected": "প্রত্যাখ্যাত"
+  },
+  "fields": {
+    "supplier_gstin": "সরবরাহকারীর GSTIN",
+    "invoice_date": "চালানের তারিখ",
+    "invoice_value": "চালানের মূল্য",
+    "itc_amount": "ITC পরিমাণ",
+    "match_confidence": "মিলের আস্থা",
+    "difference_amount": "পার্থক্যের পরিমাণ"
+  }
+}

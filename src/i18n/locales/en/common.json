@@ -1,0 +1,102 @@
+{
+  "nav": {
+    "dashboard": "Dashboard",
+    "filing": "Return Filing",
+    "reconciliation": "ITC Reconciliation",
+    "invoices": "Invoice Management",
+    "e_invoice": "E-Invoice",
+    "e_way_bill": "E-way Bill",
+    "analytics": "Analytics",
+    "ai_assistant": "AI Assistant",
+    "settings": "Settings",
+    "notifications": "Notifications"
+  },
+  "buttons": {
+    "save": "Save",
+    "cancel": "Cancel",
+    "submit": "Submit",
+    "delete": "Delete",
+    "edit": "Edit",
+    "view": "View",
+    "download": "Download",
+    "upload": "Upload",
+    "search": "Search",
+    "filter": "Filter",
+    "refresh": "Refresh",
+    "previous": "Previous",
+    "next": "Next",
+    "close": "Close",
+    "confirm": "Confirm",
+    "create": "Create",
+    "update": "Update"
+  },
+  "labels": {
+    "name": "Name",
+    "email": "Email",
+    "phone": "Phone",
+    "address": "Address",
+    "gstin": "GSTIN",
+    "pan": "PAN",
+    "date": "Date",
+    "amount": "Amount",
+    "status": "Status",
+    "type": "Type",
+    "description": "Description",
+    "total": "Total",
+    "subtotal": "Subtotal",
+    "tax": "Tax",
+    "discount": "Discount",
+    "quantity": "Quantity",
+    "rate": "Rate",
+    "hsn_code": "HSN Code",
+    "invoice_number": "Invoice Number",
+    "due_date": "Due Date"
+  },
+  "status": {
+    "active": "Active",
+    "inactive": "Inactive",
+    "pending": "Pending",
+    "completed": "Completed",
+    "failed": "Failed",
+    "processing": "Processing",
+    "cancelled": "Cancelled",
+    "draft": "Draft",
+    "submitted": "Submitted",
+    "approved": "Approved",
+    "rejected": "Rejected"
+  },
+  "language": {
+    "select": "Select Language",
+    "english": "English",
+    "hindi": "हिंदी",
+    "tamil": "தமிழ்",
+    "bengali": "বাংলা",
+    "gujarati": "ગુજરાતી",
+    "marathi": "मराठी",
+    "telugu": "తెలుగు",
+    "kannada": "ಕನ್ನಡ",
+    "malayalam": "മലയാളം"
+  },
+  "currency": {
+    "symbol": "₹",
+    "inr": "INR",
+    "rupees": "Rupees"
+  },
+  "time": {
+    "today": "Today",
+    "yesterday": "Yesterday",
+    "last_week": "Last Week",
+    "last_month": "Last Month",
+    "this_year": "This Year",
+    "last_year": "Last Year"
+  },
+  "profile": {
+    "profile": "Profile",
+    "settings": "Settings",
+    "logout": "Logout"
+  },
+  "notifications": {
+    "notifications": "Notifications",
+    "view_all": "View All Notifications"
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "general": {
+    "something_went_wrong": "कुछ गलत हो गया",
+    "please_try_again": "कृपया फिर से कोशिश करें",
+    "network_error": "नेटवर्क कनेक्शन त्रुटि",
+    "server_error": "सर्वर त्रुटि हुई",
+    "permission_denied": "अनुमति अस्वीकृत",
+    "not_found": "संसाधन नहीं मिला"
+  },
+  "validation": {
+    "required_field": "यह फ़ील्ड आवश्यक है",
+    "invalid_email": "कृपया एक वैध ईमेल दर्ज करें",
+    "invalid_phone": "कृपया एक वैध फोन नंबर दर्ज करें",
+    "invalid_gstin": "कृपया एक वैध जीएसटीआईएन दर्ज करें",
+    "invalid_pan": "कृपया एक वैध पैन दर्ज करें",
+    "invalid_amount": "कृपया एक वैध राशि दर्ज करें",
+    "invalid_date": "कृपया एक वैध दिनांक दर्ज करें",
+    "future_date_not_allowed": "भविष्य की तारीखों की अनुमति नहीं है"
+  },
+  "auth": {
+    "login_failed": "लॉगिन असफल",
+    "session_expired": "आपका सत्र समाप्त हो गया है",
+    "access_denied": "पहुंच अस्वीकृत"
+  },
+  "filing": {
+    "upload_failed": "फ़ाइल अपलोड असफल",
+    "validation_failed": "डेटा सत्यापन असफल",
+    "submission_failed": "रिटर्न जमा करना असफल",
+    "invalid_file_format": "अवैध फ़ाइल प्रारूप"
+  }
+}

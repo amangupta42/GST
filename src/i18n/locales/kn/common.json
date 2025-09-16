@@ -1,0 +1,102 @@
+{
+  "nav": {
+    "dashboard": "ಡ್ಯಾಶ್‌ಬೋರ್ಡ್",
+    "filing": "ರಿಟರ್ನ್ ಫೈಲಿಂಗ್",
+    "reconciliation": "ITC ಮಿಲನ",
+    "invoices": "ಇನ್‌ವಾಯ್ಸ್ ವ್ಯವಸ್ಥಾಪನೆ",
+    "e_invoice": "ಇ-ಇನ್‌ವಾಯ್ಸ್",
+    "e_way_bill": "ಇ-ವೇ ಬಿಲ್",
+    "analytics": "ವಿಶ್ಲೇಷಣೆಗಳು",
+    "ai_assistant": "AI ಸಹಾಯಕ",
+    "settings": "ಸೆಟ್ಟಿಂಗ್‌ಗಳು",
+    "notifications": "ಅವಸರಗಳು"
+  },
+  "buttons": {
+    "save": "ಸೇವ್ ಮಾಡಿ",
+    "cancel": "ರದ್ದು ಮಾಡಿ",
+    "submit": "ಸಬ್ಮಿಟ್ ಮಾಡಿ",
+    "delete": "ಅಲಿಸಿ",
+    "edit": "ಸಂಪಾದನೆ ಮಾಡಿ",
+    "view": "ನೋಡಿ",
+    "download": "ಡೌನ್‌ಲೋಡ್ ಮಾಡಿ",
+    "upload": "ಅಪ್‌ಲೋಡ್ ಮಾಡಿ",
+    "search": "ಹುಡುಕಿ",
+    "filter": "ಫಿಲ್ಟರ್",
+    "refresh": "ರಿಫ್ರೆಶ್ ಮಾಡಿ",
+    "previous": "ಹಿಂದಿನ",
+    "next": "ಮುಂದಿನ",
+    "close": "ಮುಚ್ಚಿ",
+    "confirm": "ಸುನಿಶ್ಚಿತಗೊಪುಂಗು",
+    "create": "ಸರ್ಜನೆ ಮಾಡಿ",
+    "update": "ಅಪ್‌ಡೇಟ್ ಮಾಡಿ"
+  },
+  "labels": {
+    "name": "ಹೆಸರು",
+    "email": "ಇಮೆಯಿಲ್",
+    "phone": "ಫೋನ್",
+    "address": "ವಿಲಾಸ",
+    "gstin": "GSTIN",
+    "pan": "PAN",
+    "date": "ದಿನಾಂಕ",
+    "amount": "ರಕ್ಕ",
+    "status": "ಸ್ಥಿತಿ",
+    "type": "ಪ್ರಕಾರ",
+    "description": "ವಿವರಣೆ",
+    "total": "ಮುತ್ತು",
+    "subtotal": "ಉಪ ಮುತ್ತು",
+    "tax": "ಕರ",
+    "discount": "ರಿಯಾಯತಿ",
+    "quantity": "ಪರಿಮಾಣ",
+    "rate": "ದರ",
+    "hsn_code": "HSN ಕೋಡ್",
+    "invoice_number": "ಇನ್‌ವಾಯ್ಸ್ ಸಂಖ್ಯೆ",
+    "due_date": "ಅವಧಿ ದಿನಾಂಕ"
+  },
+  "status": {
+    "active": "ಸಕ್ರಿಯ",
+    "inactive": "ನಿಷ್ಕ್ರಿಯ",
+    "pending": "ಬಾಕಿ ಉಯ್ತು",
+    "completed": "ಪೂರ್ಣಗೋದು",
+    "failed": "ಅಸಫಲಗೋದು",
+    "processing": "ಪ್ರಕ್ರಿಯೆ ನಡೆಯಲಿದೆ",
+    "cancelled": "ರದ್ದುಗೋದು",
+    "draft": "ಕಸ೚ದೆ",
+    "submitted": "ಸಬ್ಮಿಟ್ ಮಾಡುದೆ",
+    "approved": "ಅನುಮೋದನೆಯದೆ",
+    "rejected": "ವ್ಯಕ್ಕರಣಗೋದು"
+  },
+  "language": {
+    "select": "ಭಾಷೆಯನ್ನು ಆಏಕೆ ಮಾಡಿ",
+    "english": "English",
+    "hindi": "हिंदी",
+    "tamil": "தமிழ்",
+    "bengali": "বাংলা",
+    "gujarati": "ગુજરાતી",
+    "marathi": "मराठी",
+    "telugu": "తెలుగు",
+    "kannada": "ಕನ್ನಡ",
+    "malayalam": "മലയാളം"
+  },
+  "currency": {
+    "symbol": "₹",
+    "inr": "INR",
+    "rupees": "ರೂಪಾಯಿಗಳು"
+  },
+  "time": {
+    "today": "ಇಂದು",
+    "yesterday": "ನಿನ್ನೆ",
+    "last_week": "ಕೆಟ್ಟ ವಾರ",
+    "last_month": "ಕೆಟ್ಟ ತಿಂಗಳು",
+    "this_year": "ಇ ವರ್ಷ",
+    "last_year": "ಕೆಟ್ಟ ವರ್ಷ"
+  },
+  "profile": {
+    "profile": "ಪ್ರೊಫೈಲ್",
+    "settings": "ಸೆಟ್ಟಿಂಗ್‌ಗಳು",
+    "logout": "ಲಾಗ್‌ಔಟ್"
+  },
+  "notifications": {
+    "notifications": "ಅವಸರಗಳು",
+    "view_all": "ಎಲ್ಲಾ ಅವಸರಗಳನ್ನು ನೋಡಿ"
+  }
+}

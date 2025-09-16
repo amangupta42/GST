@@ -1,0 +1,38 @@
+{
+  "title": "ITC Reconciliation",
+  "description": "Reconcile Input Tax Credit with GSTR-2A/2B data",
+  "sections": {
+    "purchase_invoices": "Purchase Invoices",
+    "gstr2a_data": "GSTR-2A Data",
+    "gstr2b_data": "GSTR-2B Data",
+    "matched_invoices": "Matched Invoices",
+    "unmatched_invoices": "Unmatched Invoices",
+    "disputed_invoices": "Disputed Invoices"
+  },
+  "actions": {
+    "upload_invoices": "Upload Purchase Invoices",
+    "fetch_gstr2a": "Fetch GSTR-2A",
+    "fetch_gstr2b": "Fetch GSTR-2B",
+    "start_reconciliation": "Start Reconciliation",
+    "view_details": "View Details",
+    "mark_disputed": "Mark as Disputed",
+    "accept_match": "Accept Match",
+    "reject_match": "Reject Match"
+  },
+  "status": {
+    "matched": "Matched",
+    "unmatched": "Unmatched",
+    "disputed": "Disputed",
+    "pending": "Pending Review",
+    "accepted": "Accepted",
+    "rejected": "Rejected"
+  },
+  "fields": {
+    "supplier_gstin": "Supplier GSTIN",
+    "invoice_date": "Invoice Date",
+    "invoice_value": "Invoice Value",
+    "itc_amount": "ITC Amount",
+    "match_confidence": "Match Confidence",
+    "difference_amount": "Difference Amount"
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "general": {
+    "something_went_wrong": "ಏದೋ ತಪ್ಪು ಆಹ್ತು",
+    "please_try_again": "ದಯವಿಟ್ಟು ಮತ್ತೆ ಪ್ರಯತ್ನಿಸಿ",
+    "network_error": "ನೆಟ್‌ವರ್ಕ್ ಕನೆಕ್ಷನ್ ತೆರೈಕೆ",
+    "server_error": "ಸರ್ವರ್ ತೆರೈಕೆ ಆಹ್ತು",
+    "permission_denied": "ಅನುಮತಿ ನೆಈಂಗರೈಕೆ",
+    "not_found": "ಸಾಧನ ಸಿಕ್ಕಿಲ್ಲ"
+  },
+  "validation": {
+    "required_field": "ಈ ಕ್ಷೇತ್ರ ಅವಶ್ಯಕ",
+    "invalid_email": "ದಯವಿಟ್ಟು ವೈಧ ಇಮೆಯಿಲ್ ನಮೂದಿಸಿ",
+    "invalid_phone": "ದಯವಿಟ್ಟು ವೈಧ ಫೋನ್ ನಂಬರ್ ನಮೂದಿಸಿ",
+    "invalid_gstin": "ದಯವಿಟ್ಟು ವೈಧ GSTIN ನಮೂದಿಸಿ",
+    "invalid_pan": "ದಯವಿಟ್ಟು ವೈಧ PAN ನಮೂದಿಸಿ",
+    "invalid_amount": "ದಯವಿಟ್ಟು ವೈಧ ರಕ್ಕ ನಮೂದಿಸಿ",
+    "invalid_date": "ದಯವಿಟ್ಟು ವೈಧ ದಿನಾಂಕ ನಮೂದಿಸಿ",
+    "future_date_not_allowed": "ಭವಿಷ್ಯದ ದಿನಾಂಕಗಳಿಗೆ ಅನುಮತಿಯಿಲ್ಲ"
+  },
+  "auth": {
+    "login_failed": "ಲಾಗ್ಇನ್ ಅಸಫಲಗೋದು",
+    "session_expired": "ನಿಮ್ಮ ಸೆಷನ್ ಕಾಲಿಯೈತು",
+    "access_denied": "ಪ್ರವೇಶ ನಾಕಾರೈಕೆ"
+  },
+  "filing": {
+    "upload_failed": "ಫೈಲ್ ಅಪ್‌ಲೋಡ್ ಅಸಫಲಗೋದು",
+    "validation_failed": "ಡೇಟಾ ಸತ್ಯಾಪನೆ ಅಸಫಲಗೋದು",
+    "submission_failed": "ರಿಟರ್ನ್ ಸಬ್ಮಿಷನ್ ಅಸಫಲಗೋದು",
+    "invalid_file_format": "ಅವೈಧ ಫೈಲ್ ಫಾರ್ಮ್ಯಾಟ್"
+  }
+}

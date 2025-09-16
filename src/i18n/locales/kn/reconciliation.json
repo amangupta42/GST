@@ -1,0 +1,38 @@
+{
+  "title": "ITC ಮಿಲನ",
+  "description": "GSTR-2A/2B ಡೇಟಾಸಹ ಇನ್‌ಪುಟ್ ಟ್ಯಾಕ್ಸ್ ಕ್ರೆಡಿಟ್ ಮಿಲನ",
+  "sections": {
+    "purchase_invoices": "ಬಾಂಧವ ಇನ್‌ವಾಯ್ಸ್‌ಗಳು",
+    "gstr2a_data": "GSTR-2A ಡೇಟಾ",
+    "gstr2b_data": "GSTR-2B ಡೇಟಾ",
+    "matched_invoices": "ಹೆಂಗಸಿಕೆಯಾದ ಇನ್‌ವಾಯ್ಸ್‌ಗಳು",
+    "unmatched_invoices": "ಹೆಂಗಸಾನಿಲ್ಲದ ಇನ್‌ವಾಯ್ಸ್‌ಗಳು",
+    "disputed_invoices": "ವಿವಾದಾಸ್ಪದ ಇನ್‌ವಾಯ್ಸ್‌ಗಳು"
+  },
+  "actions": {
+    "upload_invoices": "ಬಾಂಧವ ಇನ್‌ವಾಯ್ಸ್‌ಗಳನ್ನು ಅಪ್‌ಲೋಡ್ ಮಾಡಿ",
+    "fetch_gstr2a": "GSTR-2A ತೆಗೆದುಕೊಳ್ಳಿ",
+    "fetch_gstr2b": "GSTR-2B ತೆಗೆದುಕೊಳ್ಳಿ",
+    "start_reconciliation": "ಮಿಲನ ಪ್ರಾರಂಭಿಸಿ",
+    "view_details": "ವಿವರಗಳನ್ನು ನೋಡಿ",
+    "mark_disputed": "ವಿವಾದಾಸ್ಪದರೆಂದು ಗುರುತು ಮಾಡಿ",
+    "accept_match": "ಹೆಂಗಸಿಕೆಯನ್ನು ಸ್ವೀಕರಿಸಿ",
+    "reject_match": "ಹೆಂಗಸಿಕೆಯನ್ನು ನಾಕ್ಕರಿಸಿ"
+  },
+  "status": {
+    "matched": "ಹೆಂಗಸಿಕೆಯಾದು",
+    "unmatched": "ಹೆಂಗಸಾನಿಲ್ಲ",
+    "disputed": "ವಿವಾದಾಸ್ಪದ",
+    "pending": "ರಿವಿಯೂ ಬಾಕಿಉಂದು",
+    "accepted": "ಸ್ವೀಕರಿಸುದೆ",
+    "rejected": "ನಾಕ್ಕರಿಸುದೆ"
+  },
+  "fields": {
+    "supplier_gstin": "ಪುರವಣಿಗದರ GSTIN",
+    "invoice_date": "ಇನ್‌ವಾಯ್ಸ್ ದಿನಾಂಕ",
+    "invoice_value": "ಇನ್‌ವಾಯ್ಸ್ ಮೂಲ್ಯ",
+    "itc_amount": "ITC ರಕ್ಕ",
+    "match_confidence": "ಹೆಂಗಸಿಕೆ ವಿಶ್ವಾಸ",
+    "difference_amount": "ವಿವಿಧತೆಯ ರಕ್ಕ"
+  }
+}

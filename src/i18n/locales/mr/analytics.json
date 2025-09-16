@@ -1,0 +1,31 @@
+{
+  "title": "विश्लेषणे आणि अहवाल",
+  "description": "व्यापारिक विश्लेषणे आणि नियमानुवर्तन अहवाल",
+  "sections": {
+    "overview": "व्यापार आढावा",
+    "tax_analytics": "कर विश्लेषणे",
+    "compliance_metrics": "नियमानुवर्तन मेट्रिक्स",
+    "financial_insights": "आर्थिक अंतर्दृष्टी",
+    "trend_analysis": "ट्रेंड विश्लेषण"
+  },
+  "charts": {
+    "revenue_trend": "उत्पन्न ट्रेंड",
+    "tax_liability": "कर देयता",
+    "itc_utilization": "ITC वापर",
+    "compliance_score": "नियमानुवर्तन गुण",
+    "payment_status": "भुगतान स्थिती",
+    "regional_performance": "प्रादेशिक कामगिरी"
+  },
+  "filters": {
+    "date_range": "तारीख श्रेणी",
+    "business_unit": "व्यापार युनिट",
+    "tax_type": "कर प्रकार",
+    "location": "ठिकाण",
+    "customer_segment": "ग्राहक विभाग"
+  },
+  "export": {
+    "download_report": "अहवाल डाउनलोड करा",
+    "schedule_report": "अहवाल नियोजित करा",
+    "share_insights": "अंतर्दृष्टी शेयर करा"
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "title": "Analytics & Reports",
+  "description": "Comprehensive business analytics and compliance reporting",
+  "sections": {
+    "overview": "Business Overview",
+    "tax_analytics": "Tax Analytics",
+    "compliance_metrics": "Compliance Metrics",
+    "financial_insights": "Financial Insights",
+    "trend_analysis": "Trend Analysis"
+  },
+  "charts": {
+    "revenue_trend": "Revenue Trend",
+    "tax_liability": "Tax Liability",
+    "itc_utilization": "ITC Utilization",
+    "compliance_score": "Compliance Score",
+    "payment_status": "Payment Status",
+    "regional_performance": "Regional Performance"
+  },
+  "filters": {
+    "date_range": "Date Range",
+    "business_unit": "Business Unit",
+    "tax_type": "Tax Type",
+    "location": "Location",
+    "customer_segment": "Customer Segment"
+  },
+  "export": {
+    "download_report": "Download Report",
+    "schedule_report": "Schedule Report",
+    "share_insights": "Share Insights"
+  }
+}

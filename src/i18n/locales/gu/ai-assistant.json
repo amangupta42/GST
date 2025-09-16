@@ -1,0 +1,26 @@
+{
+  "title": "AI Assistant",
+  "description": "Your intelligent GST compliance companion",
+  "features": {
+    "voice_commands": "Voice Commands",
+    "rate_finder": "GST Rate Finder",
+    "compliance_guide": "Compliance Guide",
+    "document_analysis": "Document Analysis",
+    "tax_calculator": "Tax Calculator"
+  },
+  "prompts": {
+    "ask_question": "Ask me anything about GST...",
+    "voice_prompt": "Speak your question",
+    "upload_document": "Upload document for analysis"
+  },
+  "responses": {
+    "thinking": "Let me analyze that for you...",
+    "found_answer": "Here's what I found:",
+    "need_clarification": "Could you provide more details?",
+    "calculation_result": "Based on your input, here's the calculation:"
+  },
+  "languages": {
+    "switch_language": "Switch Language",
+    "voice_language": "Voice Language"
+  }
+}

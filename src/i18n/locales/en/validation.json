@@ -1,0 +1,19 @@
+{
+  "required": "{{field}} is required",
+  "invalid": "{{field}} is invalid",
+  "min_length": "{{field}} must be at least {{min}} characters",
+  "max_length": "{{field}} cannot exceed {{max}} characters",
+  "min_value": "{{field}} must be at least {{min}}",
+  "max_value": "{{field}} cannot exceed {{max}}",
+  "pattern": "{{field}} format is invalid",
+  "email": "Please enter a valid email address",
+  "phone": "Please enter a valid phone number",
+  "gstin": "Please enter a valid GSTIN (15 characters)",
+  "pan": "Please enter a valid PAN (10 characters)",
+  "pincode": "Please enter a valid 6-digit pincode",
+  "amount": "Please enter a valid amount",
+  "percentage": "Please enter a valid percentage (0-100)",
+  "date": "Please enter a valid date",
+  "file_size": "File size cannot exceed {{max}}MB",
+  "file_type": "Only {{types}} files are allowed"
+}

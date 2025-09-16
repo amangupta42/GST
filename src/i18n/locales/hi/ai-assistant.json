@@ -1,0 +1,26 @@
+{
+  "title": "एआई सहायक",
+  "description": "आपका बुद्धिमान जीएसटी अनुपालन साथी",
+  "features": {
+    "voice_commands": "वॉयस कमांड",
+    "rate_finder": "जीएसटी दर खोजक",
+    "compliance_guide": "अनुपालन गाइड",
+    "document_analysis": "दस्तावेज़ विश्लेषण",
+    "tax_calculator": "कर कैलकुलेटर"
+  },
+  "prompts": {
+    "ask_question": "जीएसटी के बारे में कुछ भी पूछें...",
+    "voice_prompt": "अपना प्रश्न बोलें",
+    "upload_document": "विश्लेषण के लिए दस्तावेज़ अपलोड करें"
+  },
+  "responses": {
+    "thinking": "मैं आपके लिए इसका विश्लेषण कर रहा हूँ...",
+    "found_answer": "यहाँ है जो मुझे मिला:",
+    "need_clarification": "क्या आप अधिक विवरण प्रदान कर सकते हैं?",
+    "calculation_result": "आपके इनपुट के आधार पर, यहाँ है गणना:"
+  },
+  "languages": {
+    "switch_language": "भाषा बदलें",
+    "voice_language": "वॉयस भाषा"
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "title": "ITC तुलना",
+  "description": "GSTR-2A/2B डेटासोबत इनपुट टॅक्स क्रेडिटची तुलना करा",
+  "sections": {
+    "purchase_invoices": "खरेदी बीजके",
+    "gstr2a_data": "GSTR-2A डेटा",
+    "gstr2b_data": "GSTR-2B डेटा",
+    "matched_invoices": "जुळलेले बीजके",
+    "unmatched_invoices": "न जुळलेले बीजके",
+    "disputed_invoices": "वादग्रस्त बीजके"
+  },
+  "actions": {
+    "upload_invoices": "खरेदी बीजके अपलोड करा",
+    "fetch_gstr2a": "GSTR-2A आणा",
+    "fetch_gstr2b": "GSTR-2B आणा",
+    "start_reconciliation": "तुलना सुरू करा",
+    "view_details": "तपशील पहा",
+    "mark_disputed": "वादग्रस्त म्हणून चिन्हांकित करा",
+    "accept_match": "जुळणी स्वीकारा",
+    "reject_match": "जुळणी नाकारा"
+  },
+  "status": {
+    "matched": "जुळले",
+    "unmatched": "न जुळले",
+    "disputed": "वादग्रस्त",
+    "pending": "पुनरावलोकन प्रलंबित",
+    "accepted": "स्वीकारले",
+    "rejected": "नाकारले"
+  },
+  "fields": {
+    "supplier_gstin": "पुरवठादार GSTIN",
+    "invoice_date": "बीजक तारीख",
+    "invoice_value": "बीजक मूल्य",
+    "itc_amount": "ITC रक्कम",
+    "match_confidence": "जुळणी विश्वास",
+    "difference_amount": "फरक रक्कम"
+  }
+}

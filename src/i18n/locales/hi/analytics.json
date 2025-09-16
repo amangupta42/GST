@@ -1,0 +1,31 @@
+{
+  "title": "विश्लेषणात्मक और रिपोर्ट",
+  "description": "व्यापक व्यावसायिक विश्लेषण और अनुपालन रिपोर्टिंग",
+  "sections": {
+    "overview": "व्यावसायिक अवलोकन",
+    "tax_analytics": "कर विश्लेषण",
+    "compliance_metrics": "अनुपालन मेट्रिक्स",
+    "financial_insights": "वित्तीय अंतर्दृष्टि",
+    "trend_analysis": "प्रवृत्ति विश्लेषण"
+  },
+  "charts": {
+    "revenue_trend": "राजस्व प्रवृत्ति",
+    "tax_liability": "कर देयता",
+    "itc_utilization": "आईटीसी उपयोग",
+    "compliance_score": "अनुपालन स्कोर",
+    "payment_status": "भुगतान स्थिति",
+    "regional_performance": "क्षेत्रीय प्रदर्शन"
+  },
+  "filters": {
+    "date_range": "दिनांक सीमा",
+    "business_unit": "व्यावसायिक इकाई",
+    "tax_type": "कर प्रकार",
+    "location": "स्थान",
+    "customer_segment": "ग्राहक खंड"
+  },
+  "export": {
+    "download_report": "रिपोर्ट डाउनलोड करें",
+    "schedule_report": "रिपोर्ट शेड्यूल करें",
+    "share_insights": "अंतर्दृष्टि साझा करें"
+  }
+}

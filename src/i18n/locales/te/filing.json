@@ -1,0 +1,72 @@
+{
+  "gstr1": {
+    "title": "GSTR-1 రిటర్న్ ఫైలింగ్",
+    "description": "కర దాన వస్తువులు మరియు సేవల బాహ్య పురవరికి మాసిక రిటర్న్",
+    "steps": {
+      "upload": "డేటా అప్‌లోడ్ చేయండి",
+      "categorize": "ఇన్‌వౌయస్‌లను వర్గీకరించండి",
+      "validate": "డేటా సత్యాపన",
+      "preview": "రిటర్న్ పూర్వావలోకనం",
+      "submit": "రిటర్న్ సబ్మిట్ చేయండి"
+    },
+    "fields": {
+      "invoice_type": "ఇన్‌వౌయస్ రకం",
+      "place_of_supply": "పురవర్ స్థలం",
+      "invoice_value": "ఇన్‌వౌయస్ విలువ",
+      "taxable_value": "కరయోగ్య విలువ",
+      "cgst_amount": "CGST మొత్తం",
+      "sgst_amount": "SGST మొత్తం",
+      "igst_amount": "IGST మొత్తం"
+    }
+  },
+  "gstr3b": {
+    "title": "GSTR-3B మాసిక రిటర్న్",
+    "description": "బాహ్య మరియు ఆంతరిక పురవరి వివరాలతో మాసిక సారాంశ రిటర్న్",
+    "steps": {
+      "outward_supplies": "బాహ్య పురవరి",
+      "inward_supplies": "ఆంతరిక పురవరి",
+      "itc_reconciliation": "ITC సమన్వయం",
+      "tax_calculation": "పన్ను గణన",
+      "preview": "పూర్వావలోకనం మరియు సత్యాపన",
+      "submit": "రిటర్న్ సబ్మిట్ చేయండి"
+    },
+    "sections": {
+      "supplies": "బాహ్య పురవరి వివరాలు",
+      "inward": "ఆంతరిక పురవరి వివరాలు",
+      "itc": "అర్హత ఉన్న ITC",
+      "payment": "పన్ను చెల్లింపు"
+    }
+  },
+  "gstr9": {
+    "title": "GSTR-9 వార్షిక రిటర్న్",
+    "description": "అన్ని మాసిక/త్రైమాసిక రిటర్న్‌లను ఏకీకరించే వార్షిక రిటర్న్",
+    "steps": {
+      "data_source": "డేటా మూలాలు",
+      "turnover": "టర్న్‌ఓవర్ సమన్వయం",
+      "tax_details": "పన్ను వివరాలు",
+      "itc_analysis": "ITC విశ్లేషణ",
+      "preview": "రిటర్న్ పూర్వావలోకనం",
+      "submit": "రిటర్న్ సబ్మిట్ చేయండి"
+    },
+    "sections": {
+      "basic_details": "మూల వివరాలు",
+      "turnover_details": "టర్న్‌ఓవర్ వివరాలు",
+      "itc_details": "ITC వివరాలు",
+      "tax_paid": "చెల్లించిన పన్ను"
+    }
+  },
+  "common": {
+    "return_period": "రిటర్న్ కాలావధి",
+    "due_date": "నిర్ధారిత తేదీ",
+    "filing_status": "ఫైలింగ్ స్థితి",
+    "late_fee": "ఆలస్య షుల్కం",
+    "interest": "వంటి",
+    "penalty": "దండం",
+    "acknowledgment": "రసీదు నంబర్",
+    "reference_number": "రిఫరెన్స్ నంబర్",
+    "file_return": "రిటర్న్ ఫైల్ చేయండి",
+    "save_draft": "డ్రాఫ్ట్‌గా రక్షించండి",
+    "validate_data": "డేటా సత్యాపన",
+    "download_summary": "సారాంశం డౌన్‌లోడ్ చేయండి"
+  }
+}

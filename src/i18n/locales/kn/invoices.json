@@ -1,0 +1,31 @@
+{
+  "title": "ಇನ್‌ವಾಯ್ಸ್ ವ್ಯವಸ್ಥಾಪನೆ",
+  "description": "ಇನ್‌ವಾಯ್ಸ್‌ಗಳನ್ನು ವ್ಯವಸ್ಥಾಪನೆ ಮಾಡಿ ಮರಿಯು ಇ-ಇನ್‌ವಾಯ್ಸ್‌ಗಳನ್ನು ತಯಾರಿಸಿ",
+  "actions": {
+    "create_invoice": "ಇನ್‌ವಾಯ್ಸ್ ಸರ್ಜನೆ ಮಾಡಿ",
+    "generate_e_invoice": "ಇ-ಇನ್‌ವಾಯ್ಸ್ ತಯಾರಿಸಿ",
+    "download_pdf": "PDF ಡೌನ್‌ಲೋಡ್ ಮಾಡಿ",
+    "send_email": "ಇಮೆಯಿಲ್ ವಗಂಡಿಸಿ",
+    "cancel_invoice": "ಇನ್‌ವಾಯ್ಸ್ ರದ್ದು ಮಾಡಿ",
+    "view_qr_code": "QR ಕೋಡ್ ನೋಡಿ"
+  },
+  "fields": {
+    "customer_name": "ಗುರಿಗೆ ಹೆಸರು",
+    "customer_gstin": "ಗುರಿ GSTIN",
+    "billing_address": "ಬಿಲ್ಲಿಂಗ್ ವಿಲಾಸ",
+    "shipping_address": "ಶಿಪ್ಪಿಂಗ್ ವಿಲಾಸ",
+    "item_description": "ವಸ್ತು ವಿವರಣೆ",
+    "unit_price": "ಯೂನಿಟ್ ಬೆಲೆ",
+    "tax_rate": "ಕರ ದರ",
+    "irn_number": "IRN ಕ್ರಮಾಂಕ",
+    "ack_number": "ಪರಿಗಣನೆ ಕ್ರಮಾಂಕ"
+  },
+  "status": {
+    "draft": "ಕಸ೚ದೆ",
+    "generated": "ತಯಾರಿಸಿದೆ",
+    "sent": "ವಂಗವಾಹನೆ ಮಾಡಿದೆ",
+    "paid": "ಸಂದೊಲಿಸಿದೆ",
+    "overdue": "ಅವಧಿ ಅತಿಕ್ರಮಿಸಿದೆ",
+    "cancelled": "ರದ್ದುಗೋದು"
+  }
+}

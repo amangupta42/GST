@@ -1,0 +1,72 @@
+{
+  "gstr1": {
+    "title": "GSTR-1 ರಿಟರ್ನ್ ಫೈಲಿಂಗ್",
+    "description": "ಕರಯೋಗ್ಯ ವಸ್ತುಗಳು ಮರಿಯು ಸೇವೆಗಳ ಬಾಹ್ಯ ಪುರವಣಿಗಿಗಸರ ಮಾಸಿಕ ರಿಟರ್ನ್",
+    "steps": {
+      "upload": "ಡೇಟಾ ಅಪ್‌ಲೋಡ್ ಮಾಡಿ",
+      "categorize": "ಇನ್‌ವಾಯ್ಸ್‌ಗಳನ್ನು ವರ್ಗೀಕರಣ ಮಾಡಿ",
+      "validate": "ಡೇಟಾ ಸತ್ಯಾಪನೆ",
+      "preview": "ರಿಟರ್ನ್ ಪೂರ್ವಾವಲೋಕನ",
+      "submit": "ರಿಟರ್ನ್ ಸಬ್ಮಿಟ್ ಮಾಡಿ"
+    },
+    "fields": {
+      "invoice_type": "ಇನ್‌ವಾಯ್ಸ್ ಪ್ರಕಾರ",
+      "place_of_supply": "ಪುರವಣಿಗೆ ಸ್ಥಳ",
+      "invoice_value": "ಇನ್‌ವಾಯ್ಸ್ ಮೂಲ್ಯ",
+      "taxable_value": "ಕರಯೋಗ್ಯ ಮೂಲ್ಯ",
+      "cgst_amount": "CGST ರಕ್ಕ",
+      "sgst_amount": "SGST ರಕ್ಕ",
+      "igst_amount": "IGST ರಕ್ಕ"
+    }
+  },
+  "gstr3b": {
+    "title": "GSTR-3B ಮಾಸಿಕ ರಿಟರ್ನ್",
+    "description": "ಬಾಹ್ಯ ಮರಿಯು ಆಂತರಿಕ ಪುರವಣಿಗಳ ವಿವರಗಳಿಂದ ಮಾಸಿಕ ಸಾರಾಂಶ ರಿಟರ್ನ್",
+    "steps": {
+      "outward_supplies": "ಬಾಹ್ಯ ಪುರವಣಿಗಳು",
+      "inward_supplies": "ಆಂತರಿಕ ಪುರವಣಿಗಳು",
+      "itc_reconciliation": "ITC ಮಿಲನ",
+      "tax_calculation": "ಕರ ಗಣನೆ",
+      "preview": "ಪೂರ್ವಾವಲೋಕನ ಮರಿಯು ಸತ್ಯಾಪನೆ",
+      "submit": "ರಿಟರ್ನ್ ಸಬ್ಮಿಟ್ ಮಾಡಿ"
+    },
+    "sections": {
+      "supplies": "ಬಾಹ್ಯ ಪುರವಣಿಗಳ ವಿವರಗಳು",
+      "inward": "ಆಂತರಿಕ ಪುರವಣಿಗಳ ವಿವರಗಳು",
+      "itc": "ಅರ್ಹತೆಯುಂದ ITC",
+      "payment": "ಕರ ಪೆಲ್ಲಿಕೆ"
+    }
+  },
+  "gstr9": {
+    "title": "GSTR-9 ವಾರ್ಷಿಕ ರಿಟರ್ನ್",
+    "description": "ಎಲ್ಲಾ ಮಾಸಿಕ/ತ್ರೈಮಾಸಿಕ ರಿಟರ್ನ್‌ಗಳನ್ನು ಬೆರೆಸಿ ಮಾಡಿದ ವಾರ್ಷಿಕ ರಿಟರ್ನ್",
+    "steps": {
+      "data_source": "ಡೇಟಾ ಮೂಲಗಳು",
+      "turnover": "ಟರ್ನ್‌ಓವರ್ ಮಿಲನ",
+      "tax_details": "ಕರ ವಿವರಗಳು",
+      "itc_analysis": "ITC ವಿಶ್ಲೇಷಣೆ",
+      "preview": "ರಿಟರ್ನ್ ಪೂರ್ವಾವಲೋಕನ",
+      "submit": "ರಿಟರ್ನ್ ಸಬ್ಮಿಟ್ ಮಾಡಿ"
+    },
+    "sections": {
+      "basic_details": "ಮೂಲ ವಿವರಗಳು",
+      "turnover_details": "ಟರ್ನ್‌ಓವರ್ ವಿವರಗಳು",
+      "itc_details": "ITC ವಿವರಗಳು",
+      "tax_paid": "ವಘೆಂತಿಸಿದ ಕರ"
+    }
+  },
+  "common": {
+    "return_period": "ರಿಟರ್ನ್ ಅವಧಿ",
+    "due_date": "ಅವಧಿ ದಿನಾಂಕ",
+    "filing_status": "ಫೈಲಿಂಗ್ ಸ್ಥಿತಿ",
+    "late_fee": "ವಿಳಂಬ ಫೀಸ್",
+    "interest": "ವಟ್ಟಿ",
+    "penalty": "ದಂಡ",
+    "acknowledgment": "ಪರಿಗಣನೆ ಕ್ರಮಾಂಕ",
+    "reference_number": "ರೆಫರೆನ್ಸ್ ಕ್ರಮಾಂಕ",
+    "file_return": "ರಿಟರ್ನ್ ಫೈಲ್ ಮಾಡಿ",
+    "save_draft": "ಕಸ೚ದಾಗಿ ಸೇವ್ ಮಾಡಿ",
+    "validate_data": "ಡೇಟಾ ಸತ್ಯಾಪನೆ",
+    "download_summary": "ಸಾರಾಂಶ ಡೌನ್‌ಲೋಡ್ ಮಾಡಿ"
+  }
+}

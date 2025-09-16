@@ -1,0 +1,38 @@
+{
+  "title": "GST અનુપાલન ડેશબોર્ડ",
+  "subtitle": "વાસ્તવિક સમયમાં GST અનુપાલન નિરીક્ષણ અને વ્યવસ્થાપન",
+  "kpis": {
+    "total_liability": "કુલ GST જવાબદારી",
+    "itc_available": "ITC ઉપલબ્ધ",
+    "compliance_score": "અનુપાલન સ્કોર",
+    "pending_returns": "બાકી રિટર્ન",
+    "current_month": "વર્તમાન મહિનો",
+    "vs_last_month": "છેલ્લા મહિના કરતાં"
+  },
+  "quick_actions": {
+    "title": "ઝડપી ક્રિયાઓ",
+    "file_gstr1": "GSTR-1 ફાઇલ કરો",
+    "file_gstr3b": "GSTR-3B ફાઇલ કરો",
+    "reconcile_itc": "ITC મિલાન કરો",
+    "generate_invoice": "ઇ-ઇન્વૉઇસ બનાવો",
+    "create_eway_bill": "ઇ-વે બિલ બનાવો",
+    "view_analytics": "વિશ્લેષણ જુઓ"
+  },
+  "charts": {
+    "gst_liability": "GST જવાબદારી ટ્રેન્ડ",
+    "itc_utilization": "ITC ઉપયોગ",
+    "compliance_breakdown": "અનુપાલન વિભાજન",
+    "filing_status": "ફાઇલિંગ સ્થિતિ સમયરેખા"
+  },
+  "notifications": {
+    "title": "તાજેતરની સૂચનાઓ",
+    "view_all": "બધી જુઓ",
+    "mark_read": "વાંચેલ તરીકે માર્ક કરો",
+    "no_notifications": "કોઇ નવી સૂચનાઓ નથી"
+  },
+  "widgets": {
+    "configure": "વિજેટ્સ કોન્ફિગર કરો",
+    "refresh": "ડેટા રિફ્રેશ કરો",
+    "last_updated": "છેલ્લે અપડેટ થયેલ"
+  }
+}

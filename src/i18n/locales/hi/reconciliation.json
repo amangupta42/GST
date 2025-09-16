@@ -1,0 +1,38 @@
+{
+  "title": "आईटीसी मिलान",
+  "description": "जीएसटीआर-2ए/2बी डेटा के साथ इनपुट टैक्स क्रेडिट का मिलान करें",
+  "sections": {
+    "purchase_invoices": "खरीद चालान",
+    "gstr2a_data": "जीएसटीआर-2ए डेटा",
+    "gstr2b_data": "जीएसटीआर-2बी डेटा",
+    "matched_invoices": "मिलान किए गए चालान",
+    "unmatched_invoices": "अमिलान चालान",
+    "disputed_invoices": "विवादित चालान"
+  },
+  "actions": {
+    "upload_invoices": "खरीद चालान अपलोड करें",
+    "fetch_gstr2a": "जीएसटीआर-2ए प्राप्त करें",
+    "fetch_gstr2b": "जीएसटीआर-2बी प्राप्त करें",
+    "start_reconciliation": "मिलान शुरू करें",
+    "view_details": "विवरण देखें",
+    "mark_disputed": "विवादित के रूप में चिह्नित करें",
+    "accept_match": "मिलान स्वीकार करें",
+    "reject_match": "मिलान अस्वीकार करें"
+  },
+  "status": {
+    "matched": "मिलान किया गया",
+    "unmatched": "अमिलान",
+    "disputed": "विवादित",
+    "pending": "समीक्षा लंबित",
+    "accepted": "स्वीकृत",
+    "rejected": "अस्वीकृत"
+  },
+  "fields": {
+    "supplier_gstin": "आपूर्तिकर्ता जीएसटीआईएन",
+    "invoice_date": "चालान दिनांक",
+    "invoice_value": "चालान मूल्य",
+    "itc_amount": "आईटीसी राशि",
+    "match_confidence": "मिलान विश्वास",
+    "difference_amount": "अंतर राशि"
+  }
+}

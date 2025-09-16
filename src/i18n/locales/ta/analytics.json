@@ -1,0 +1,31 @@
+{
+  "title": "பகுப்பாய்வு & அறிக்கைகள்",
+  "description": "விரிவான வணிக பகுப்பாய்வு மற்றும் இணக்க அறிக்கையிடல்",
+  "sections": {
+    "overview": "வணிக கண்ணோட்டம்",
+    "tax_analytics": "வரி பகுப்பாய்வு",
+    "compliance_metrics": "இணக்க அளவீடுகள்",
+    "financial_insights": "நிதி நுண்ணறிவு",
+    "trend_analysis": "போக்கு பகுப்பாய்வு"
+  },
+  "charts": {
+    "revenue_trend": "வருவாய் போக்கு",
+    "tax_liability": "வரி பொறுப்பு",
+    "itc_utilization": "ITC பயன்பாடு",
+    "compliance_score": "இணக்க மதிப்பெண்",
+    "payment_status": "செலுத்துதல் நிலை",
+    "regional_performance": "பிராந்திய செயல்திறன்"
+  },
+  "filters": {
+    "date_range": "தேதி வரம்பு",
+    "business_unit": "வணிக பிரிவு",
+    "tax_type": "வரி வகை",
+    "location": "இடம்",
+    "customer_segment": "வாடிக்கையாளர் பிரிவு"
+  },
+  "export": {
+    "download_report": "அறிக்கை பதிவிறக்கு",
+    "schedule_report": "அறிக்கை அட்டவணை",
+    "share_insights": "நுண்ணறிவுகளை பகிர்"
+  }
+}

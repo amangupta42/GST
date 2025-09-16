@@ -1,0 +1,72 @@
+{
+  "gstr1": {
+    "title": "GSTR-1 रिटर्न फाइलिंग",
+    "description": "करपात्र वस्तू आणि सेवांच्या बाह्य पुरवठ्यासाठी मासिक रिटर्न",
+    "steps": {
+      "upload": "डेटा अपलोड करा",
+      "categorize": "बीजक वर्गीकृत करा",
+      "validate": "डेटा सत्यापित करा",
+      "preview": "रिटर्न पूर्वावलोकन",
+      "submit": "रिटर्न सबमिट करा"
+    },
+    "fields": {
+      "invoice_type": "बीजक प्रकार",
+      "place_of_supply": "पुरवठ्याचे ठिकाण",
+      "invoice_value": "बीजक मूल्य",
+      "taxable_value": "करपात्र मूल्य",
+      "cgst_amount": "CGST रक्कम",
+      "sgst_amount": "SGST रक्कम",
+      "igst_amount": "IGST रक्कम"
+    }
+  },
+  "gstr3b": {
+    "title": "GSTR-3B मासिक रिटर्न",
+    "description": "बाह्य आणि आंतरिक पुरवठ्याचे तपशील असलेले मासिक सारांश रिटर्न",
+    "steps": {
+      "outward_supplies": "बाह्य पुरवठे",
+      "inward_supplies": "आंतरिक पुरवठे",
+      "itc_reconciliation": "ITC तुलना",
+      "tax_calculation": "कर गणना",
+      "preview": "पूर्वावलोकन आणि सत्यापन",
+      "submit": "रिटर्न सबमिट करा"
+    },
+    "sections": {
+      "supplies": "बाह्य पुरवठ्याचे तपशील",
+      "inward": "आंतरिक पुरवठ्याचे तपशील",
+      "itc": "पात्र ITC",
+      "payment": "कराचे भुगतान"
+    }
+  },
+  "gstr9": {
+    "title": "GSTR-9 वार्षिक रिटर्न",
+    "description": "सर्व मासिक/तिमाही रिटर्न एकत्रित करणारे वार्षिक रिटर्न",
+    "steps": {
+      "data_source": "डेटा स्रोत",
+      "turnover": "उलाढाल तुलना",
+      "tax_details": "कर तपशील",
+      "itc_analysis": "ITC विश्लेषण",
+      "preview": "रिटर्न पूर्वावलोकन",
+      "submit": "रिटर्न सबमिट करा"
+    },
+    "sections": {
+      "basic_details": "मूलभूत तपशील",
+      "turnover_details": "उलाढाल तपशील",
+      "itc_details": "ITC तपशील",
+      "tax_paid": "भरलेला कर"
+    }
+  },
+  "common": {
+    "return_period": "रिटर्न कालावधी",
+    "due_date": "अंतिम तारीख",
+    "filing_status": "फाइलिंग स्थिती",
+    "late_fee": "विलंब शुल्क",
+    "interest": "व्याज",
+    "penalty": "दंड",
+    "acknowledgment": "पावती क्रमांक",
+    "reference_number": "संदर्भ क्रमांक",
+    "file_return": "रिटर्न फाइल करा",
+    "save_draft": "मसुदा जतन करा",
+    "validate_data": "डेटा सत्यापित करा",
+    "download_summary": "सारांश डाउनलोड करा"
+  }
+}

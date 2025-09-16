@@ -1,0 +1,31 @@
+{
+  "title": "चालान प्रबंधन",
+  "description": "चालान प्रबंधित करें और ई-चालान जेनरेट करें",
+  "actions": {
+    "create_invoice": "चालान बनाएं",
+    "generate_e_invoice": "ई-चालान जेनरेट करें",
+    "download_pdf": "पीडीएफ डाउनलोड करें",
+    "send_email": "ईमेल भेजें",
+    "cancel_invoice": "चालान रद्द करें",
+    "view_qr_code": "क्यूआर कोड देखें"
+  },
+  "fields": {
+    "customer_name": "ग्राहक का नाम",
+    "customer_gstin": "ग्राहक जीएसटीआईएन",
+    "billing_address": "बिलिंग पता",
+    "shipping_address": "शिपिंग पता",
+    "item_description": "वस्तु विवरण",
+    "unit_price": "यूनिट मूल्य",
+    "tax_rate": "कर दर",
+    "irn_number": "आईआरएन नंबर",
+    "ack_number": "पावती संख्या"
+  },
+  "status": {
+    "draft": "मसौदा",
+    "generated": "जेनरेट किया गया",
+    "sent": "भेजा गया",
+    "paid": "भुगतान किया गया",
+    "overdue": "अतिदेय",
+    "cancelled": "रद्द"
+  }
+}

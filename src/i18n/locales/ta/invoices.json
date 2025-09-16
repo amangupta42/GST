@@ -1,0 +1,31 @@
+{
+  "title": "இன்வாய்ஸ் மேலாண்மை",
+  "description": "இன்வாய்ஸ்களை நிர்வகித்து இ-இன்வாய்ஸ்களை உருவாக்கவும்",
+  "actions": {
+    "create_invoice": "இன்வாய்ஸ் உருவாக்கு",
+    "generate_e_invoice": "இ-இன்வாய்ஸ் உருவாக்கு",
+    "download_pdf": "PDF பதிவிறக்கு",
+    "send_email": "மின்னஞ்சல் அனுப்பு",
+    "cancel_invoice": "இன்வாய்ஸ் ரத்து",
+    "view_qr_code": "QR குறியீடு பார்"
+  },
+  "fields": {
+    "customer_name": "வாடிக்கையாளர் பெயர்",
+    "customer_gstin": "வாடிக்கையாளர் GSTIN",
+    "billing_address": "பில்லிங் முகவரி",
+    "shipping_address": "கப்பல் முகவரி",
+    "item_description": "பொருள் விளக்கம்",
+    "unit_price": "அலகு விலை",
+    "tax_rate": "வரி விகிதம்",
+    "irn_number": "IRN எண்",
+    "ack_number": "ஒப்புகை எண்"
+  },
+  "status": {
+    "draft": "வரைவு",
+    "generated": "உருவாக்கப்பட்டது",
+    "sent": "அனுப்பப்பட்டது",
+    "paid": "செலுத்தப்பட்டது",
+    "overdue": "தாமதம்",
+    "cancelled": "ரத்து"
+  }
+}

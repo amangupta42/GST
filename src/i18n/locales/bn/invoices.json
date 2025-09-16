@@ -1,0 +1,31 @@
+{
+  "title": "চালান ব্যবস্থাপনা",
+  "description": "চালান পরিচালনা এবং ই-চালান তৈরি করুন",
+  "actions": {
+    "create_invoice": "চালান তৈরি করুন",
+    "generate_e_invoice": "ই-চালান তৈরি করুন",
+    "download_pdf": "PDF ডাউনলোড",
+    "send_email": "ইমেইল পাঠান",
+    "cancel_invoice": "চালান বাতিল",
+    "view_qr_code": "QR কোড দেখুন"
+  },
+  "fields": {
+    "customer_name": "গ্রাহকের নাম",
+    "customer_gstin": "গ্রাহকের GSTIN",
+    "billing_address": "বিলিং ঠিকানা",
+    "shipping_address": "শিপিং ঠিকানা",
+    "item_description": "পণ্যের বিবরণ",
+    "unit_price": "একক মূল্য",
+    "tax_rate": "করের হার",
+    "irn_number": "IRN নম্বর",
+    "ack_number": "স্বীকৃতি নম্বর"
+  },
+  "status": {
+    "draft": "খসড়া",
+    "generated": "তৈরি হয়েছে",
+    "sent": "পাঠানো হয়েছে",
+    "paid": "পরিশোধিত",
+    "overdue": "মেয়াদ উত্তীর্ণ",
+    "cancelled": "বাতিল"
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "general": {
+    "something_went_wrong": "काहीतरी चूक झाली",
+    "please_try_again": "कृपया पुन्हा प्रयत्न करा",
+    "network_error": "नेटवर्क कनेक्शन त्रुटी",
+    "server_error": "सर्वर त्रुटी आली",
+    "permission_denied": "परवानगी नाकारली",
+    "not_found": "सरंक्स सापडले नाही"
+  },
+  "validation": {
+    "required_field": "हे फील्ड आवश्यक आहे",
+    "invalid_email": "कृपया वैध ईमेल द्या",
+    "invalid_phone": "कृपया वैध फोन नंबर द्या",
+    "invalid_gstin": "कृपया वैध GSTIN द्या",
+    "invalid_pan": "कृपया वैध PAN द्या",
+    "invalid_amount": "कृपया वैध रक्कम द्या",
+    "invalid_date": "कृपया वैध तारीख द्या",
+    "future_date_not_allowed": "भविष्याच्या तारखांना परवानगी नाही"
+  },
+  "auth": {
+    "login_failed": "लॉगिन अयशस्वी",
+    "session_expired": "तुमचे सेशन संपले",
+    "access_denied": "प्रवेश नाकारला"
+  },
+  "filing": {
+    "upload_failed": "फाइल अपलोड अयशस्वी",
+    "validation_failed": "डेटा सत्यापन अयशस्वी",
+    "submission_failed": "रिटर्न सबमिशन अयशस्वी",
+    "invalid_file_format": "अवैध फाइल फॉरमॅट"
+  }
+}

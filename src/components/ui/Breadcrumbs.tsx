@@ -1,40 +1,46 @@
 'use client';
 
-import { usePathname } from 'next/navigation';
+import { usePathname } from '@/i18n';
 import { Breadcrumbs as MUIBreadcrumbs, Typography, Link as MUILink, Box } from '@mui/material';
 import { Home as HomeIcon } from '@mui/icons-material';
-import Link from 'next/link';
+import { Link } from '@/i18n';
+import { useTranslations } from 'next-intl';
 
 interface BreadcrumbItem {
   label: string;
   href?: string;
 }
 
-const routeMap: Record<string, string> = {
-  dashboard: 'Dashboard',
-  filing: 'Return Filing',
+const getRouteMap = (t: any) => ({
+  dashboard: t('nav.dashboard'),
+  filing: t('nav.filing'),
   'gstr-1': 'GSTR-1',
   'gstr-3b': 'GSTR-3B',
   'gstr-9': 'GSTR-9',
-  reconciliation: 'ITC Reconciliation',
-  invoices: 'Invoice Management',
-  analytics: 'Analytics',
-  notifications: 'Notifications',
-  settings: 'Settings',
-};
+  reconciliation: t('nav.reconciliation'),
+  invoices: t('nav.invoices'),
+  'e-invoice': t('nav.e_invoice'),
+  'e-way-bill': t('nav.e_way_bill'),
+  analytics: t('nav.analytics'),
+  'ai-assistant': t('nav.ai_assistant'),
+  notifications: t('nav.notifications'),
+  settings: t('nav.settings'),
+});
 
 export function Breadcrumbs() {
+  const t = useTranslations('common');
   const pathname = usePathname();
-  
+  const routeMap = getRouteMap(t);
+
   // Don't show breadcrumbs on the home page or dashboard root
   if (pathname === '/' || pathname === '/dashboard') {
     return null;
   }
 
   const pathSegments = pathname.split('/').filter(Boolean);
-  
+
   const breadcrumbItems: BreadcrumbItem[] = [
-    { label: 'Dashboard', href: '/dashboard' }
+    { label: t('nav.dashboard'), href: '/dashboard' }
   ];
 
   // Build breadcrumb items from path segments

@@ -1,0 +1,31 @@
+{
+  "title": "बीजक व्यवस्थापन",
+  "description": "बीजक व्यवस्थापित करा आणि ई-बीजक तयार करा",
+  "actions": {
+    "create_invoice": "बीजक तयार करा",
+    "generate_e_invoice": "ई-बीजक तयार करा",
+    "download_pdf": "PDF डाउनलोड करा",
+    "send_email": "ईमेल पाठवा",
+    "cancel_invoice": "बीजक रद्द करा",
+    "view_qr_code": "QR कोड पहा"
+  },
+  "fields": {
+    "customer_name": "ग्राहकाचे नाव",
+    "customer_gstin": "ग्राहक GSTIN",
+    "billing_address": "बिलिंग पत्ता",
+    "shipping_address": "शिपिंग पत्ता",
+    "item_description": "वस्तूचे वर्णन",
+    "unit_price": "युनिट किंमत",
+    "tax_rate": "कर दर",
+    "irn_number": "IRN नंबर",
+    "ack_number": "पावती नंबर"
+  },
+  "status": {
+    "draft": "मसुदा",
+    "generated": "तयार केले",
+    "sent": "पाठवले",
+    "paid": "भरले",
+    "overdue": "मुदत संपली",
+    "cancelled": "रद्द"
+  }
+}

@@ -1,0 +1,72 @@
+{
+  "gstr1": {
+    "title": "GSTR-1 রিটার্ন দাখিল",
+    "description": "করযোগ্য পণ্য এবং সেবার বহির্গামী সরবরাহের মাসিক রিটার্ন",
+    "steps": {
+      "upload": "ডেটা আপলোড",
+      "categorize": "চালান শ্রেণীবদ্ধকরণ",
+      "validate": "ডেটা যাচাই",
+      "preview": "রিটার্ন পূর্বরূপ",
+      "submit": "রিটার্ন জমা দিন"
+    },
+    "fields": {
+      "invoice_type": "চালানের ধরন",
+      "place_of_supply": "সরবরাহের স্থান",
+      "invoice_value": "চালানের মূল্য",
+      "taxable_value": "করযোগ্য মূল্য",
+      "cgst_amount": "CGST পরিমাণ",
+      "sgst_amount": "SGST পরিমাণ",
+      "igst_amount": "IGST পরিমাণ"
+    }
+  },
+  "gstr3b": {
+    "title": "GSTR-3B মাসিক রিটার্ন",
+    "description": "বহির্গামী এবং অভ্যন্তরীণ সরবরাহের বিস্তারিত সহ মাসিক সারাংশ রিটার্ন",
+    "steps": {
+      "outward_supplies": "বহির্গামী সরবরাহ",
+      "inward_supplies": "অভ্যন্তরীণ সরবরাহ",
+      "itc_reconciliation": "ITC মিলকরণ",
+      "tax_calculation": "কর গণনা",
+      "preview": "পূর্বরূপ ও যাচাই",
+      "submit": "রিটার্ন জমা দিন"
+    },
+    "sections": {
+      "supplies": "বহির্গামী সরবরাহের বিবরণ",
+      "inward": "অভ্যন্তরীণ সরবরাহের বিবরণ",
+      "itc": "যোগ্য ITC",
+      "payment": "কর পরিশোধ"
+    }
+  },
+  "gstr9": {
+    "title": "GSTR-9 বার্ষিক রিটার্ন",
+    "description": "সমস্ত মাসিক/ত্রৈমাসিক রিটার্নের একত্রিত বার্ষিক রিটার্ন",
+    "steps": {
+      "data_source": "ডেটা উৎস",
+      "turnover": "টার্নওভার মিলকরণ",
+      "tax_details": "কর বিবরণ",
+      "itc_analysis": "ITC বিশ্লেষণ",
+      "preview": "রিটার্ন পূর্বরূপ",
+      "submit": "রিটার্ন জমা দিন"
+    },
+    "sections": {
+      "basic_details": "মৌলিক বিবরণ",
+      "turnover_details": "টার্নওভার বিবরণ",
+      "itc_details": "ITC বিবরণ",
+      "tax_paid": "পরিশোধিত কর"
+    }
+  },
+  "common": {
+    "return_period": "রিটার্ন মেয়াদ",
+    "due_date": "নির্ধারিত তারিখ",
+    "filing_status": "দাখিলের অবস্থা",
+    "late_fee": "বিলম্ব ফি",
+    "interest": "সুদ",
+    "penalty": "জরিমানা",
+    "acknowledgment": "স্বীকৃতি নম্বর",
+    "reference_number": "রেফারেন্স নম্বর",
+    "file_return": "রিটার্ন দাখিল",
+    "save_draft": "খসড়া হিসেবে সংরক্ষণ",
+    "validate_data": "ডেটা যাচাই",
+    "download_summary": "সারাংশ ডাউনলোড"
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "general": {
+    "something_went_wrong": "ఏదో తప్పు అయింది",
+    "please_try_again": "దయచేసి మల్లీ ప్రయత్నించండి",
+    "network_error": "నెట్‌వర్క్ కనెక్షన్ తప్పు",
+    "server_error": "సర్వర్ తప్పు అయింది",
+    "permission_denied": "అనుమతి నాకరించబడింది",
+    "not_found": "సాధనం కనుగొనబడలేదు"
+  },
+  "validation": {
+    "required_field": "ఈ ఫీల్డ్ తప్పనిసరి",
+    "invalid_email": "దయచేసి వైధ ఇమెయిల్ ప్రవేశపెట్టండి",
+    "invalid_phone": "దయచేసి వైధ ఫోన్ నంబర్ ప్రవేశపెట్టండి",
+    "invalid_gstin": "దయచేసి వైధ GSTIN ప్రవేశపెట్టండి",
+    "invalid_pan": "దయచేసి వైధ PAN ప్రవేశపెట్టండి",
+    "invalid_amount": "దయచేసి వైధ మొత్తం ప్రవేశపెట్టండి",
+    "invalid_date": "దయచేసి వైధ తేదీ ప్రవేశపెట్టండి",
+    "future_date_not_allowed": "భవిష్యత్ తేదీలను అనుమతించలేదు"
+  },
+  "auth": {
+    "login_failed": "లాగిన్ విఫలమైంది",
+    "session_expired": "మీ సెషన్ ముగించింది",
+    "access_denied": "ప్రవేశం నాకరించబడింది"
+  },
+  "filing": {
+    "upload_failed": "ఫైల్ అప్‌లోడ్ విఫలమైంది",
+    "validation_failed": "డేటా సత్యాపన విఫలమైంది",
+    "submission_failed": "రిటర్న్ సబ్మిషన్ విఫలమైంది",
+    "invalid_file_format": "అవైధ ఫైల్ ఫార్మాట్"
+  }
+}

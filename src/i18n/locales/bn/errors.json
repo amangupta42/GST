@@ -1,0 +1,31 @@
+{
+  "general": {
+    "something_went_wrong": "কিছু ভুল হয়েছে",
+    "please_try_again": "অনুগ্রহ করে আবার চেষ্টা করুন",
+    "network_error": "নেটওয়ার্ক সংযোগ ত্রুটি",
+    "server_error": "সার্ভার ত্রুটি ঘটেছে",
+    "permission_denied": "অনুমতি প্রত্যাখ্যাত",
+    "not_found": "রিসোর্স পাওয়া যায়নি"
+  },
+  "validation": {
+    "required_field": "এই ক্ষেত্রটি প্রয়োজনীয়",
+    "invalid_email": "অনুগ্রহ করে একটি বৈধ ইমেইল প্রবেশ করান",
+    "invalid_phone": "অনুগ্রহ করে একটি বৈধ ফোন নম্বর প্রবেশ করান",
+    "invalid_gstin": "অনুগ্রহ করে একটি বৈধ GSTIN প্রবেশ করান",
+    "invalid_pan": "অনুগ্রহ করে একটি বৈধ PAN প্রবেশ করান",
+    "invalid_amount": "অনুগ্রহ করে একটি বৈধ পরিমাণ প্রবেশ করান",
+    "invalid_date": "অনুগ্রহ করে একটি বৈধ তারিখ প্রবেশ করান",
+    "future_date_not_allowed": "ভবিষ্যতের তারিখ অনুমোদিত নয়"
+  },
+  "auth": {
+    "login_failed": "লগইন ব্যর্থ",
+    "session_expired": "আপনার সেশনের মেয়াদ শেষ",
+    "access_denied": "প্রবেশাধিকার প্রত্যাখ্যাত"
+  },
+  "filing": {
+    "upload_failed": "ফাইল আপলোড ব্যর্থ",
+    "validation_failed": "ডেটা যাচাই ব্যর্থ",
+    "submission_failed": "রিটার্ন জমা দেওয়া ব্যর্থ",
+    "invalid_file_format": "অবৈধ ফাইল ফরম্যাট"
+  }
+}

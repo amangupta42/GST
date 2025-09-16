@@ -1,0 +1,38 @@
+{
+  "title": "GST সম্মতি ড্যাশবোর্ড",
+  "subtitle": "রিয়েল-টাইম GST সম্মতি পর্যবেক্ষণ এবং ব্যবস্থাপনা",
+  "kpis": {
+    "total_liability": "মোট GST দায়বদ্ধতা",
+    "itc_available": "উপলব্ধ ITC",
+    "compliance_score": "সম্মতি স্কোর",
+    "pending_returns": "অপেক্ষারত রিটার্ন",
+    "current_month": "বর্তমান মাস",
+    "vs_last_month": "গত মাসের তুলনায়"
+  },
+  "quick_actions": {
+    "title": "দ্রুত কার্যক্রম",
+    "file_gstr1": "GSTR-1 দাখিল",
+    "file_gstr3b": "GSTR-3B দাখিল",
+    "reconcile_itc": "ITC মিলকরণ",
+    "generate_invoice": "ই-চালান তৈরি",
+    "create_eway_bill": "ই-ওয়ে বিল তৈরি",
+    "view_analytics": "বিশ্লেষণ দেখুন"
+  },
+  "charts": {
+    "gst_liability": "GST দায়বদ্ধতার প্রবণতা",
+    "itc_utilization": "ITC ব্যবহার",
+    "compliance_breakdown": "সম্মতি ভাঙ্গন",
+    "filing_status": "দাখিলের অবস্থার সময়রেখা"
+  },
+  "notifications": {
+    "title": "সাম্প্রতিক বিজ্ঞপ্তি",
+    "view_all": "সব দেখুন",
+    "mark_read": "পড়া হিসেবে চিহ্নিত করুন",
+    "no_notifications": "কোনো নতুন বিজ্ঞপ্তি নেই"
+  },
+  "widgets": {
+    "configure": "উইজেট কনফিগার করুন",
+    "refresh": "ডেটা রিফ্রেশ করুন",
+    "last_updated": "সর্বশেষ আপডেট"
+  }
+}

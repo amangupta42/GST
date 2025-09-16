@@ -1,0 +1,31 @@
+{
+  "title": "Invoice Management",
+  "description": "Manage invoices and generate e-invoices",
+  "actions": {
+    "create_invoice": "Create Invoice",
+    "generate_e_invoice": "Generate E-Invoice",
+    "download_pdf": "Download PDF",
+    "send_email": "Send Email",
+    "cancel_invoice": "Cancel Invoice",
+    "view_qr_code": "View QR Code"
+  },
+  "fields": {
+    "customer_name": "Customer Name",
+    "customer_gstin": "Customer GSTIN",
+    "billing_address": "Billing Address",
+    "shipping_address": "Shipping Address",
+    "item_description": "Item Description",
+    "unit_price": "Unit Price",
+    "tax_rate": "Tax Rate",
+    "irn_number": "IRN Number",
+    "ack_number": "Acknowledgment Number"
+  },
+  "status": {
+    "draft": "Draft",
+    "generated": "Generated",
+    "sent": "Sent",
+    "paid": "Paid",
+    "overdue": "Overdue",
+    "cancelled": "Cancelled"
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "title": "વિશ્લેષણ અને રિપોર્ટ્સ",
+  "description": "વ્યાપક વ્યવસાયિક વિશ્લેષણ અને અનુપાલન રિપોર્ટિંગ",
+  "sections": {
+    "overview": "વ્યવસાયિક ઝાંખી",
+    "tax_analytics": "કર વિશ્લેષણ",
+    "compliance_metrics": "અનુપાલન માપદંડો",
+    "financial_insights": "નાણાકીય અંતર્દૃષ્ટિ",
+    "trend_analysis": "ટ્રેન્ડ વિશ્લેષણ"
+  },
+  "charts": {
+    "revenue_trend": "આવકનો ટ્રેન્ડ",
+    "tax_liability": "કર જવાબદારી",
+    "itc_utilization": "ITC ઉપયોગ",
+    "compliance_score": "અનુપાલન સ્કોર",
+    "payment_status": "ચુકવણીની સ્થિતિ",
+    "regional_performance": "પ્રાદેશિક પ્રદર્શન"
+  },
+  "filters": {
+    "date_range": "તારીખની શ્રેણી",
+    "business_unit": "વ્યવસાયિક એકમ",
+    "tax_type": "કરનો પ્રકાર",
+    "location": "સ્થાન",
+    "customer_segment": "ગ્રાહક વિભાગ"
+  },
+  "export": {
+    "download_report": "રિપોર્ટ ડાઉનલોડ કરો",
+    "schedule_report": "રિપોર્ટ શેડ્યૂલ કરો",
+    "share_insights": "અંતર્દૃષ્ટિ શેર કરો"
+  }
+}

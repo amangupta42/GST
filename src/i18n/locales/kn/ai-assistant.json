@@ -1,0 +1,26 @@
+{
+  "title": "AI ಸಹಾಯಕ",
+  "description": "ನಿಮ್ಮ ಬುದ್ಧಿಮತ್ತೆಯ ಮತ್ತು GST ನಿಯಮಾನುಪಾಲನೆ ಸಹಾಯಕ",
+  "features": {
+    "voice_commands": "ವಾಯ್ಸ್ ಕಮ್ಯಾಂಡ್‌ಗಳು",
+    "rate_finder": "GST ದರ ಹುಡುಕ್ಕೆ",
+    "compliance_guide": "ನಿಯಮಾನುಪಾಲನೆ ಮಾರ್ಗದರ್ಶಕ",
+    "document_analysis": "ದಾಖಲೆ ವಿಶ್ಲೇಷಣೆ",
+    "tax_calculator": "ಕರ ಕ್ಯಾಲ್ಕ್ಯುಲೇಟರ್"
+  },
+  "prompts": {
+    "ask_question": "GST ಗುರಿಯನ್ನು ಏನಾದರೂ ಕೇಳಿ...",
+    "voice_prompt": "ನಿಮ್ಮ ಪ್ರಶ್ನೆಯನ್ನು ಮಾತನಾಡಿ",
+    "upload_document": "ವಿಶ್ಲೇಷಣೆಗಕಿ ದಾಖಲೆಯನ್ನು ಅಪ್‌ಲೋಡ್ ಮಾಡಿ"
+  },
+  "responses": {
+    "thinking": "ನಾನು ಅದನ್ನು ನಿಮಗಗಸರ ವಿಶ್ಲೇಷಿಸುತ್ತೇನೆ...",
+    "found_answer": "ನಿನ್ನ ಫಲಿತಾಂಶ ಇದೆ:",
+    "need_clarification": "ದಯವಿಟ್ಟು ಅಧಿಕ ವಿವರಗಳನ್ನು ನೀಡುತ್ತೀರಾ?",
+    "calculation_result": "ನಿಮ್ಮ ಇನ್‌ಪುಟ್ ಆಧಾರ೚ಲ್ಲಿ, ಗಣನೆ ಇದೆ:"
+  },
+  "languages": {
+    "switch_language": "ಭಾಷೆ ಬದಲಾಯಿಸಿ",
+    "voice_language": "ವಾಯ್ಸ್ ಭಾಷೆ"
+  }
+}

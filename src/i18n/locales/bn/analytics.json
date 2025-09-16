@@ -1,0 +1,31 @@
+{
+  "title": "বিশ্লেষণ এবং প্রতিবেদন",
+  "description": "ব্যাপক ব্যবসায়িক বিশ্লেষণ এবং সম্মতি প্রতিবেদন",
+  "sections": {
+    "overview": "ব্যবসায়িক সংক্ষিপ্তসার",
+    "tax_analytics": "কর বিশ্লেষণ",
+    "compliance_metrics": "সম্মতি মেট্রিক্স",
+    "financial_insights": "আর্থিক অন্তর্দৃষ্টি",
+    "trend_analysis": "প্রবণতা বিশ্লেষণ"
+  },
+  "charts": {
+    "revenue_trend": "আয়ের প্রবণতা",
+    "tax_liability": "কর দায়বদ্ধতা",
+    "itc_utilization": "ITC ব্যবহার",
+    "compliance_score": "সম্মতি স্কোর",
+    "payment_status": "পেমেন্ট অবস্থা",
+    "regional_performance": "আঞ্চলিক কর্মক্ষমতা"
+  },
+  "filters": {
+    "date_range": "তারিখের পরিসর",
+    "business_unit": "ব্যবসায়িক ইউনিট",
+    "tax_type": "করের ধরন",
+    "location": "অবস্থান",
+    "customer_segment": "গ্রাহক বিভাগ"
+  },
+  "export": {
+    "download_report": "প্রতিবেদন ডাউনলোড",
+    "schedule_report": "প্রতিবেদন নির্ধারণ",
+    "share_insights": "অন্তর্দৃষ্টি শেয়ার করুন"
+  }
+}

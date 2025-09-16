@@ -1,0 +1,31 @@
+{
+  "title": "విశ్లేషణలు మరియు రిపోర్టులు",
+  "description": "వ్యాపార విశ్లేషణలు మరియు నియమానుపాలన రిపోర్టింగ్",
+  "sections": {
+    "overview": "వ్యాపార విహంగావలోకనం",
+    "tax_analytics": "పన్ను విశ్లేషణలు",
+    "compliance_metrics": "నియమానుపాలన మెట్రిక్స్",
+    "financial_insights": "ఆర్థిక అంతర్దృష్టిలు",
+    "trend_analysis": "ట్రెండ్ విశ్లేషణ"
+  },
+  "charts": {
+    "revenue_trend": "ఆదాయం ట్రెండ్",
+    "tax_liability": "పన్ను దాయబద్ధత",
+    "itc_utilization": "ITC ఉపయోగం",
+    "compliance_score": "నియమానుపాలన స్కోర్",
+    "payment_status": "చెల్లింపు స్థితి",
+    "regional_performance": "ప్రాంతీయ ప్రదర్శన"
+  },
+  "filters": {
+    "date_range": "తేదీ వ్యాప్తి",
+    "business_unit": "వ్యాపార యూనిట్",
+    "tax_type": "పన్ను రకం",
+    "location": "స్థలం",
+    "customer_segment": "గ్రాహక విభాగం"
+  },
+  "export": {
+    "download_report": "రిపోర్ట్ డౌన్‌లోడ్ చేయండి",
+    "schedule_report": "రిపోర్ట్ నియమించండి",
+    "share_insights": "అంతర్దృష్టిలను శేయర్ చేయండి"
+  }
+}

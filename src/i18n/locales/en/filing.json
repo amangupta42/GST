@@ -1,0 +1,72 @@
+{
+  "gstr1": {
+    "title": "GSTR-1 Return Filing",
+    "description": "Monthly return for outward supplies of taxable goods and services",
+    "steps": {
+      "upload": "Upload Data",
+      "categorize": "Categorize Invoices",
+      "validate": "Validate Data",
+      "preview": "Preview Return",
+      "submit": "Submit Return"
+    },
+    "fields": {
+      "invoice_type": "Invoice Type",
+      "place_of_supply": "Place of Supply",
+      "invoice_value": "Invoice Value",
+      "taxable_value": "Taxable Value",
+      "cgst_amount": "CGST Amount",
+      "sgst_amount": "SGST Amount",
+      "igst_amount": "IGST Amount"
+    }
+  },
+  "gstr3b": {
+    "title": "GSTR-3B Monthly Return",
+    "description": "Monthly summary return with details of outward and inward supplies",
+    "steps": {
+      "outward_supplies": "Outward Supplies",
+      "inward_supplies": "Inward Supplies",
+      "itc_reconciliation": "ITC Reconciliation",
+      "tax_calculation": "Tax Calculation",
+      "preview": "Preview & Verify",
+      "submit": "Submit Return"
+    },
+    "sections": {
+      "supplies": "Details of Outward Supplies",
+      "inward": "Details of Inward Supplies",
+      "itc": "Eligible ITC",
+      "payment": "Payment of Tax"
+    }
+  },
+  "gstr9": {
+    "title": "GSTR-9 Annual Return",
+    "description": "Annual return consolidating all monthly/quarterly returns filed",
+    "steps": {
+      "data_source": "Data Sources",
+      "turnover": "Turnover Reconciliation",
+      "tax_details": "Tax Details",
+      "itc_analysis": "ITC Analysis",
+      "preview": "Preview Return",
+      "submit": "Submit Return"
+    },
+    "sections": {
+      "basic_details": "Basic Details",
+      "turnover_details": "Turnover Details",
+      "itc_details": "ITC Details",
+      "tax_paid": "Tax Paid"
+    }
+  },
+  "common": {
+    "return_period": "Return Period",
+    "due_date": "Due Date",
+    "filing_status": "Filing Status",
+    "late_fee": "Late Fee",
+    "interest": "Interest",
+    "penalty": "Penalty",
+    "acknowledgment": "Acknowledgment Number",
+    "reference_number": "Reference Number",
+    "file_return": "File Return",
+    "save_draft": "Save as Draft",
+    "validate_data": "Validate Data",
+    "download_summary": "Download Summary"
+  }
+}

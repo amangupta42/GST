@@ -1,0 +1,26 @@
+{
+  "title": "AI সহায়ক",
+  "description": "আপনার বুদ্ধিমান GST সম্মতি সঙ্গী",
+  "features": {
+    "voice_commands": "ভয়েস কমান্ড",
+    "rate_finder": "GST হার খোঁজক",
+    "compliance_guide": "সম্মতি গাইড",
+    "document_analysis": "নথি বিশ্লেষণ",
+    "tax_calculator": "কর ক্যালকুলেটর"
+  },
+  "prompts": {
+    "ask_question": "GST সম্পর্কে যেকোনো প্রশ্ন করুন...",
+    "voice_prompt": "আপনার প্রশ্ন বলুন",
+    "upload_document": "বিশ্লেষণের জন্য নথি আপলোড করুন"
+  },
+  "responses": {
+    "thinking": "আমি আপনার জন্য বিশ্লেষণ করছি...",
+    "found_answer": "আমি যা পেয়েছি তা এখানে:",
+    "need_clarification": "আপনি কি আরো বিস্তারিত প্রদান করতে পারেন?",
+    "calculation_result": "আপনার ইনপুটের ভিত্তিতে, এখানে গণনা:"
+  },
+  "languages": {
+    "switch_language": "ভাষা পরিবর্তন",
+    "voice_language": "ভয়েস ভাষা"
+  }
+}

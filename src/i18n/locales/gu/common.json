@@ -1,0 +1,102 @@
+{
+  "nav": {
+    "dashboard": "ડેશબોર્ડ",
+    "filing": "રિટર્ન ફાઇલિંગ",
+    "reconciliation": "ITC મિલાન",
+    "invoices": "ઇન્વૉઇસ વ્યવસ્થાપન",
+    "e_invoice": "ઇ-ઇન્વૉઇસ",
+    "e_way_bill": "ઇ-વે બિલ",
+    "analytics": "વિશ્લેષણ",
+    "ai_assistant": "AI સહાયક",
+    "settings": "સેટિંગ્સ",
+    "notifications": "સૂચનાઓ"
+  },
+  "buttons": {
+    "save": "સાચવો",
+    "cancel": "રદ કરો",
+    "submit": "સબમિટ કરો",
+    "delete": "કાઢી નાખો",
+    "edit": "સંપાદિત કરો",
+    "view": "જુઓ",
+    "download": "ડાઉનલોડ કરો",
+    "upload": "અપલોડ કરો",
+    "search": "શોધો",
+    "filter": "ફિલ્ટર",
+    "refresh": "રિફ્રેશ કરો",
+    "previous": "પાછળ",
+    "next": "આગળ",
+    "close": "બંધ કરો",
+    "confirm": "પુષ્ટિ કરો",
+    "create": "બનાવો",
+    "update": "અપડેટ કરો"
+  },
+  "labels": {
+    "name": "નામ",
+    "email": "ઇમેઇલ",
+    "phone": "ફોન",
+    "address": "સરનામું",
+    "gstin": "GSTIN",
+    "pan": "PAN",
+    "date": "તારીખ",
+    "amount": "રકમ",
+    "status": "સ્થિતિ",
+    "type": "પ્રકાર",
+    "description": "વર્ણન",
+    "total": "કુલ",
+    "subtotal": "ઉપકુલ",
+    "tax": "કર",
+    "discount": "છૂટ",
+    "quantity": "માત્રા",
+    "rate": "દર",
+    "hsn_code": "HSN કોડ",
+    "invoice_number": "ઇન્વૉઇસ નંબર",
+    "due_date": "અંતિમ તારીખ"
+  },
+  "status": {
+    "active": "સક્રિય",
+    "inactive": "નિષ્ક્રિય",
+    "pending": "બાકી",
+    "completed": "પૂર્ણ",
+    "failed": "નિષ્ફળ",
+    "processing": "પ્રક્રિયા અધીન",
+    "cancelled": "રદ થયેલ",
+    "draft": "ડ્રાફ્ટ",
+    "submitted": "સબમિટ થયેલ",
+    "approved": "મંજૂર",
+    "rejected": "અસ્વીકાર"
+  },
+  "language": {
+    "select": "ભાષા પસંદ કરો",
+    "english": "English",
+    "hindi": "हिंदी",
+    "tamil": "தமிழ்",
+    "bengali": "বাংলা",
+    "gujarati": "ગુજરાતી",
+    "marathi": "मराठी",
+    "telugu": "తెలుగు",
+    "kannada": "ಕನ್ನಡ",
+    "malayalam": "മലയാളം"
+  },
+  "currency": {
+    "symbol": "₹",
+    "inr": "INR",
+    "rupees": "રૂપિયા"
+  },
+  "time": {
+    "today": "આજે",
+    "yesterday": "ગઈકાલે",
+    "last_week": "છેલ્લા અઠવાડિયે",
+    "last_month": "છેલ્લા મહિને",
+    "this_year": "આ વર્ષે",
+    "last_year": "ગયા વર્ષે"
+  },
+  "profile": {
+    "profile": "પ્રોફાઇલ",
+    "settings": "સેટિંગ્સ",
+    "logout": "લોગઆઉટ"
+  },
+  "notifications": {
+    "notifications": "સૂચનાઓ",
+    "view_all": "બધી સૂચનાઓ જુઓ"
+  }
+}

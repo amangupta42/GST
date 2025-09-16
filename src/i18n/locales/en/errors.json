@@ -1,0 +1,31 @@
+{
+  "general": {
+    "something_went_wrong": "Something went wrong",
+    "please_try_again": "Please try again",
+    "network_error": "Network connection error",
+    "server_error": "Server error occurred",
+    "permission_denied": "Permission denied",
+    "not_found": "Resource not found"
+  },
+  "validation": {
+    "required_field": "This field is required",
+    "invalid_email": "Please enter a valid email",
+    "invalid_phone": "Please enter a valid phone number",
+    "invalid_gstin": "Please enter a valid GSTIN",
+    "invalid_pan": "Please enter a valid PAN",
+    "invalid_amount": "Please enter a valid amount",
+    "invalid_date": "Please enter a valid date",
+    "future_date_not_allowed": "Future dates are not allowed"
+  },
+  "auth": {
+    "login_failed": "Login failed",
+    "session_expired": "Your session has expired",
+    "access_denied": "Access denied"
+  },
+  "filing": {
+    "upload_failed": "File upload failed",
+    "validation_failed": "Data validation failed",
+    "submission_failed": "Return submission failed",
+    "invalid_file_format": "Invalid file format"
+  }
+}

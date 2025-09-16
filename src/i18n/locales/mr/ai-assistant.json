@@ -1,0 +1,26 @@
+{
+  "title": "AI सहाय्यक",
+  "description": "तुमचा बुद्धिमान GST नियमानुवर्तन साथी",
+  "features": {
+    "voice_commands": "व्हॉइस कमांड",
+    "rate_finder": "GST दर शोधक",
+    "compliance_guide": "नियमानुवर्तन मार्गदर्शक",
+    "document_analysis": "दस्तावेज विश्लेषण",
+    "tax_calculator": "कर कॅल्कुलेटर"
+  },
+  "prompts": {
+    "ask_question": "GST बद्दल काहीही विचारा...",
+    "voice_prompt": "तुमचा प्रश्न बोला",
+    "upload_document": "विश्लेषणासाठी दस्तावेज अपलोड करा"
+  },
+  "responses": {
+    "thinking": "मी तुमच्यासाठी विश्लेषण करतोय...",
+    "found_answer": "मला हे सापडले:",
+    "need_clarification": "कृपया अधिक तपशील द्याल?",
+    "calculation_result": "तुमच्या इनपुटवर आधारित, ही गणना आहे:"
+  },
+  "languages": {
+    "switch_language": "भाषा बदला",
+    "voice_language": "व्हॉइस भाषा"
+  }
+}

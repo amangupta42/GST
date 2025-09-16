@@ -1,0 +1,102 @@
+{
+  "nav": {
+    "dashboard": "डैशबोर्ड",
+    "filing": "रिटर्न फाइलिंग",
+    "reconciliation": "आईटीसी मिलान",
+    "invoices": "चालान प्रबंधन",
+    "e_invoice": "ई-चालान",
+    "e_way_bill": "ई-वे बिल",
+    "analytics": "विश्लेषणात्मक",
+    "ai_assistant": "एआई सहायक",
+    "settings": "सेटिंग्स",
+    "notifications": "सूचनाएं"
+  },
+  "buttons": {
+    "save": "सेव करें",
+    "cancel": "रद्द करें",
+    "submit": "जमा करें",
+    "delete": "हटाएं",
+    "edit": "संपादित करें",
+    "view": "देखें",
+    "download": "डाउनलोड करें",
+    "upload": "अपलोड करें",
+    "search": "खोजें",
+    "filter": "फिल्टर करें",
+    "refresh": "रीफ्रेश करें",
+    "previous": "पिछला",
+    "next": "अगला",
+    "close": "बंद करें",
+    "confirm": "पुष्टि करें",
+    "create": "बनाएं",
+    "update": "अपडेट करें"
+  },
+  "labels": {
+    "name": "नाम",
+    "email": "ईमेल",
+    "phone": "फोन",
+    "address": "पता",
+    "gstin": "जीएसटीआईएन",
+    "pan": "पैन",
+    "date": "दिनांक",
+    "amount": "राशि",
+    "status": "स्थिति",
+    "type": "प्रकार",
+    "description": "विवरण",
+    "total": "कुल",
+    "subtotal": "उप योग",
+    "tax": "कर",
+    "discount": "छूट",
+    "quantity": "मात्रा",
+    "rate": "दर",
+    "hsn_code": "एचएसएन कोड",
+    "invoice_number": "चालान नंबर",
+    "due_date": "देय तिथि"
+  },
+  "status": {
+    "active": "सक्रिय",
+    "inactive": "निष्क्रिय",
+    "pending": "लंबित",
+    "completed": "पूर्ण",
+    "failed": "असफल",
+    "processing": "प्रक्रिया में",
+    "cancelled": "रद्द",
+    "draft": "मसौदा",
+    "submitted": "जमा किया गया",
+    "approved": "स्वीकृत",
+    "rejected": "अस्वीकृत"
+  },
+  "language": {
+    "select": "भाषा चुनें",
+    "english": "English",
+    "hindi": "हिंदी",
+    "tamil": "தமிழ்",
+    "bengali": "বাংলা",
+    "gujarati": "ગુજરાતી",
+    "marathi": "मराठी",
+    "telugu": "తెలుగు",
+    "kannada": "ಕನ್ನಡ",
+    "malayalam": "മലയാളം"
+  },
+  "currency": {
+    "symbol": "₹",
+    "inr": "आईएनआर",
+    "rupees": "रुपए"
+  },
+  "time": {
+    "today": "आज",
+    "yesterday": "कल",
+    "last_week": "पिछले सप्ताह",
+    "last_month": "पिछले महीने",
+    "this_year": "इस साल",
+    "last_year": "पिछले साल"
+  },
+  "profile": {
+    "profile": "प्रोफ़ाइल",
+    "settings": "सेटिंग्स",
+    "logout": "लॉगआउट"
+  },
+  "notifications": {
+    "notifications": "सूचनाएं",
+    "view_all": "सभी सूचनाएं देखें"
+  }
+}

@@ -24,12 +24,15 @@ import {
   Logout,
   Person,
 } from '@mui/icons-material';
+import { LanguageSwitcher } from '@/components/ui/LanguageSwitcher';
+import { useTranslations } from 'next-intl';
 
 interface TopNavigationProps {
   onMenuClick: () => void;
 }
 
 export function TopNavigation({ onMenuClick }: TopNavigationProps) {
+  const t = useTranslations('common');
   const theme = useTheme();
   const isMobile = useMediaQuery(theme.breakpoints.down('md'));
   const [anchorEl, setAnchorEl] = useState<null | HTMLElement>(null);
@@ -82,12 +85,15 @@ export function TopNavigation({ onMenuClick }: TopNavigationProps) {
           {/* Page title area */}
           <Box sx={{ flexGrow: 1, display: 'flex', alignItems: 'center' }}>
             <Typography variant="h6" component="div" fontWeight="medium">
-              Dashboard
+              {t('nav.dashboard')}
             </Typography>
           </Box>
 
           {/* Right side actions */}
           <Box sx={{ display: 'flex', alignItems: 'center', gap: 1 }}>
+            {/* Language Switcher */}
+            <LanguageSwitcher compact />
+
             {/* Notifications */}
             <IconButton
               color="inherit"
@@ -152,20 +158,20 @@ export function TopNavigation({ onMenuClick }: TopNavigationProps) {
           <ListItemIcon>
             <Person fontSize="small" />
           </ListItemIcon>
-          Profile
+          {t('profile.profile')}
         </MenuItem>
         <MenuItem>
           <ListItemIcon>
             <Settings fontSize="small" />
           </ListItemIcon>
-          Settings
+          {t('profile.settings')}
         </MenuItem>
         <Divider />
         <MenuItem>
           <ListItemIcon>
             <Logout fontSize="small" />
           </ListItemIcon>
-          Logout
+          {t('profile.logout')}
         </MenuItem>
       </Menu>
 
@@ -187,7 +193,7 @@ export function TopNavigation({ onMenuClick }: TopNavigationProps) {
       >
         <Box sx={{ px: 2, py: 1.5, borderBottom: '1px solid', borderColor: 'divider' }}>
           <Typography variant="subtitle2" fontWeight="medium">
-            Notifications
+            {t('notifications.notifications')}
           </Typography>
         </Box>
 
@@ -227,7 +233,7 @@ export function TopNavigation({ onMenuClick }: TopNavigationProps) {
         <Divider />
         <MenuItem sx={{ justifyContent: 'center' }}>
           <Typography variant="body2" color="primary">
-            View All Notifications
+            {t('notifications.view_all')}
           </Typography>
         </MenuItem>
       </Menu>

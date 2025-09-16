@@ -1,0 +1,38 @@
+{
+  "title": "जीएसटी अनुपालन डैशबोर्ड",
+  "subtitle": "रीयल-टाइम जीएसटी अनुपालन निगरानी और प्रबंधन",
+  "kpis": {
+    "total_liability": "कुल जीएसटी देयता",
+    "itc_available": "उपलब्ध आईटीसी",
+    "compliance_score": "अनुपालन स्कोर",
+    "pending_returns": "लंबित रिटर्न",
+    "current_month": "वर्तमान महीना",
+    "vs_last_month": "पिछले महीने की तुलना में"
+  },
+  "quick_actions": {
+    "title": "त्वरित कार्य",
+    "file_gstr1": "जीएसटीआर-1 फाइल करें",
+    "file_gstr3b": "जीएसटीआर-3बी फाइल करें",
+    "reconcile_itc": "आईटीसी मिलान करें",
+    "generate_invoice": "ई-चालान बनाएं",
+    "create_eway_bill": "ई-वे बिल बनाएं",
+    "view_analytics": "विश्लेषण देखें"
+  },
+  "charts": {
+    "gst_liability": "जीएसटी देयता रुझान",
+    "itc_utilization": "आईटीसी उपयोग",
+    "compliance_breakdown": "अनुपालन विवरण",
+    "filing_status": "फाइलिंग स्थिति समयरेखा"
+  },
+  "notifications": {
+    "title": "हाल की सूचनाएं",
+    "view_all": "सभी देखें",
+    "mark_read": "पढ़े गए के रूप में चिह्नित करें",
+    "no_notifications": "कोई नई सूचना नहीं"
+  },
+  "widgets": {
+    "configure": "विजेट कॉन्फ़िगर करें",
+    "refresh": "डेटा रीफ्रेश करें",
+    "last_updated": "अंतिम बार अपडेट किया गया"
+  }
+}

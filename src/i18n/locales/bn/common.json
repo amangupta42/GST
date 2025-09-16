@@ -1,0 +1,102 @@
+{
+  "nav": {
+    "dashboard": "ড্যাশবোর্ড",
+    "filing": "রিটার্ন দাখিল",
+    "reconciliation": "ITC মিলকরণ",
+    "invoices": "চালান ব্যবস্থাপনা",
+    "e_invoice": "ই-চালান",
+    "e_way_bill": "ই-ওয়ে বিল",
+    "analytics": "বিশ্লেষণ",
+    "ai_assistant": "AI সহায়ক",
+    "settings": "সেটিংস",
+    "notifications": "বিজ্ঞপ্তি"
+  },
+  "buttons": {
+    "save": "সংরক্ষণ",
+    "cancel": "বাতিল",
+    "submit": "জমা দিন",
+    "delete": "মুছে ফেলুন",
+    "edit": "সম্পাদনা",
+    "view": "দেখুন",
+    "download": "ডাউনলোড",
+    "upload": "আপলোড",
+    "search": "অনুসন্ধান",
+    "filter": "ফিল্টার",
+    "refresh": "রিফ্রেশ",
+    "previous": "পূর্ববর্তী",
+    "next": "পরবর্তী",
+    "close": "বন্ধ",
+    "confirm": "নিশ্চিত",
+    "create": "তৈরি করুন",
+    "update": "আপডেট"
+  },
+  "labels": {
+    "name": "নাম",
+    "email": "ইমেইল",
+    "phone": "ফোন",
+    "address": "ঠিকানা",
+    "gstin": "GSTIN",
+    "pan": "PAN",
+    "date": "তারিখ",
+    "amount": "পরিমাণ",
+    "status": "অবস্থা",
+    "type": "ধরন",
+    "description": "বিবরণ",
+    "total": "মোট",
+    "subtotal": "উপ-মোট",
+    "tax": "কর",
+    "discount": "ছাড়",
+    "quantity": "পরিমাণ",
+    "rate": "হার",
+    "hsn_code": "HSN কোড",
+    "invoice_number": "চালান নম্বর",
+    "due_date": "নির্ধারিত তারিখ"
+  },
+  "status": {
+    "active": "সক্রিয়",
+    "inactive": "নিষ্ক্রিয়",
+    "pending": "অপেক্ষারত",
+    "completed": "সম্পন্ন",
+    "failed": "ব্যর্থ",
+    "processing": "প্রক্রিয়াধীন",
+    "cancelled": "বাতিল",
+    "draft": "খসড়া",
+    "submitted": "জমা দেওয়া",
+    "approved": "অনুমোদিত",
+    "rejected": "প্রত্যাখ্যাত"
+  },
+  "language": {
+    "select": "ভাষা নির্বাচন করুন",
+    "english": "English",
+    "hindi": "हिंदी",
+    "tamil": "தமிழ்",
+    "bengali": "বাংলা",
+    "gujarati": "ગુજરાતી",
+    "marathi": "मराठी",
+    "telugu": "తెలుగు",
+    "kannada": "ಕನ್ನಡ",
+    "malayalam": "മലയാളം"
+  },
+  "currency": {
+    "symbol": "₹",
+    "inr": "INR",
+    "rupees": "টাকা"
+  },
+  "time": {
+    "today": "আজ",
+    "yesterday": "গতকাল",
+    "last_week": "গত সপ্তাহে",
+    "last_month": "গত মাসে",
+    "this_year": "এই বছরে",
+    "last_year": "গত বছরে"
+  },
+  "profile": {
+    "profile": "প্রোফাইল",
+    "settings": "সেটিংস",
+    "logout": "লগআউট"
+  },
+  "notifications": {
+    "notifications": "বিজ্ঞপ্তি",
+    "view_all": "সমস্ত বিজ্ঞপ্তি দেখুন"
+  }
+}

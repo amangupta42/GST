@@ -1,0 +1,38 @@
+{
+  "title": "ITC సమన్వయం",
+  "description": "GSTR-2A/2B డేటాతో ఇన్‌పుట్ ట౅క్స్ క్రెడిట్ సమన్వయం",
+  "sections": {
+    "purchase_invoices": "పరెధాస్ ఇన్‌వౌయస్‌లు",
+    "gstr2a_data": "GSTR-2A డేటా",
+    "gstr2b_data": "GSTR-2B డేటా",
+    "matched_invoices": "మాచ్ అయిన ఇన్‌వౌయస్‌లు",
+    "unmatched_invoices": "మాచ్ కాని ఇన్‌వౌయస్‌లు",
+    "disputed_invoices": "వివాదిత ఇన్‌వౌయస్‌లు"
+  },
+  "actions": {
+    "upload_invoices": "పరెధాస్ ఇన్‌వౌయస్‌లను అప్‌లోడ్ చేయండి",
+    "fetch_gstr2a": "GSTR-2A తెచ్చండి",
+    "fetch_gstr2b": "GSTR-2B తెచ్చండి",
+    "start_reconciliation": "సమన్వయం ప్రారంభించండి",
+    "view_details": "వివరాలు చూడండి",
+    "mark_disputed": "వివాదితంగా గుర్తు చేయండి",
+    "accept_match": "మాచ్ స్వీకరించండి",
+    "reject_match": "మాచ్ తిరస్కరించండి"
+  },
+  "status": {
+    "matched": "మాచ్ అయింది",
+    "unmatched": "మాచ్ కాలేదు",
+    "disputed": "వివాదితం",
+    "pending": "రివ్యూ వేచి ఉంది",
+    "accepted": "స్వీకరించింది",
+    "rejected": "తిరస్కరించింది"
+  },
+  "fields": {
+    "supplier_gstin": "పురవరిదార GSTIN",
+    "invoice_date": "ఇన్‌వౌయస్ తేదీ",
+    "invoice_value": "ఇన్‌వౌయస్ విలువ",
+    "itc_amount": "ITC మొత్తం",
+    "match_confidence": "మాచ్ విశ్వాసం",
+    "difference_amount": "వ్యత్యాస మొత్తం"
+  }
+}

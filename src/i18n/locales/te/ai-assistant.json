@@ -1,0 +1,26 @@
+{
+  "title": "AI సహాయకుడు",
+  "description": "మీ బుద్ధిమత్తైన GST నియమానుపాలన సహాయకుడు",
+  "features": {
+    "voice_commands": "వాయ్స్ కమాండ్స్",
+    "rate_finder": "GST రేట్ ఫైండర్",
+    "compliance_guide": "నియమానుపాలన గైడ్",
+    "document_analysis": "దస్తావేజు విశ్లేషణ",
+    "tax_calculator": "పన్ను క౅ల్కులేటర్"
+  },
+  "prompts": {
+    "ask_question": "GST గురించి ఏది అనా అడగండి...",
+    "voice_prompt": "మీ ప్రశ్నను మాట్లాడండి",
+    "upload_document": "విశ్లేషణ కోసం దస్తావేజు అప్‌లోడ్ చేయండి"
+  },
+  "responses": {
+    "thinking": "నేను మీ కోసం విశ్లేషించస్తున్నాను...",
+    "found_answer": "నాకు కనుగొన్నది ఇది:",
+    "need_clarification": "దయచేసి అధిక వివరాలు ఇవ్వగలరా?",
+    "calculation_result": "మీ ఇన్‌పుట్ ఆధారంగా, గణన ఇది:"
+  },
+  "languages": {
+    "switch_language": "భాష మార్చండి",
+    "voice_language": "వాయ్స్ భాష"
+  }
+}

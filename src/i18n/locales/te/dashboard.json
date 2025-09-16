@@ -1,0 +1,38 @@
+{
+  "title": "GST నియమానుపాలన డ్యాష్‌బోర్డ్",
+  "subtitle": "రియల్-టైమ్ GST నియమానుపాలన నిరీక్షణ మరియు నిర్వహణ",
+  "kpis": {
+    "total_liability": "మొత్తం GST దాయబద్ధత",
+    "itc_available": "ITC లభ్యం",
+    "compliance_score": "నియమానుపాలన స్కోర్",
+    "pending_returns": "వేచి ఉన్న రిటర్న్‌లు",
+    "current_month": "ఈ నెల",
+    "vs_last_month": "గత నెల తో తులనలో"
+  },
+  "quick_actions": {
+    "title": "వేగ క్రియలు",
+    "file_gstr1": "GSTR-1 ఫైల్ చేయండి",
+    "file_gstr3b": "GSTR-3B ఫైల్ చేయండి",
+    "reconcile_itc": "ITC సమన్వయం",
+    "generate_invoice": "ఇ-ఇన్‌వౌయస్ ఉత్పత్తి",
+    "create_eway_bill": "ఇ-వే బిల్ సృష్టి",
+    "view_analytics": "విశ్లేషణలు చూడండి"
+  },
+  "charts": {
+    "gst_liability": "GST దాయబద్ధత ట్రెండ్",
+    "itc_utilization": "ITC ఉపయోగం",
+    "compliance_breakdown": "నియమానుపాలన విభాగం",
+    "filing_status": "ఫైలింగ్ స్థితి టైమ్‌లైన్"
+  },
+  "notifications": {
+    "title": "ఇక్కడ నోటిఫికేషన్‌లు",
+    "view_all": "అన్ని చూడండి",
+    "mark_read": "చదివినదిగా గుర్తు చేయండి",
+    "no_notifications": "కొత్త నోటిఫికేషన్‌లు లేవు"
+  },
+  "widgets": {
+    "configure": "విజెట్‌లను కాన్‌ఫిగర్ చేయండి",
+    "refresh": "డేటా రిఫ్రెష్ చేయండి",
+    "last_updated": "చివరిగా అప్‌డేట్ అయింది"
+  }
+}

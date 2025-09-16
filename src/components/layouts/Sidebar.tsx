@@ -26,67 +26,67 @@ import {
   LocalShipping as EWayBillIcon,
   SmartToy as AIAssistantIcon,
 } from '@mui/icons-material';
-import Link from 'next/link';
-import { usePathname } from 'next/navigation';
+import { Link, usePathname } from '@/i18n';
+import { useTranslations } from 'next-intl';
 
 interface SidebarProps {
   open: boolean;
   onClose: () => void;
 }
 
-const navigationItems = [
+const getNavigationItems = (t: any) => [
   {
-    text: 'Dashboard',
+    textKey: 'nav.dashboard',
     icon: <DashboardIcon />,
     href: '/dashboard',
   },
   {
-    text: 'Return Filing',
+    textKey: 'nav.filing',
     icon: <FilingIcon />,
     href: '/filing',
     children: [
-      { text: 'GSTR-1', href: '/filing/gstr-1' },
-      { text: 'GSTR-3B', href: '/filing/gstr-3b' },
-      { text: 'GSTR-9', href: '/filing/gstr-9' },
+      { textKey: 'GSTR-1', href: '/filing/gstr-1' },
+      { textKey: 'GSTR-3B', href: '/filing/gstr-3b' },
+      { textKey: 'GSTR-9', href: '/filing/gstr-9' },
     ],
   },
   {
-    text: 'ITC Reconciliation',
+    textKey: 'nav.reconciliation',
     icon: <ReconciliationIcon />,
     href: '/reconciliation',
   },
   {
-    text: 'Invoice Management',
+    textKey: 'nav.invoices',
     icon: <InvoiceIcon />,
     href: '/invoices',
   },
   {
-    text: 'E-Invoice',
+    textKey: 'nav.e_invoice',
     icon: <EInvoiceIcon />,
     href: '/e-invoice',
   },
   {
-    text: 'E-way Bill',
+    textKey: 'nav.e_way_bill',
     icon: <EWayBillIcon />,
     href: '/e-way-bill',
   },
   {
-    text: 'Analytics',
+    textKey: 'nav.analytics',
     icon: <AnalyticsIcon />,
     href: '/analytics',
   },
   {
-    text: 'AI Assistant',
+    textKey: 'nav.ai_assistant',
     icon: <AIAssistantIcon />,
     href: '/ai-assistant',
   },
   {
-    text: 'Notifications',
+    textKey: 'nav.notifications',
     icon: <NotificationIcon />,
     href: '/notifications',
   },
   {
-    text: 'Settings',
+    textKey: 'nav.settings',
     icon: <SettingsIcon />,
     href: '/settings',
   },
@@ -95,17 +95,19 @@ const navigationItems = [
 const DRAWER_WIDTH = 280;
 
 export function Sidebar({ open, onClose }: SidebarProps) {
+  const t = useTranslations('common');
   const theme = useTheme();
   const isMobile = useMediaQuery(theme.breakpoints.down('md'));
   const pathname = usePathname();
   const [expandedItems, setExpandedItems] = useState<string[]>([]);
+  const navigationItems = getNavigationItems(t);
 
   const handleItemClick = (item: typeof navigationItems[0]) => {
     if (item.children) {
       setExpandedItems((prev) =>
-        prev.includes(item.text)
-          ? prev.filter((i) => i !== item.text)
-          : [...prev, item.text]
+        prev.includes(item.textKey)
+          ? prev.filter((i) => i !== item.textKey)
+          : [...prev, item.textKey]
       );
     } else if (isMobile) {
       onClose();
@@ -134,7 +136,7 @@ export function Sidebar({ open, onClose }: SidebarProps) {
       <Box sx={{ flex: 1, overflow: 'auto' }}>
         <List sx={{ px: 2, py: 1 }}>
           {navigationItems.map((item) => (
-            <Box key={item.text}>
+            <Box key={item.textKey}>
               <ListItem disablePadding sx={{ mb: 0.5 }}>
                 <ListItemButton
                   component={item.children ? 'div' : Link}
@@ -163,7 +165,7 @@ export function Sidebar({ open, onClose }: SidebarProps) {
                     {item.icon}
                   </ListItemIcon>
                   <ListItemText
-                    primary={item.text}
+                    primary={t(item.textKey)}
                     primaryTypographyProps={{
                       fontSize: '0.875rem',
                       fontWeight: isActive(item.href) ? 600 : 400,
@@ -173,10 +175,10 @@ export function Sidebar({ open, onClose }: SidebarProps) {
               </ListItem>
 
               {/* Submenu items */}
-              {item.children && expandedItems.includes(item.text) && (
+              {item.children && expandedItems.includes(item.textKey) && (
                 <List sx={{ pl: 2 }}>
                   {item.children.map((child) => (
-                    <ListItem key={child.text} disablePadding sx={{ mb: 0.5 }}>
+                    <ListItem key={child.textKey} disablePadding sx={{ mb: 0.5 }}>
                       <ListItemButton
                         component={Link}
                         href={child.href}
@@ -196,7 +198,7 @@ export function Sidebar({ open, onClose }: SidebarProps) {
                         }}
                       >
                         <ListItemText
-                          primary={child.text}
+                          primary={child.textKey}
                           primaryTypographyProps={{
                             fontSize: '0.8125rem',
                             fontWeight: isActive(child.href) ? 600 : 400,

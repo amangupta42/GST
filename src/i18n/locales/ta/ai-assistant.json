@@ -1,0 +1,26 @@
+{
+  "title": "AI உதவியாளர்",
+  "description": "உங்கள் அறிவார்ந்த GST இணக்க துணைவர்",
+  "features": {
+    "voice_commands": "குரல் கட்டளைகள்",
+    "rate_finder": "GST விகித கண்டுபிடிப்பான்",
+    "compliance_guide": "இணக்க வழிகாட்டி",
+    "document_analysis": "ஆவண பகுப்பாய்வு",
+    "tax_calculator": "வரி கணக்கீட்டான்"
+  },
+  "prompts": {
+    "ask_question": "GST பற்றி எதையும் கேளுங்கள்...",
+    "voice_prompt": "உங்கள் கேள்வியை சொல்லுங்கள்",
+    "upload_document": "பகுப்பாய்விற்காக ஆவணத்தை பதிவேற்றவும்"
+  },
+  "responses": {
+    "thinking": "உங்களுக்காக அதை பகுப்பாய்வு செய்கிறேன்...",
+    "found_answer": "நான் கண்டறிந்தது இங்கே:",
+    "need_clarification": "மேலும் விவரங்களை தரமுடியுமா?",
+    "calculation_result": "உங்கள் உள்ளீட்டின் அடிப்படையில், இங்கே கணக்கீடு:"
+  },
+  "languages": {
+    "switch_language": "மொழி மாற்று",
+    "voice_language": "குரல் மொழி"
+  }
+}

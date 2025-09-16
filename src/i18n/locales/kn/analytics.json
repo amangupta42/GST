@@ -1,0 +1,31 @@
+{
+  "title": "ವಿಶ್ಲೇಷಣೆಗಳು ಮರಿಯು ರಿಪೋರ್ಟ್‌ಗಳು",
+  "description": "ವ್ಯವಸಾಯ ವಿಶ್ಲೇಷಣೆಗಳು ಮರಿಯು ನಿಯಮಾನುಪಾಲನೆ ರಿಪೋರ್ಟಿಂಗ್",
+  "sections": {
+    "overview": "ವ್ಯವಸಾಯ ವಿಹಂಗಾವಲೋಕನ",
+    "tax_analytics": "ಕರ ವಿಶ್ಲೇಷಣೆಗಳು",
+    "compliance_metrics": "ನಿಯಮಾನುಪಾಲನೆ ಮೆಟ್ರಿಕ್‌ಗಳು",
+    "financial_insights": "ಆರ್ಥಿಕ ಅಂತರ್ದೃಷ್ಟಿಗಳು",
+    "trend_analysis": "ಟ್ರೆಂಡ್ ವಿಶ್ಲೇಷಣೆ"
+  },
+  "charts": {
+    "revenue_trend": "ಆದಾಯ ಟ್ರೆಂಡ್",
+    "tax_liability": "ಕರ ದಾಯಬದ್ಧತೆ",
+    "itc_utilization": "ITC ವಿನಿಯೋಗ",
+    "compliance_score": "ನಿಯಮಾನುಪಾಲನೆ ಗುಣ",
+    "payment_status": "ಸಂದಾಯ ಸ್ಥಿತಿ",
+    "regional_performance": "ಪ್ರಾಂತೀಯ ಕಾರ್ಯನಿರ್ವದನೆ"
+  },
+  "filters": {
+    "date_range": "ದಿನಾಂಕ ವ್ಯಾಪ್ತಿ",
+    "business_unit": "ವ್ಯವಸಾಯ ಏಕಕ",
+    "tax_type": "ಕರ ಪ್ರಕಾರ",
+    "location": "ಸ್ಥಳ",
+    "customer_segment": "ಗುರಿ ವಿಭಾಗ"
+  },
+  "export": {
+    "download_report": "ರಿಪೋರ್ಟ್ ಡೌನ್‌ಲೋಡ್ ಮಾಡಿ",
+    "schedule_report": "ರಿಪೋರ್ಟ್ ನಿಯಮಾವಳಿ ಮಾಡಿ",
+    "share_insights": "ಅಂತರ್ದೃಷ್ಟಿಗಳನ್ನು ಶೇರ್ ಮಾಡಿ"
+  }
+}
