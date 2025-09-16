@@ -43,7 +43,7 @@ import {
   Switch,
   FormControlLabel,
   Autocomplete,
-  DatePicker,
+  // DatePicker,
   Accordion,
   AccordionSummary,
   AccordionDetails
@@ -257,12 +257,12 @@ export function InvoiceManagementSystem({ onComplete }: InvoiceManagementSystemP
   const filteredInvoices = useMemo(() => {
     return invoices.filter(invoice => {
       const matchesSearch = invoice.invoiceNumber.toLowerCase().includes(searchTerm.toLowerCase()) ||
-                           invoice.customerName.toLowerCase().includes(searchTerm.toLowerCase()) ||
-                           invoice.customerGstin.toLowerCase().includes(searchTerm.toLowerCase());
-      
+        invoice.customerName.toLowerCase().includes(searchTerm.toLowerCase()) ||
+        invoice.customerGstin.toLowerCase().includes(searchTerm.toLowerCase());
+
       const matchesStatus = filterStatus === 'all' || invoice.status === filterStatus;
       const matchesType = filterType === 'all' || invoice.invoiceType === filterType;
-      
+
       return matchesSearch && matchesStatus && matchesType;
     });
   }, [invoices, searchTerm, filterStatus, filterType]);
@@ -274,11 +274,11 @@ export function InvoiceManagementSystem({ onComplete }: InvoiceManagementSystemP
     const sent = invoices.filter(inv => inv.status === 'sent').length;
     const paid = invoices.filter(inv => inv.status === 'paid').length;
     const overdue = invoices.filter(inv => inv.status === 'overdue').length;
-    
+
     const totalAmount = invoices.reduce((sum, inv) => sum + inv.totalAmount, 0);
     const pendingAmount = invoices.filter(inv => inv.paymentStatus === 'pending').reduce((sum, inv) => sum + inv.totalAmount, 0);
     const paidAmount = invoices.filter(inv => inv.paymentStatus === 'paid').reduce((sum, inv) => sum + inv.totalAmount, 0);
-    
+
     const eInvoicesGenerated = invoices.filter(inv => inv.eInvoiceDetails?.status === 'generated').length;
     const eWayBillsGenerated = invoices.filter(inv => inv.eWayBillDetails?.status === 'generated').length;
 
@@ -314,14 +314,14 @@ export function InvoiceManagementSystem({ onComplete }: InvoiceManagementSystemP
 
   const handleBulkAction = useCallback(async (action: string) => {
     if (selectedInvoices.length === 0) return;
-    
+
     setLoading(true);
     try {
       await new Promise(resolve => setTimeout(resolve, 2000));
-      
+
       switch (action) {
         case 'generate-einvoice':
-          setInvoices(prev => prev.map(inv => 
+          setInvoices(prev => prev.map(inv =>
             selectedInvoices.includes(inv.id) ? {
               ...inv,
               eInvoiceDetails: {
@@ -334,9 +334,9 @@ export function InvoiceManagementSystem({ onComplete }: InvoiceManagementSystemP
             } : inv
           ));
           break;
-          
+
         case 'generate-ewaybill':
-          setInvoices(prev => prev.map(inv => 
+          setInvoices(prev => prev.map(inv =>
             selectedInvoices.includes(inv.id) ? {
               ...inv,
               eWayBillDetails: {
@@ -347,20 +347,20 @@ export function InvoiceManagementSystem({ onComplete }: InvoiceManagementSystemP
             } : inv
           ));
           break;
-          
+
         case 'mark-sent':
-          setInvoices(prev => prev.map(inv => 
+          setInvoices(prev => prev.map(inv =>
             selectedInvoices.includes(inv.id) ? { ...inv, status: 'sent' as const } : inv
           ));
           break;
-          
+
         case 'export':
           // Simulate export
           const exportData = invoices.filter(inv => selectedInvoices.includes(inv.id));
           console.log('Exporting:', exportData);
           break;
       }
-      
+
       setSelectedInvoices([]);
       setBulkActionDialog({ open: false, action: '' });
     } finally {
@@ -679,14 +679,14 @@ export function InvoiceManagementSystem({ onComplete }: InvoiceManagementSystemP
                         </Typography>
                       </TableCell>
                       <TableCell>
-                        <Chip 
+                        <Chip
                           size="small"
                           label={invoice.status.toUpperCase()}
                           color={getStatusColor(invoice.status)}
                         />
                       </TableCell>
                       <TableCell>
-                        <Chip 
+                        <Chip
                           size="small"
                           label={invoice.paymentStatus.toUpperCase()}
                           color={getPaymentStatusColor(invoice.paymentStatus)}
@@ -696,7 +696,7 @@ export function InvoiceManagementSystem({ onComplete }: InvoiceManagementSystemP
                       <TableCell>
                         {invoice.eInvoiceDetails ? (
                           <Tooltip title={`IRN: ${invoice.eInvoiceDetails.irn}`}>
-                            <Chip 
+                            <Chip
                               size="small"
                               icon={<CheckCircle />}
                               label="Generated"
@@ -705,7 +705,7 @@ export function InvoiceManagementSystem({ onComplete }: InvoiceManagementSystemP
                             />
                           </Tooltip>
                         ) : (
-                          <Chip 
+                          <Chip
                             size="small"
                             label="Pending"
                             color="default"
@@ -716,7 +716,7 @@ export function InvoiceManagementSystem({ onComplete }: InvoiceManagementSystemP
                       <TableCell>
                         {invoice.eWayBillDetails ? (
                           <Tooltip title={`EWB: ${invoice.eWayBillDetails.ewbNo}`}>
-                            <Chip 
+                            <Chip
                               size="small"
                               icon={<CheckCircle />}
                               label="Generated"
@@ -725,7 +725,7 @@ export function InvoiceManagementSystem({ onComplete }: InvoiceManagementSystemP
                             />
                           </Tooltip>
                         ) : (
-                          <Chip 
+                          <Chip
                             size="small"
                             label="Not Required"
                             color="default"
@@ -764,7 +764,7 @@ export function InvoiceManagementSystem({ onComplete }: InvoiceManagementSystemP
             <Typography variant="h6" gutterBottom>
               Draft Invoices ({invoices.filter(inv => inv.status === 'draft').length})
             </Typography>
-            
+
             <Alert severity="info" sx={{ mb: 2 }}>
               <Typography variant="body2">
                 Complete your draft invoices to send them to customers and generate e-invoices.
@@ -834,21 +834,21 @@ export function InvoiceManagementSystem({ onComplete }: InvoiceManagementSystemP
                           {invoiceSummary.eInvoicesGenerated}
                         </Typography>
                       </Box>
-                      <LinearProgress 
-                        variant="determinate" 
+                      <LinearProgress
+                        variant="determinate"
                         value={(invoiceSummary.eInvoicesGenerated / invoiceSummary.total) * 100}
                         color="success"
                         sx={{ mb: 2 }}
                       />
-                      
+
                       <Box sx={{ display: 'flex', justifyContent: 'space-between', mb: 1 }}>
                         <Typography variant="body2">Pending</Typography>
                         <Typography variant="body2" fontWeight="bold">
                           {invoiceSummary.total - invoiceSummary.eInvoicesGenerated}
                         </Typography>
                       </Box>
-                      <LinearProgress 
-                        variant="determinate" 
+                      <LinearProgress
+                        variant="determinate"
                         value={((invoiceSummary.total - invoiceSummary.eInvoicesGenerated) / invoiceSummary.total) * 100}
                         color="warning"
                       />
@@ -919,7 +919,7 @@ export function InvoiceManagementSystem({ onComplete }: InvoiceManagementSystemP
                             {new Date(invoice.eInvoiceDetails?.ackDate || '').toLocaleDateString()}
                           </TableCell>
                           <TableCell>
-                            <Chip 
+                            <Chip
                               size="small"
                               label={invoice.eInvoiceDetails?.status.toUpperCase()}
                               color="success"
@@ -1014,21 +1014,21 @@ export function InvoiceManagementSystem({ onComplete }: InvoiceManagementSystemP
                         <TableCell>{invoice.dueDate}</TableCell>
                         <TableCell>
                           {daysOverdue > 0 ? (
-                            <Chip 
-                              size="small" 
+                            <Chip
+                              size="small"
                               label={`${daysOverdue} days`}
                               color="error"
                             />
                           ) : (
-                            <Chip 
-                              size="small" 
+                            <Chip
+                              size="small"
                               label="Current"
                               color="success"
                             />
                           )}
                         </TableCell>
                         <TableCell>
-                          <Chip 
+                          <Chip
                             size="small"
                             label={invoice.paymentStatus.toUpperCase()}
                             color={getPaymentStatusColor(invoice.paymentStatus)}
@@ -1110,10 +1110,10 @@ export function InvoiceManagementSystem({ onComplete }: InvoiceManagementSystemP
       </Menu>
 
       {/* Bulk Action Dialog */}
-      <Dialog 
-        open={bulkActionDialog.open} 
+      <Dialog
+        open={bulkActionDialog.open}
         onClose={() => setBulkActionDialog({ open: false, action: '' })}
-        maxWidth="sm" 
+        maxWidth="sm"
         fullWidth
       >
         <DialogTitle>
@@ -1121,28 +1121,28 @@ export function InvoiceManagementSystem({ onComplete }: InvoiceManagementSystemP
         </DialogTitle>
         <DialogContent>
           <Typography variant="body1" gutterBottom>
-            {bulkActionDialog.action === 'generate-einvoice' && 
+            {bulkActionDialog.action === 'generate-einvoice' &&
               `Generate e-invoices for ${selectedInvoices.length} selected invoice(s)?`}
-            {bulkActionDialog.action === 'generate-ewaybill' && 
+            {bulkActionDialog.action === 'generate-ewaybill' &&
               `Generate e-way bills for ${selectedInvoices.length} selected invoice(s)?`}
-            {bulkActionDialog.action === 'mark-sent' && 
+            {bulkActionDialog.action === 'mark-sent' &&
               `Mark ${selectedInvoices.length} selected invoice(s) as sent?`}
-            {bulkActionDialog.action === 'export' && 
+            {bulkActionDialog.action === 'export' &&
               `Export ${selectedInvoices.length} selected invoice(s) to Excel?`}
           </Typography>
-          
+
           {loading && (
             <LinearProgress sx={{ mt: 2 }} />
           )}
         </DialogContent>
         <DialogActions>
-          <Button 
+          <Button
             onClick={() => setBulkActionDialog({ open: false, action: '' })}
             disabled={loading}
           >
             Cancel
           </Button>
-          <Button 
+          <Button
             onClick={() => handleBulkAction(bulkActionDialog.action)}
             variant="contained"
             disabled={loading}

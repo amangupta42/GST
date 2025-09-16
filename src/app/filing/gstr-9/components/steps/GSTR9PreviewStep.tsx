@@ -398,7 +398,7 @@ export function GSTR9PreviewStep({ data }: GSTR9PreviewStepProps) {
             <Grid container spacing={3}>
               <Grid item xs={12} md={4}>
                 <Typography variant="subtitle1" gutterBottom>6(A) Available ITC</Typography>
-                <TableContainer component={Paper} variant="outlined" size="small">
+                <TableContainer component={Paper} variant="outlined">
                   <Table size="small">
                     <TableBody>
                       <TableRow>
@@ -428,61 +428,65 @@ export function GSTR9PreviewStep({ data }: GSTR9PreviewStepProps) {
 
               <Grid item xs={12} md={4}>
                 <Typography variant="subtitle1" gutterBottom>6(B) Claimed ITC</Typography>
-                <TableContainer component={Paper} variant="outlined" size="small">
-                  <Table size="small">
-                    <TableBody>
-                      <TableRow>
-                        <TableCell>CGST</TableCell>
-                        <TableCell align="right">{formatCurrency(gstr9Tables.table6.claimedITC.cgst)}</TableCell>
-                      </TableRow>
-                      <TableRow>
-                        <TableCell>SGST</TableCell>
-                        <TableCell align="right">{formatCurrency(gstr9Tables.table6.claimedITC.sgst)}</TableCell>
-                      </TableRow>
-                      <TableRow>
-                        <TableCell>IGST</TableCell>
-                        <TableCell align="right">{formatCurrency(gstr9Tables.table6.claimedITC.igst)}</TableCell>
-                      </TableRow>
-                      <TableRow>
-                        <TableCell>Cess</TableCell>
-                        <TableCell align="right">{formatCurrency(gstr9Tables.table6.claimedITC.cess)}</TableCell>
-                      </TableRow>
-                      <TableRow sx={{ backgroundColor: '#f5f5f5' }}>
-                        <TableCell><strong>Total</strong></TableCell>
-                        <TableCell align="right"><strong>{formatCurrency(gstr9Tables.table6.claimedITC.total)}</strong></TableCell>
-                      </TableRow>
-                    </TableBody>
-                  </Table>
+                <TableContainer>
+                  <Paper variant="outlined">
+                    <Table size="small">
+                      <TableBody>
+                        <TableRow>
+                          <TableCell>CGST</TableCell>
+                          <TableCell align="right">{formatCurrency(gstr9Tables.table6.claimedITC.cgst)}</TableCell>
+                        </TableRow>
+                        <TableRow>
+                          <TableCell>SGST</TableCell>
+                          <TableCell align="right">{formatCurrency(gstr9Tables.table6.claimedITC.sgst)}</TableCell>
+                        </TableRow>
+                        <TableRow>
+                          <TableCell>IGST</TableCell>
+                          <TableCell align="right">{formatCurrency(gstr9Tables.table6.claimedITC.igst)}</TableCell>
+                        </TableRow>
+                        <TableRow>
+                          <TableCell>Cess</TableCell>
+                          <TableCell align="right">{formatCurrency(gstr9Tables.table6.claimedITC.cess)}</TableCell>
+                        </TableRow>
+                        <TableRow sx={{ backgroundColor: '#f5f5f5' }}>
+                          <TableCell><strong>Total</strong></TableCell>
+                          <TableCell align="right"><strong>{formatCurrency(gstr9Tables.table6.claimedITC.total)}</strong></TableCell>
+                        </TableRow>
+                      </TableBody>
+                    </Table>
+                  </Paper>
                 </TableContainer>
               </Grid>
 
               <Grid item xs={12} md={4}>
                 <Typography variant="subtitle1" gutterBottom>6(C) Reversed ITC</Typography>
-                <TableContainer component={Paper} variant="outlined" size="small">
-                  <Table size="small">
-                    <TableBody>
-                      <TableRow>
-                        <TableCell>CGST</TableCell>
-                        <TableCell align="right">{formatCurrency(gstr9Tables.table6.reversedITC.cgst)}</TableCell>
-                      </TableRow>
-                      <TableRow>
-                        <TableCell>SGST</TableCell>
-                        <TableCell align="right">{formatCurrency(gstr9Tables.table6.reversedITC.sgst)}</TableCell>
-                      </TableRow>
-                      <TableRow>
-                        <TableCell>IGST</TableCell>
-                        <TableCell align="right">{formatCurrency(gstr9Tables.table6.reversedITC.igst)}</TableCell>
-                      </TableRow>
-                      <TableRow>
-                        <TableCell>Cess</TableCell>
-                        <TableCell align="right">{formatCurrency(gstr9Tables.table6.reversedITC.cess)}</TableCell>
-                      </TableRow>
-                      <TableRow sx={{ backgroundColor: '#f5f5f5' }}>
-                        <TableCell><strong>Total</strong></TableCell>
-                        <TableCell align="right"><strong>{formatCurrency(gstr9Tables.table6.reversedITC.total)}</strong></TableCell>
-                      </TableRow>
-                    </TableBody>
-                  </Table>
+                <TableContainer>
+                  <Paper variant="outlined">
+                    <Table size="small">
+                      <TableBody>
+                        <TableRow>
+                          <TableCell>CGST</TableCell>
+                          <TableCell align="right">{formatCurrency(gstr9Tables.table6.reversedITC.cgst)}</TableCell>
+                        </TableRow>
+                        <TableRow>
+                          <TableCell>SGST</TableCell>
+                          <TableCell align="right">{formatCurrency(gstr9Tables.table6.reversedITC.sgst)}</TableCell>
+                        </TableRow>
+                        <TableRow>
+                          <TableCell>IGST</TableCell>
+                          <TableCell align="right">{formatCurrency(gstr9Tables.table6.reversedITC.igst)}</TableCell>
+                        </TableRow>
+                        <TableRow>
+                          <TableCell>Cess</TableCell>
+                          <TableCell align="right">{formatCurrency(gstr9Tables.table6.reversedITC.cess)}</TableCell>
+                        </TableRow>
+                        <TableRow sx={{ backgroundColor: '#f5f5f5' }}>
+                          <TableCell><strong>Total</strong></TableCell>
+                          <TableCell align="right"><strong>{formatCurrency(gstr9Tables.table6.reversedITC.total)}</strong></TableCell>
+                        </TableRow>
+                      </TableBody>
+                    </Table>
+                  </Paper>
                 </TableContainer>
               </Grid>
             </Grid>

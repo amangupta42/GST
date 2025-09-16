@@ -43,7 +43,6 @@ import {
   Switch,
   FormControlLabel,
   Autocomplete,
-  DatePicker,
   Accordion,
   AccordionSummary,
   AccordionDetails

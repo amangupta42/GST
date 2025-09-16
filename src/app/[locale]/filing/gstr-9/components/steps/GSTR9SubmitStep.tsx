@@ -133,7 +133,7 @@ export function GSTR9SubmitStep({ data, onUpdate, onComplete, loading, setLoadin
 
       if (validationIssues.length > 0) {
         updateStepStatus(0, 'failed', `Validation failed: ${validationIssues.join(', ')}`);
-        throw new Error(`Validation failed: ${validationIssues.join(', ')}`);
+        throw new (Error as any)(`Validation failed: ${validationIssues.join(', ')}`);
       }
 
       updateStepStatus(0, 'completed', 'All validation checks passed');

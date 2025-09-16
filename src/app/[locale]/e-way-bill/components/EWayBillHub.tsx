@@ -60,7 +60,7 @@ import {
   Timer as TimerIcon,
   Traffic as TrafficIcon,
   Speed as SpeedIcon,
-  Emergency as EmergencyIcon
+  Warning as EmergencyIcon
 } from '@mui/icons-material';
 
 interface Vehicle {

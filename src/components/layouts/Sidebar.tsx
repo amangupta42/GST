@@ -138,40 +138,75 @@ export function Sidebar({ open, onClose }: SidebarProps) {
           {navigationItems.map((item) => (
             <Box key={item.textKey}>
               <ListItem disablePadding sx={{ mb: 0.5 }}>
-                <ListItemButton
-                  component={item.children ? 'div' : Link}
-                  href={item.children ? undefined : item.href}
-                  onClick={() => handleItemClick(item)}
-                  sx={{
-                    borderRadius: 2,
-                    minHeight: 48,
-                    backgroundColor: isActive(item.href)
-                      ? 'primary.main'
-                      : 'transparent',
-                    color: isActive(item.href) ? 'white' : 'text.primary',
-                    '&:hover': {
-                      backgroundColor: isActive(item.href)
-                        ? 'primary.dark'
-                        : 'action.hover',
-                    },
-                  }}
-                >
-                  <ListItemIcon
+                {item.children ? (
+                  <ListItemButton
+                    onClick={() => handleItemClick(item)}
                     sx={{
-                      color: isActive(item.href) ? 'white' : 'text.secondary',
-                      minWidth: 40,
+                      borderRadius: 2,
+                      minHeight: 48,
+                      backgroundColor: isActive(item.href)
+                        ? 'primary.main'
+                        : 'transparent',
+                      color: isActive(item.href) ? 'white' : 'text.primary',
+                      '&:hover': {
+                        backgroundColor: isActive(item.href)
+                          ? 'primary.dark'
+                          : 'action.hover',
+                      },
                     }}
                   >
-                    {item.icon}
-                  </ListItemIcon>
-                  <ListItemText
-                    primary={t(item.textKey)}
-                    primaryTypographyProps={{
-                      fontSize: '0.875rem',
-                      fontWeight: isActive(item.href) ? 600 : 400,
-                    }}
-                  />
-                </ListItemButton>
+                    <ListItemIcon
+                      sx={{
+                        color: isActive(item.href) ? 'white' : 'text.secondary',
+                        minWidth: 40,
+                      }}
+                    >
+                      {item.icon}
+                    </ListItemIcon>
+                    <ListItemText
+                      primary={t(item.textKey)}
+                      primaryTypographyProps={{
+                        fontSize: '0.875rem',
+                        fontWeight: isActive(item.href) ? 600 : 400,
+                      }}
+                    />
+                  </ListItemButton>
+                ) : (
+                  <Link href={item.href as Parameters<typeof Link>[0]['href']} style={{ textDecoration: 'none' }}>
+                    <ListItemButton
+                      onClick={() => handleItemClick(item)}
+                      sx={{
+                        borderRadius: 2,
+                        minHeight: 48,
+                        backgroundColor: isActive(item.href)
+                          ? 'primary.main'
+                          : 'transparent',
+                        color: isActive(item.href) ? 'white' : 'text.primary',
+                        '&:hover': {
+                          backgroundColor: isActive(item.href)
+                            ? 'primary.dark'
+                            : 'action.hover',
+                        },
+                      }}
+                    >
+                      <ListItemIcon
+                        sx={{
+                          color: isActive(item.href) ? 'white' : 'text.secondary',
+                          minWidth: 40,
+                        }}
+                      >
+                        {item.icon}
+                      </ListItemIcon>
+                      <ListItemText
+                        primary={t(item.textKey)}
+                        primaryTypographyProps={{
+                          fontSize: '0.875rem',
+                          fontWeight: isActive(item.href) ? 600 : 400,
+                        }}
+                      />
+                    </ListItemButton>
+                  </Link>
+                )}
               </ListItem>
 
               {/* Submenu items */}
@@ -179,32 +214,32 @@ export function Sidebar({ open, onClose }: SidebarProps) {
                 <List sx={{ pl: 2 }}>
                   {item.children.map((child) => (
                     <ListItem key={child.textKey} disablePadding sx={{ mb: 0.5 }}>
-                      <ListItemButton
-                        component={Link}
-                        href={child.href}
-                        onClick={() => isMobile && onClose()}
-                        sx={{
-                          borderRadius: 1.5,
-                          minHeight: 40,
-                          backgroundColor: isActive(child.href)
-                            ? 'primary.main'
-                            : 'transparent',
-                          color: isActive(child.href) ? 'white' : 'text.primary',
-                          '&:hover': {
+                      <Link href={child.href as Parameters<typeof Link>[0]['href']} style={{ textDecoration: 'none' }}>
+                        <ListItemButton
+                          onClick={() => isMobile && onClose()}
+                          sx={{
+                            borderRadius: 1.5,
+                            minHeight: 40,
                             backgroundColor: isActive(child.href)
-                              ? 'primary.dark'
-                              : 'action.hover',
-                          },
-                        }}
-                      >
-                        <ListItemText
-                          primary={child.textKey}
-                          primaryTypographyProps={{
-                            fontSize: '0.8125rem',
-                            fontWeight: isActive(child.href) ? 600 : 400,
+                              ? 'primary.main'
+                              : 'transparent',
+                            color: isActive(child.href) ? 'white' : 'text.primary',
+                            '&:hover': {
+                              backgroundColor: isActive(child.href)
+                                ? 'primary.dark'
+                                : 'action.hover',
+                            },
                           }}
-                        />
-                      </ListItemButton>
+                        >
+                          <ListItemText
+                            primary={child.textKey}
+                            primaryTypographyProps={{
+                              fontSize: '0.8125rem',
+                              fontWeight: isActive(child.href) ? 600 : 400,
+                            }}
+                          />
+                        </ListItemButton>
+                      </Link>
                     </ListItem>
                   ))}
                 </List>

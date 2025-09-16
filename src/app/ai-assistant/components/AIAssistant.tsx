@@ -63,6 +63,44 @@ import {
   Translate as TranslateIcon
 } from '@mui/icons-material';
 
+// --- START: BUG FIXES ---
+
+// Fix for Speech Recognition API types (Errors #4, #5, #6)
+// Minimal SpeechRecognition type declaration to fix "Cannot find name 'SpeechRecognition'"
+type SpeechRecognition = {
+  lang: string;
+  continuous: boolean;
+  interimResults: boolean;
+  onstart: (() => void) | null;
+  onresult: ((event: any) => void) | null;
+  onerror: (() => void) | null;
+  onend: (() => void) | null;
+  start: () => void;
+  stop?: () => void;
+};
+
+// Extend the global Window interface to include non-standard speech recognition APIs
+declare global {
+  interface Window {
+    SpeechRecognition: { new(): SpeechRecognition };
+    webkitSpeechRecognition: { new(): SpeechRecognition };
+  }
+}
+
+// Define a type for the speech recognition event to avoid implicit 'any'
+interface SpeechRecognitionEvent extends Event {
+  results: SpeechRecognitionResultList;
+}
+
+// Define a more specific type for message categories (Fix for Error #2)
+type MessageCategory = 'gst_rate' | 'compliance' | 'filing' | 'invoice' | 'general';
+
+// Define language codes as a specific type (Fix for Errors #1, #3)
+type LanguageCode = 'en' | 'hi' | 'ta' | 'te' | 'bn' | 'gu' | 'mr' | 'kn';
+
+// --- END: BUG FIXES ---
+
+
 interface Message {
   id: string;
   type: 'user' | 'ai';
@@ -127,7 +165,7 @@ export const AIAssistant = ({ onNavigate }: AIAssistantProps) => {
   const [dialogOpen, setDialogOpen] = useState(false);
   const [dialogType, setDialogType] = useState<'settings' | 'history' | 'help'>('settings');
   const [anchorEl, setAnchorEl] = useState<null | HTMLElement>(null);
-  
+
   const messagesEndRef = useRef<HTMLDivElement>(null);
   const inputRef = useRef<HTMLInputElement>(null);
 
@@ -206,7 +244,7 @@ export const AIAssistant = ({ onNavigate }: AIAssistantProps) => {
       messages: [{
         id: `msg-${Date.now()}`,
         type: 'ai',
-        content: mockResponses[selectedLanguage]?.greeting || mockResponses.en.greeting,
+        content: mockResponses[selectedLanguage as keyof typeof mockResponses]?.greeting || mockResponses.en.greeting,
         timestamp: new Date().toISOString(),
         language: selectedLanguage,
         metadata: { category: 'general', confidence: 1.0 }
@@ -215,7 +253,7 @@ export const AIAssistant = ({ onNavigate }: AIAssistantProps) => {
       language: selectedLanguage,
       category: 'general'
     };
-    
+
     setCurrentSession(newSession);
     setSessions(prev => [newSession, ...prev]);
   }, [selectedLanguage, mockResponses]);
@@ -245,7 +283,7 @@ export const AIAssistant = ({ onNavigate }: AIAssistantProps) => {
     setTimeout(() => {
       const category = detectCategory(content);
       const response = generateResponse(content, category);
-      
+
       const aiMessage: Message = {
         id: `msg-${Date.now()}-ai`,
         type: 'ai',
@@ -279,7 +317,7 @@ export const AIAssistant = ({ onNavigate }: AIAssistantProps) => {
     setInputMessage('');
   }, [currentSession, selectedLanguage, voiceEnabled]);
 
-  const detectCategory = (content: string): string => {
+  const detectCategory = (content: string): MessageCategory => {
     const lowerContent = content.toLowerCase();
     if (lowerContent.includes('rate') || lowerContent.includes('hsn') || lowerContent.includes('tax')) return 'gst_rate';
     if (lowerContent.includes('file') || lowerContent.includes('return') || lowerContent.includes('gstr')) return 'filing';
@@ -288,13 +326,21 @@ export const AIAssistant = ({ onNavigate }: AIAssistantProps) => {
     return 'general';
   };
 
-  const generateResponse = (query: string, category: string) => {
-    const responses = mockResponses[selectedLanguage] || mockResponses.en;
+  const generateResponse = (query: string, category: MessageCategory) => {
+    const responses = mockResponses[selectedLanguage as keyof typeof mockResponses] || mockResponses.en;
     let confidence = 0.9;
     let sources = ['GST Portal', 'CBIC Guidelines', 'Tax Regulations 2024'];
     let actions: any[] = [];
 
-    let content = responses[category] || responses.fallback;
+    let content: string;
+    if (category === 'gst_rate' || category === 'filing' || category === 'compliance') {
+      content = responses[category];
+    } else if (category === 'invoice') {
+      // 'invoice' is not in the response object, fallback
+      content = responses.fallback;
+    } else {
+      content = responses.fallback;
+    }
 
     // Add specific actions based on category
     if (category === 'gst_rate') {
@@ -331,11 +377,11 @@ export const AIAssistant = ({ onNavigate }: AIAssistantProps) => {
     if ('webkitSpeechRecognition' in window || 'SpeechRecognition' in window) {
       const SpeechRecognition = window.webkitSpeechRecognition || window.SpeechRecognition;
       const recognition = new SpeechRecognition();
-      
+
       recognition.lang = selectedLanguage === 'hi' ? 'hi-IN' : selectedLanguage === 'ta' ? 'ta-IN' : 'en-US';
       recognition.continuous = false;
       recognition.interimResults = false;
-      
+
       recognition.onstart = () => setIsListening(true);
       recognition.onresult = (event) => {
         const transcript = event.results[0][0].transcript;
@@ -344,7 +390,7 @@ export const AIAssistant = ({ onNavigate }: AIAssistantProps) => {
       };
       recognition.onerror = () => setIsListening(false);
       recognition.onend = () => setIsListening(false);
-      
+
       recognition.start();
     }
   }, [selectedLanguage]);
@@ -372,14 +418,14 @@ export const AIAssistant = ({ onNavigate }: AIAssistantProps) => {
 
   const toggleBookmark = useCallback((messageId: string) => {
     if (!currentSession) return;
-    
+
     const updatedSession = {
       ...currentSession,
-      messages: currentSession.messages.map(msg => 
+      messages: currentSession.messages.map(msg =>
         msg.id === messageId ? { ...msg, isBookmarked: !msg.isBookmarked } : msg
       )
     };
-    
+
     setCurrentSession(updatedSession);
     setSessions(prev => prev.map(s => s.id === updatedSession.id ? updatedSession : s));
   }, [currentSession]);
@@ -409,7 +455,7 @@ export const AIAssistant = ({ onNavigate }: AIAssistantProps) => {
             <AIIcon fontSize="small" />
           </Avatar>
         )}
-        
+
         <Paper
           sx={{
             p: 2,
@@ -421,7 +467,7 @@ export const AIAssistant = ({ onNavigate }: AIAssistantProps) => {
           <Typography variant="body1" sx={{ whiteSpace: 'pre-line' }}>
             {message.content}
           </Typography>
-          
+
           {message.metadata?.actions && (
             <Box sx={{ mt: 1, display: 'flex', gap: 1, flexWrap: 'wrap' }}>
               {message.metadata.actions.map((action, index) => (
@@ -440,12 +486,12 @@ export const AIAssistant = ({ onNavigate }: AIAssistantProps) => {
               ))}
             </Box>
           )}
-          
+
           <Box sx={{ mt: 1, display: 'flex', alignItems: 'center', gap: 1 }}>
             <Typography variant="caption" color="text.secondary">
               {new Date(message.timestamp).toLocaleTimeString()}
             </Typography>
-            
+
             {message.type === 'ai' && (
               <>
                 <IconButton
@@ -458,7 +504,7 @@ export const AIAssistant = ({ onNavigate }: AIAssistantProps) => {
                     <BookmarkIcon fontSize="small" />
                   )}
                 </IconButton>
-                
+
                 <IconButton
                   size="small"
                   onClick={() => speakText(message.content)}
@@ -470,7 +516,7 @@ export const AIAssistant = ({ onNavigate }: AIAssistantProps) => {
             )}
           </Box>
         </Paper>
-        
+
         {message.type === 'user' && (
           <Avatar sx={{ bgcolor: 'grey.500', width: 32, height: 32 }}>
             U
@@ -527,7 +573,7 @@ export const AIAssistant = ({ onNavigate }: AIAssistantProps) => {
             <CardContent sx={{ flex: 1, overflow: 'auto', p: 0 }}>
               <Box sx={{ p: 2 }}>
                 {currentSession?.messages.map(renderMessage)}
-                
+
                 {isTyping && (
                   <Box sx={{ display: 'flex', justifyContent: 'flex-start', mb: 2 }}>
                     <Box sx={{ display: 'flex', gap: 1, alignItems: 'center' }}>
@@ -544,7 +590,7 @@ export const AIAssistant = ({ onNavigate }: AIAssistantProps) => {
                     </Box>
                   </Box>
                 )}
-                
+
                 <div ref={messagesEndRef} />
               </Box>
             </CardContent>
@@ -563,7 +609,7 @@ export const AIAssistant = ({ onNavigate }: AIAssistantProps) => {
                   placeholder={`Ask me anything about GST... (${LANGUAGES.find(l => l.code === selectedLanguage)?.nativeName})`}
                   disabled={isTyping}
                 />
-                
+
                 <IconButton
                   color="primary"
                   onClick={startVoiceInput}
@@ -573,7 +619,7 @@ export const AIAssistant = ({ onNavigate }: AIAssistantProps) => {
                     {isListening ? <MicIcon /> : <MicOffIcon />}
                   </Badge>
                 </IconButton>
-                
+
                 <IconButton
                   color="primary"
                   onClick={() => sendMessage(inputMessage)}
@@ -611,7 +657,7 @@ export const AIAssistant = ({ onNavigate }: AIAssistantProps) => {
                       ))}
                     </Select>
                   </FormControl>
-                  
+
                   <Box sx={{ mt: 2 }}>
                     <FormControlLabel
                       control={
@@ -637,7 +683,7 @@ export const AIAssistant = ({ onNavigate }: AIAssistantProps) => {
                       <MagicIcon />
                     </IconButton>
                   </Box>
-                  
+
                   <List dense>
                     {sessions.slice(0, 5).map((session) => (
                       <ListItem
@@ -653,7 +699,7 @@ export const AIAssistant = ({ onNavigate }: AIAssistantProps) => {
                       </ListItem>
                     ))}
                   </List>
-                  
+
                   <Button
                     fullWidth
                     variant="outlined"
@@ -677,7 +723,7 @@ export const AIAssistant = ({ onNavigate }: AIAssistantProps) => {
                     <InsightIcon sx={{ mr: 1 }} />
                     <Typography variant="h6">AI Insights</Typography>
                   </Box>
-                  
+
                   <Alert severity="info" sx={{ mb: 1 }}>
                     <Typography variant="body2" fontWeight="medium">
                       GST Rate Update
@@ -686,7 +732,7 @@ export const AIAssistant = ({ onNavigate }: AIAssistantProps) => {
                       New rates effective from Oct 1, 2024
                     </Typography>
                   </Alert>
-                  
+
                   <Alert severity="success" sx={{ mb: 1 }}>
                     <Typography variant="body2" fontWeight="medium">
                       Filing Reminder
@@ -695,7 +741,7 @@ export const AIAssistant = ({ onNavigate }: AIAssistantProps) => {
                       GSTR-1 due in 3 days
                     </Typography>
                   </Alert>
-                  
+
                   <Alert severity="warning">
                     <Typography variant="body2" fontWeight="medium">
                       Compliance Alert
@@ -736,7 +782,7 @@ export const AIAssistant = ({ onNavigate }: AIAssistantProps) => {
                 control={<Switch defaultChecked />}
                 label="Smart suggestions"
               />
-              
+
               <Typography variant="h6" gutterBottom sx={{ mt: 3 }}>
                 Privacy Settings
               </Typography>
@@ -750,7 +796,7 @@ export const AIAssistant = ({ onNavigate }: AIAssistantProps) => {
               />
             </Box>
           )}
-          
+
           {dialogType === 'history' && (
             <Box sx={{ mt: 2 }}>
               {sessions.map((session) => (
@@ -770,7 +816,7 @@ export const AIAssistant = ({ onNavigate }: AIAssistantProps) => {
               ))}
             </Box>
           )}
-          
+
           {dialogType === 'help' && (
             <Box sx={{ mt: 2 }}>
               <Typography variant="h6" gutterBottom>

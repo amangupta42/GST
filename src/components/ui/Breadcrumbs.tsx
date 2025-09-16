@@ -47,7 +47,7 @@ export function Breadcrumbs() {
   let currentPath = '';
   pathSegments.forEach((segment, index) => {
     currentPath += `/${segment}`;
-    const label = routeMap[segment] || segment.charAt(0).toUpperCase() + segment.slice(1);
+    const label = (routeMap as Record<string, string>)[segment] || segment.charAt(0).toUpperCase() + segment.slice(1);
     
     // Don't make the last item a link
     if (index === pathSegments.length - 1) {
@@ -70,27 +70,27 @@ export function Breadcrumbs() {
         {breadcrumbItems.map((item, index) => {
           if (item.href) {
             return (
-              <MUILink
-                key={index}
-                component={Link}
-                href={item.href}
-                color="inherit"
-                underline="hover"
-                sx={{
-                  display: 'flex',
-                  alignItems: 'center',
-                  color: 'text.secondary',
-                  fontSize: '0.875rem',
-                  '&:hover': {
-                    color: 'primary.main',
-                  },
-                }}
-              >
-                {index === 0 && (
-                  <HomeIcon sx={{ mr: 0.5, fontSize: 16 }} />
-                )}
-                {item.label}
-              </MUILink>
+              <Link key={index} href={item.href as any} passHref legacyBehavior>
+                <MUILink
+                 
+                  color="inherit"
+                  underline="hover"
+                  sx={{
+                    display: 'flex',
+                    alignItems: 'center',
+                    color: 'text.secondary',
+                    fontSize: '0.875rem',
+                    '&:hover': {
+                      color: 'primary.main',
+                    },
+                  }}
+                >
+                  {index === 0 && (
+                    <HomeIcon sx={{ mr: 0.5, fontSize: 16 }} />
+                  )}
+                  {item.label}
+                </MUILink>
+              </Link>
             );
           }
 

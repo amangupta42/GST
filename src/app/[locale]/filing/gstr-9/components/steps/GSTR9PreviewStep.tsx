@@ -398,7 +398,7 @@ export function GSTR9PreviewStep({ data }: GSTR9PreviewStepProps) {
             <Grid container spacing={3}>
               <Grid item xs={12} md={4}>
                 <Typography variant="subtitle1" gutterBottom>6(A) Available ITC</Typography>
-                <TableContainer component={Paper} variant="outlined" size="small">
+                <TableContainer component={Paper} variant="outlined">
                   <Table size="small">
                     <TableBody>
                       <TableRow>
@@ -428,7 +428,7 @@ export function GSTR9PreviewStep({ data }: GSTR9PreviewStepProps) {
 
               <Grid item xs={12} md={4}>
                 <Typography variant="subtitle1" gutterBottom>6(B) Claimed ITC</Typography>
-                <TableContainer component={Paper} variant="outlined" size="small">
+                <TableContainer component={Paper} variant="outlined">
                   <Table size="small">
                     <TableBody>
                       <TableRow>
@@ -458,7 +458,7 @@ export function GSTR9PreviewStep({ data }: GSTR9PreviewStepProps) {
 
               <Grid item xs={12} md={4}>
                 <Typography variant="subtitle1" gutterBottom>6(C) Reversed ITC</Typography>
-                <TableContainer component={Paper} variant="outlined" size="small">
+                <TableContainer component={Paper} variant="outlined">
                   <Table size="small">
                     <TableBody>
                       <TableRow>

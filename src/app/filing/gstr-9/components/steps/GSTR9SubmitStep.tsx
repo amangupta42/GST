@@ -38,7 +38,7 @@ import {
   Receipt,
   Download,
   Warning,
-  Error,
+  Error as ErrorIcon,
   Info,
   Send,
   Lock
@@ -59,6 +59,7 @@ interface SubmissionStep {
   status: 'pending' | 'in_progress' | 'completed' | 'failed';
   details?: string;
 }
+
 
 export function GSTR9SubmitStep({ data, onUpdate, onComplete, loading, setLoading }: GSTR9SubmitStepProps) {
   const [currentStep, setCurrentStep] = useState(0);
@@ -98,7 +99,7 @@ export function GSTR9SubmitStep({ data, onUpdate, onComplete, loading, setLoadin
   const formatCurrency = (value: number) => `₹${value.toLocaleString()}`;
 
   const updateStepStatus = useCallback((stepIndex: number, status: SubmissionStep['status'], details?: string) => {
-    setSubmissionSteps(prev => prev.map((step, index) => 
+    setSubmissionSteps(prev => prev.map((step, index) =>
       index === stepIndex ? { ...step, status, details } : step
     ));
   }, []);
@@ -120,11 +121,11 @@ export function GSTR9SubmitStep({ data, onUpdate, onComplete, loading, setLoadin
 
       // Simulate validation checks
       const validationIssues: string[] = [];
-      
+
       if (data.turnoverData.gstr1Turnover === 0) {
         validationIssues.push('No turnover data found');
       }
-      
+
       // Check for major discrepancies
       const turnoverDiff = Math.abs(data.turnoverData.gstr1Turnover - data.turnoverData.gstr3bTurnover);
       if (turnoverDiff > 100000) {
@@ -200,7 +201,7 @@ export function GSTR9SubmitStep({ data, onUpdate, onComplete, loading, setLoadin
     switch (status) {
       case 'completed': return <CheckCircle color="success" />;
       case 'in_progress': return <Schedule color="primary" />;
-      case 'failed': return <Error color="error" />;
+      case 'failed': return <ErrorIcon color="error" />;
       default: return <Schedule color="disabled" />;
     }
   };
@@ -270,7 +271,7 @@ export function GSTR9SubmitStep({ data, onUpdate, onComplete, loading, setLoadin
                   <ListItemIcon>
                     {data.reconciliationStatus.turnoverReconciled ? <CheckCircle color="success" /> : <Warning color="warning" />}
                   </ListItemIcon>
-                  <ListItemText 
+                  <ListItemText
                     primary="Turnover Reconciliation"
                     secondary={data.reconciliationStatus.turnoverReconciled ? 'Completed' : 'Pending'}
                   />
@@ -279,7 +280,7 @@ export function GSTR9SubmitStep({ data, onUpdate, onComplete, loading, setLoadin
                   <ListItemIcon>
                     {data.reconciliationStatus.taxReconciled ? <CheckCircle color="success" /> : <Warning color="warning" />}
                   </ListItemIcon>
-                  <ListItemText 
+                  <ListItemText
                     primary="Tax Reconciliation"
                     secondary={data.reconciliationStatus.taxReconciled ? 'Completed' : 'Pending'}
                   />
@@ -288,16 +289,16 @@ export function GSTR9SubmitStep({ data, onUpdate, onComplete, loading, setLoadin
                   <ListItemIcon>
                     {data.reconciliationStatus.itcReconciled ? <CheckCircle color="success" /> : <Warning color="warning" />}
                   </ListItemIcon>
-                  <ListItemText 
+                  <ListItemText
                     primary="ITC Analysis"
                     secondary={data.reconciliationStatus.itcReconciled ? 'Completed' : 'Pending'}
                   />
                 </ListItem>
                 <ListItem>
                   <ListItemIcon>
-                    {data.reconciliationStatus.discrepancies.length === 0 ? <CheckCircle color="success" /> : <Error color="error" />}
+                    {data.reconciliationStatus.discrepancies.length === 0 ? <CheckCircle color="success" /> : <ErrorIcon color="error" />}
                   </ListItemIcon>
-                  <ListItemText 
+                  <ListItemText
                     primary="Discrepancies"
                     secondary={data.reconciliationStatus.discrepancies.length === 0 ? 'None found' : `${data.reconciliationStatus.discrepancies.length} issues`}
                   />
@@ -390,15 +391,15 @@ export function GSTR9SubmitStep({ data, onUpdate, onComplete, loading, setLoadin
           <CardContent>
             <Box sx={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', mb: 2 }}>
               <Typography variant="h6">Submission Progress</Typography>
-              <Chip 
+              <Chip
                 label={`${submissionProgress()}% Complete`}
                 color="primary"
               />
             </Box>
 
-            <LinearProgress 
-              variant="determinate" 
-              value={submissionProgress()} 
+            <LinearProgress
+              variant="determinate"
+              value={submissionProgress()}
               sx={{ height: 8, borderRadius: 4, mb: 3 }}
             />
 
@@ -518,7 +519,7 @@ export function GSTR9SubmitStep({ data, onUpdate, onComplete, loading, setLoadin
           <Divider sx={{ my: 2 }} />
 
           <Typography variant="body2" color="text.secondary">
-            <strong>Important:</strong> Keep the acknowledgment for your records. 
+            <strong>Important:</strong> Keep the acknowledgment for your records.
             You can download it anytime from your GST portal dashboard.
           </Typography>
         </DialogContent>
