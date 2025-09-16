@@ -477,7 +477,7 @@ export function ITCReconciliationEngine({ onComplete }: ITCReconciliationEngineP
                 fullWidth
                 variant="outlined"
                 startIcon={<Refresh />}
-                onClick={() => window.location.reload()}
+                onClick={() => typeof window !== 'undefined' && window.location.reload()}
               >
                 Refresh
               </Button>

@@ -257,7 +257,7 @@ export const AIAssistant = ({ onNavigate }: AIAssistantProps) => {
       setIsTyping(false);
 
       // Speak response if voice is enabled
-      if (voiceEnabled && 'speechSynthesis' in window) {
+      if (voiceEnabled && typeof window !== 'undefined' && 'speechSynthesis' in window) {
         speakText(response.content);
       }
     }, 1000 + Math.random() * 2000); // Realistic response delay
@@ -303,7 +303,7 @@ export const AIAssistant = ({ onNavigate }: AIAssistantProps) => {
   };
 
   const speakText = useCallback((text: string) => {
-    if ('speechSynthesis' in window) {
+    if (typeof window !== 'undefined' && 'speechSynthesis' in window) {
       const utterance = new SpeechSynthesisUtterance(text);
       utterance.lang = selectedLanguage === 'hi' ? 'hi-IN' : selectedLanguage === 'ta' ? 'ta-IN' : 'en-US';
       utterance.rate = 0.8;
@@ -314,7 +314,7 @@ export const AIAssistant = ({ onNavigate }: AIAssistantProps) => {
   }, [selectedLanguage]);
 
   const startVoiceInput = useCallback(() => {
-    if ('webkitSpeechRecognition' in window || 'SpeechRecognition' in window) {
+    if (typeof window !== 'undefined' && ('webkitSpeechRecognition' in window || 'SpeechRecognition' in window)) {
       const SpeechRecognition = (window as any).webkitSpeechRecognition || (window as any).SpeechRecognition;
       const recognition = new SpeechRecognition();
       

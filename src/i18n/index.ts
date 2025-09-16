@@ -56,13 +56,18 @@ export const { Link, redirect, usePathname, useRouter } = createNavigation(routi
 export function detectUserLocale(): Locale {
   if (typeof window === 'undefined') return 'en';
 
-  // Check localStorage first
-  const stored = localStorage.getItem('preferred-locale') as Locale;
-  if (stored && locales.includes(stored)) return stored;
+  try {
+    // Check localStorage first
+    const stored = localStorage.getItem('preferred-locale') as Locale;
+    if (stored && locales.includes(stored)) return stored;
 
-  // Check browser language
-  const browserLang = navigator.language.split('-')[0] as Locale;
-  if (locales.includes(browserLang)) return browserLang;
+    // Check browser language
+    const browserLang = navigator.language.split('-')[0] as Locale;
+    if (locales.includes(browserLang)) return browserLang;
+  } catch (error) {
+    // Fallback for SSR or when localStorage is not available
+    console.warn('Could not access browser storage:', error);
+  }
 
   // Fallback to English
   return 'en';
@@ -71,7 +76,11 @@ export function detectUserLocale(): Locale {
 // Utility to save user's language preference
 export function saveUserLocale(locale: Locale): void {
   if (typeof window !== 'undefined') {
-    localStorage.setItem('preferred-locale', locale);
+    try {
+      localStorage.setItem('preferred-locale', locale);
+    } catch (error) {
+      console.warn('Could not save locale preference:', error);
+    }
   }
 }
 
